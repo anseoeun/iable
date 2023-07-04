@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title></title>
+
+<link rel=" shortcut icon" href="../images/favicon/favicon.ico">
+<link rel="icon" href="../images/favicon/favicon.ico">
+<link rel="icon" href="../images/favicon/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../images/favicon/favicon-57.png" sizes="57x57">
+<link rel="icon" href="../images/favicon/favicon-72.png" sizes="72x72">
+<link rel="icon" href="../images/favicon/favicon-152.png" sizes="152x152">
+<link rel="apple-touch-icon" href="../images/favicon/favicon.png" />
+
+<link type="text/css" rel="stylesheet" href="../css/style.css" />
+<link type="text/css" rel="stylesheet" href="../css/swiper.min.css" />
+<script src="../js/jquery-3.6.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/ui.js"></script>
+<!-- 퍼블만 사용-->
+<script src="../js/ui-pub.js"></script>
+
+<!-- 회원정보체크만 추가(퍼블만 사용중 - 개발과분리) -->
+<script type="text/javascript" language="javascript" src="../js/member-pub.js"></script>
+
+</head>
+
+<body>
+  <!-- wrap -->
+  <div class="wrap">
+      <div class="content">
+
+        <div class="form-type-wrap">
+          <div class="form-type1">
+            <span class="label">아이디</span>
+            <div class="f-wrap">
+              <input type="email" class="auto" id="input-email" data-id="inpchk">
+              <i class="ico-val-check" style="display:none;"></i>
+            </div>
+            <div class="txt-guide-wrap">
+              <p class="txt-error" style="display: none;">이메일을 형식에 맞게 입력 해 주세요.</p>
+            </div>
+          </div>
+
+          <div class="form-type1">
+            <span class="label">이름</span>
+            <div class="f-wrap">
+              <input type="text" class="auto" id="input-name">
+              <i class="ico-val-check" style="display:none;"></i>             
+            </div>
+          </div>
+          <div class="form-type1">
+            <span class="label">휴대폰 번호(‘-’제외)</span>
+            <div class="f-wrap">
+              <input type="text" class="auto" id="input-phone" maxlength="13" oninput="autoHyphen(this)">
+              <i class="ico-val-check" style="display:none;"></i>            
+              <button type="button" class="btn-type6 st2" id="btn-send" disabled>발송</button>
+            </div>
+          </div>
+          <div class="form-type1" id="form-certify" style="display:none;">
+            <span class="label">인증번호(6자리)</span>
+            <div class="f-wrap">
+              <input type="number" class="auto" id="input-certify" maxlength="6">
+              <span class="time-certify">00:00</span>
+              <button type="button" class="btn-type6 st2" id="btn-certify" disabled>인증</button>
+            </div>
+            <div class="txt-guide-wrap">
+              <p class="txt-info">인증되었습니다.</p>
+              <p class="txt-error">인증번호가 일치하지 않습니다.</p>
+            </div>
+          </div>     
+          
+          
+          <div class="form-type1">
+            <span class="label">새비밀번호<span class="hide"> : 영문+숫자+특수기호(.!@#$%*/)포함 8~15자리</span></span>
+            <div class="f-wrap">
+              <input type="password" class="auto" id="input-pw" data-id="inpchk" maxlength="15">
+              <i class="ico-val-check" style="display:none;"></i>
+              <button class="btn-val-view">
+                <i class="ico-val-view"></i>
+                <i class="ico-val-view-off"></i>
+              </button>
+            </div>
+          </div>
+          <div class="form-type1">
+            <span class="label">비밀번호 확인</span>
+            <div class="f-wrap">
+              <input type="password" class="auto" id="input-pw-check" data-id="inpchk" maxlength="15">
+              <i class="ico-val-check" style="display:none;"></i>
+              <button class="btn-val-view">
+                <i class="ico-val-view"></i>
+                <i class="ico-val-view-off"></i>
+              </button>
+            </div>
+            <div class="txt-guide-wrap">
+              <p class="txt-error" style="display:none;">비밀번호가 일치하지 않습니다.</p>
+            </div>
+          </div>
+          
+          
+        </div>
+        
+        <div class="auto-login-check">
+          <label class="inp-check">
+            <input type="checkbox">
+            <span class="ic"><i></i></span>
+            <span class="t">자동 로그인</span>
+          </label>
+        </div>
+
+
+        <br>
+
+        <div class="form-type-wrap">
+          <div class="form-type2">
+            <input type="text" placeholder="제목" id="title">
+          </div>
+          <div class="form-type2">
+            <textarea style="height:120px;" id="contents"></textarea>
+            <div class="placeholder">
+              내용 입력
+              <p>
+                **회원님의 게시글은 별도 공개되지 않으며,
+                <br>소중한 질문에 빠르게 답변 드리겠습니다.**"
+              </p>
+            </div>            
+              <div class="byte">0 / 500</div>
+          </div>
+        </div>        
+
+        <div class="form-type-wrap">
+          <div class="form-type3">
+            <span class="label">카드구분</span>
+            <div class="f-wrap card-type">
+              <label class="on"><input type="radio" name="cardtype" value="person" checked><span>개인</span></label>
+              <label><input type="radio" name="cardtype" value="company"><span>법인</span></label>
+            </div>
+          </div>
+          <div class="form-type3">
+            <span class="label">카드번호</span>
+            <div class="f-wrap" data-id="jump-input">
+              <input type="number" name="cardnum" class="auto align-c" maxlength="4">
+              <input type="number" name="cardnum" class="auto align-c" maxlength="4">
+              <input type="number" name="cardnum" class="auto align-c" maxlength="4">
+              <input type="number" name="cardnum" class="auto align-c" maxlength="4">
+            </div>
+          </div>
+          <div class="form-type3">
+            <div class="f-wrap">
+              <div class="auto">
+                <span class="label">유효기간(월 MM)</span>
+                <select>
+                  <option>01</option>
+                  <option>02</option>
+                </select>
+              </div>
+              <div class="auto">
+                <span class="label">유효기간(년 YY)</span>
+                <select>
+                  <option>23</option>
+                  <option>24</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-type3">
+            <span class="label">비밀번호(앞 2자리)</span>
+            <input type="password" name="pw" placeholder="카드 비밀번호 앞 2자리를 입력하세요" maxlength="2">
+          </div>
+          <div class="form-type3" data-id="personnum">
+            <span class="label">주민번호 6자리</span>
+            <input type="number" name="personnum" placeholder="주민번호 앞 6자리를 입력하세요" maxlength="6">
+          </div>
+          <div class="form-type3" data-id="companynum" style="display:none">
+            <span class="label">사업자등록번호</span>
+            <input type="number" name="companynum" placeholder="사업자등록번호를 입력하세요">
+          </div>
+          <div class="form-type3">
+            <span class="label">할부기간</span>
+            <select>
+              <option>일시불</option>
+              <option>무이자</option>
+            </select>
+          </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+      </div>
+  </div>
+    
+</body>
+
+</html>

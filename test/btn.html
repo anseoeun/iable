@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+  <meta name="fromat-detection" content="telephone=no" />
+  <title></title>
+
+<link rel=" shortcut icon" href="../images/favicon/favicon.ico">
+<link rel="icon" href="../images/favicon/favicon.ico">
+<link rel="icon" href="../images/favicon/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../images/favicon/favicon-57.png" sizes="57x57">
+<link rel="icon" href="../images/favicon/favicon-72.png" sizes="72x72">
+<link rel="icon" href="../images/favicon/favicon-152.png" sizes="152x152">
+<link rel="apple-touch-icon" href="../images/favicon/favicon.png" />
+
+<link type="text/css" rel="stylesheet" href="../css/style.css" />
+<link type="text/css" rel="stylesheet" href="../css/swiper.min.css" />
+<script src="../js/jquery-3.6.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/ui.js"></script>
+<!-- 퍼블만 사용-->
+<script src="../js/ui-pub.js"></script>
+
+</head>
+
+<body>
+  <!-- wrap -->
+  <div class="wrap">
+      <div class="content">
+        <div>
+          
+    
+            <button class="btn-type1 st1"><span>변경하기</span></button>
+            <button class="btn-type1 st2"><span>변경하기</span></button>
+            <button class="btn-type1 st3"><span>변경하기</span></button>
+            <button class="btn-type1 st4"><span>변경하기</span></button>
+            <button class="btn-type1 st5"><span>변경하기</span></button>
+            <button class="btn-type1 st6"><span>변경하기</span></button>
+    
+            <a href="javascript:void(0);" class="btn-type2 st2">결제정보 확인</a>
+            <button type="button" class="btn-type6 st2">발송</button>
+            <button type="button" class="btn-type7 st1"><i class="ico-srtplay"></i></button>
+          
+            <button type="button" class="btn-line">회원탈퇴</button>
+            <button type="button" class="btn-line st2">회원탈퇴</button>
+            <button type="button" class="btn-line st3">회원탈퇴</button>
+                      
+
+            <div class="link-type1">
+              <a href="javascript:void(0);">
+                <div class="txt">
+                  <b>비밀번호 찾기</b>
+                  <span>비밀번호 재설정을 도와드립니다.</span>
+                </div>
+                <i class="ico-arr-link"></i>            
+              </a>
+            </div>
+
+
+            <div class="btn-more-wrap">
+              <button type="button" class="btn-more"><span>더보기</span><i class="ico-arr-more"></i></button>
+            </div>
+            <div class="btn-spread-wrap">
+              <button type="button" class="btn-type1 st3"><span>펼쳐보기</span><i class="ico-arr-more"></i></button>
+            </div>
+            
+            <br>
+            <br>
+            <br>
+            <h2>---- 앞에버튼 사용하지않음 --- </h2>
+            <div class="btn-wrap">
+              <button type="button" class="btn-type1 st3"><div class="txt-wrap"  onclick="location.href='1-8.payment.html'"><span class="s-txt light">함께 구매하지 않고</span><br>일반승차권 예약</div></button>
+              <button type="button" class="btn-type1 st1" disabled data-id="active" onclick="location.href='1-7.sale_payment.html'">할인승차권 예약</button>
+            </div>
+            <h2>---- // 앞에버튼 사용하지않음 --- </h2>
+
+            <div class="fixed-footer-wrap" style="position: relative;">
+              <p class="txt align-c c-red">20분 이내 미 결제 시, 해당 좌석 예약이 취소됩니다.</p>
+              <p class="txt align-c c-light-gray">발권을 원하지 않으시면 예약취소를 선택하세요.</p>
+              <div class="btn-wrap">
+                <button class="btn-type1 st3" onclick="alertOpen('취소가 완료되면 처음부터 다시 예약하셔야 합니다.<br>선택하신 승차권 예약내역을 취소하시겠습니까?', ['취소', '확인'], alertCallback);">예약취소</button>
+                <a href="1-8.payment.html" class="btn-type1 st1">예매하기</a>
+              </div>
+            </div>
+
+            <div class="btn-wrap">
+              <div class="full align-c"><a href="javascript:void(0);" class="txt-info">이제, 입력하신 이메일이 계정(ID)입니다.</a></div>
+              <button class="btn-type1 st1" onclick="location.href='8-2.login.html'" disabled data-id="active"><span>아이디 변경하기</span></button>
+            </div>
+
+            <div class="fixed-footer-wrap" style="position: relative;">
+              <div class="txt-total">
+                <span class="num">총<b>4</b>개</span>
+                <div class="right">
+                  <div class="price">합계<b>84,000원</b></div>
+                </div>
+              </div>
+              <div class="btn-wrap">
+                <button class="btn-type1 st1">바로 구매하기</button>
+              </div>
+            </div>
+
+            <div class="btn-wrap">
+              <div class="full align-c">
+                <a href="javascript:void(0);" class="btn-line st2">비밀번호 찾기</a>
+                <a href="javascript:void(0);" class="btn-line st2">내 계정 아님</a>
+              </div>
+              <button class="btn-type1 st1" onclick="location.href='8-2.login.html'"><span>로그인</span></button>
+            </div>
+
+            <div class="end-content">
+              <div class="text-info">
+                본인은 14세 이상으로  SRT플레이 <a href="service.html" class="btn-line2">서비스 이용약관</a>,
+                <br><a href="privacy.html" class="btn-line2">개인정보 수집 및 이용 약관</a>에 동의합니다.
+              </div>
+              <div class="btn-wrap">
+                <button class="btn-type1 st1" onclick="location.href='9-4.join_success.html'" disabled data-id="active"><span>가입완료</span></button>
+              </div>
+            </div>
+
+        </div>
+      </div>
+  </div>
+    
+</body>
+
+</html>

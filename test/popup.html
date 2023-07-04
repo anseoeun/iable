@@ -1,0 +1,352 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title></title>
+
+<link rel=" shortcut icon" href="../images/favicon/favicon.ico">
+<link rel="icon" href="../images/favicon/favicon.ico">
+<link rel="icon" href="../images/favicon/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../images/favicon/favicon-57.png" sizes="57x57">
+<link rel="icon" href="../images/favicon/favicon-72.png" sizes="72x72">
+<link rel="icon" href="../images/favicon/favicon-152.png" sizes="152x152">
+<link rel="apple-touch-icon" href="../images/favicon/favicon.png" />
+
+<link type="text/css" rel="stylesheet" href="../css/style.css" />
+<link type="text/css" rel="stylesheet" href="../css/swiper.min.css" />
+<script src="../js/jquery-3.6.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/ui.js"></script>
+<!-- 퍼블만 사용-->
+<script src="../js/ui-pub.js"></script>
+
+</head>
+
+<body>
+  <!-- wrap -->
+  <div class="wrap">
+      <div class="content">
+
+        <button type="button" class="btn" onclick="alertOpen('1:1문의 삭제하시겠습니까?', ['취소', '삭제'], callback);">삭제</button>
+        <script>
+          function callback(type){
+            //callback 필요없을시 제거
+            alert(type);
+          }
+        </script>
+
+
+        <button type="button" class="btn-check" onclick="popOpen('#comfirn-inquiry');">문의 전 확인 <i class="ico-arr-circle"></i></button>
+  <br>
+        <button type="button"><span class="text-noti lg" onclick="popOpen('#pop-select-guide');"><span>총 3개 선택 가능</span><i class="ico-question"></i></span></button>
+
+        <button type="button"><span class="text-noti st2" onclick="popOpen('#pop-refund-guide');"><i class="ico-noti"></i><span>환불안내</span></span></button>
+        <button type="button"><span class="text-noti st2" onclick="popOpen('#pop-refund-guide2');"><i class="ico-noti"></i><span>위약금 및 환불안내</span></span></button>
+        <button class="btn-type1 st1" onclick="popOpen('#pop-ticket-agree');">결제하기</button>
+        <br>
+        <br>
+        <button type="button"><span class="text-noti st2" onclick="popOpen('#pop-select-guide');"><span>1좌석 당 1개의 상품을 선택 해 주세요.</span></span></button>        
+<br>
+
+        <script>
+          const inquiryOption = [
+            {
+              value: '1',
+              option: '회원',
+              disabled: false
+            },
+            {
+              value: '2',
+              option: '할인',
+              disabled: false
+            },
+            {
+              value: '3',
+              option: '결제추가',
+              disabled: false
+            },
+            {
+              value: '4',
+              option: '기타',
+              disabled: false
+            },
+          ]
+        </script>        
+        <button type="button" class="btn-select" onclick="selectOpen('select1', inquiryOption, function(val, text){ console.log(val);})"><span>질문 선택</span> <i class="ico-arr-select"></i></button>
+        <button type="button" class="btn-select c-pupple" onclick="selectOpen('select1', inquiryOption, function(val, text){ console.log(val);})"><span>질문 선택</span> <i class="ico-arr-select"></i></button>
+        <br>
+        <br>
+        <div class="btn-select-wrap">
+          <button type="button" class="btn-select" onclick="selectOpen('select2', inquiryOption, function(val, text){ console.log(val);})"><span>인기순</span> <i class="ico-arr-select"></i></button>
+          
+        </div>
+
+
+
+        <script>
+          const seatOption = [
+            {
+              value:'1',
+              option:'<em>1호차</em> (잔여 3석) 기저귀 교환대',
+              disabled: false,
+            },
+            {
+              value:'2',
+              option:'<em>2호차</em> (잔여 12석) 장거리 전용',
+              disabled: false,
+              selected: true
+            },
+            {
+              value:'3',
+              option:'<em>4호차</em> (잔여 6석)',
+              disabled: false
+            },
+            {
+              value:'4',
+              option:'<em>5호차</em> (잔여 0석) 유아/어린이 동반',
+              disabled: true
+            },
+            {
+              value:'5',
+              option:'<em>6호차</em> (잔여 0석) 자판기',
+              disabled: true
+            },
+            {
+              value:'6',
+              option:'<em>7호차</em> (잔여 22석)',
+              disabled: false
+            },
+            {
+              value:'7',
+              option:'<em>8호차</em> (잔여 4석)',
+              disabled: false
+            },
+          ]
+        </script>        
+        <div class="select-train"><button type="button" class="btn-select2" onclick="selectOpen('select3', seatOption, function(val, text){ console.log(val);})"><span><em>2호차</em> (잔여 12석) 장거리 전용</span> <i class="ico-arr-select2"></i></button></div>
+      
+        <br>
+        <button class="btn-type3 st1" onclick="popOpen('#pop-handicap-seats-agree');"><span>장애인 좌석옵션 동의</span></button>
+      </div>
+  </div>
+    
+
+    <!--문의전 확인-->
+    <div class="popup-wrap guide-pop" id="comfirn-inquiry">
+      <div class="dim"></div>
+      <div class="pop-wrap">
+        <div class="popup">
+          <button type="button" class="btn-close"><i class="ico-close-pop"></i></button>
+          <div class="pop-body">
+            <ul class="list-dot st2">
+              <li class="keep-all">작성하신 내용이 정상적으로 등록 및 접수되었습니다.</li>
+              <li class="keep-all">회원님의 게시글은 별도 공개되지 않습니다. 소중한 질문에 빠르게 답변 드리겠습니다.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--환불안내-->
+    <div class="popup-wrap" id="pop-refund-guide">
+      <div class="dim"></div>
+      <div class="pop-wrap">
+        <div class="popup">
+          <div class="pop-header"><strong class="tit">환불안내</strong></div>
+          <div class="pop-body">
+            
+            <div class="pop-guide-wrap">
+              <div class="txt">
+                <div class="c-blue">환불의 범위</div>
+                승차권 환불 시 함께 구매하신 상품금액과 함께 환불됩니다.
+              </div>
+              
+              <div class="txt">
+                <div class="c-blue">환불기한(영업일 기준)</div>
+                <ul class="list-dash">
+                  <li>당일 결제 : 당일 환불(부분환불 불가)</li>
+                  <li>신용카드 : 5~7일</li>
+                  <li>체크카드 : 6~8일</li>
+                </ul>
+              </div>
+              
+              <div class="txt">*카드사마다 환불기준 및 기간이 상이할 수 있으므로 보다 자세한 환불기한은 카드사를 통해 확인해 주세요.</div>
+          </div>
+          </div>
+          <div class="pop-footer">
+            <div class="btn-wrap">
+              <button type="button" class="btn c-pupple" onclick="popClose('#pop-refund-guide');">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--위약금 및 환불안내-->
+    <div class="popup-wrap" id="pop-refund-guide2">
+      <div class="dim"></div>
+      <div class="pop-wrap">
+        <div class="popup">
+          <div class="pop-header"><strong class="tit">위약금 및 환불안내</strong></div>
+          <div class="pop-body">
+            
+            <div class="pop-guide-wrap">
+              <div class="txt">본 승차권을 환불하실 경우 발생되는 위약금입니다.</div>
+
+              <div class="price">3,000원</div>
+              
+              
+              <ul class="list-dot ">
+                <li>고객님께서는 승차권 결제 시 발권 및 환불에 따른 위약금 발생에 동의하셨습니다.</li>
+                <li>환불일로부터 약 7일 이후 결제가 취소되며, 카드사에서는 고객님의 결제일에 신용으로 환불해 드리고 있습니다.</li>
+                <li>정확한 환불 일자 등 보다 상세한 사항은 해당 결제 카드사에 문의하여 주시기 바랍니다.</li>
+              </ul>
+              <br>
+              <div class="txt align-c">최종 환불 하시겠습니까?</div>
+              
+          </div>
+
+          </div>
+          
+          <div class="pop-footer">
+            <div class="btn-wrap">
+              <button type="button" class="btn" onclick="popClose('#pop-refund-guide2');">취소</button>
+              <button type="button" class="btn c-pupple" onclick="popClose('#pop-refund-guide2');toastOpen('환불이 정상 처리되었습니다.', function(){location.href='4-2.storage_box.html'});">최종 환불 요청</button>
+              <button type="button" class="btn c-pupple" onclick="popClose('#pop-refund-guide2');toastOpen('<span class=\'c-red\'>오류가 발생하였습니다. 다시 시도 해 주세요.</span>');">오류</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--승차권 발권 동의-->
+    <div class="popup-wrap" id="pop-ticket-agree">
+      <div class="dim"></div>
+      <div class="pop-wrap">
+        <div class="popup">
+          <div class="pop-header"><strong class="tit">승차권 발권 동의</strong></div>
+          <div class="pop-body">
+            
+            <div class="pop-guide-wrap">
+              <ul class="list-dot ">
+                <li>도착역 도착시각 이후 승차권 환불 신청 불가합니다.</li>
+                <li>승차권 환불 시, 환불 신청 시점에 따른 위약금이 발생합니다.</li>
+              </ul>
+
+              <div class="point-box">
+                <strong class="tit c-blue">[출발 전]</strong>
+                <ul class="list-dash">
+                  <li>당일 ~ 출발 1시간 전 : 400원</li>
+                  <li>출발 1시간 전 ~ 출발시간 전 : 10%</li>
+                </ul>
+                <br>
+                <strong class="tit c-blue">[출발 후]</strong>
+                <ul class="list-dash">
+                  <li>출발 후 ~ 20분 : 15%</li>
+                  <li>출발 20분 후 ~ 60분 이내 : 40%</li>
+                  <li>출발 60분 후 ~ 도착시각 전 : 70%</li>
+                </ul>
+              </ul>
+              </div>
+              
+              <ul class="list-dot ">
+                <li>열차 출발 후 환불을 원하시면 출발역 방문 후 증빙사진과 열차정보를 SRT플레이 상담봇에 남겨주세요.</li>
+                <li>할인승차권은 발권 후 여정, 승・하차 시간 등이 변경되지 않습니다.</li>
+              </ul>
+              
+              <div class="txt">승차권 발권 및 환불에 따른 위약금 발생에 동의하시겠습니까?</div>
+          </div>
+
+          </div>
+          <div class="pop-footer">
+            <div class="btn-wrap">
+              <button type="button" class="btn" onclick="popClose('#pop-ticket-agree');">취소</button>
+              <button type="button" class="btn c-pupple" onclick="popClose('#pop-ticket-agree');">발권동의</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--1좌석 당 1개의 상품을 선택 해 주세요.-->
+    <div class="popup-wrap" id="pop-select-guide">
+      <div class="dim"></div>
+      <div class="pop-wrap">
+        <div class="popup">
+          <div class="pop-body">
+            <div class="pop-guide-wrap">
+              <div class="select-guide">
+                <div class="img">
+                  <img src="../images/common/combine.svg" alt="">
+                </div>
+                <strong class="tit">1좌석 당 1개의 상품을 선택 해 주세요.</strong>
+                <div class="txt">’승차권+상품’ 결합 할인 상품으로 승차권 하나당 결합상품을 꼭 선택 해 주셔야 합니다.</div>
+                <div class="txt"><span class="text-noti c-base"><i class="ico-noti2"></i><span>탑승인원 미만/초과하여 상품 구매는 불가</span></span></div>
+              </div>
+          </div>
+          </div>
+          <div class="pop-footer">
+            <div class="btn-wrap">
+              <button type="button" class="btn" onclick="popClose('#pop-select-guide');">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ <!--총 3개 선택 가능-->
+  <div class="popup-wrap guide-pop" id="pop-select-guide">
+    <div class="dim"></div>
+    <div class="pop-wrap">
+      <div class="popup">
+        <button type="button" class="btn-close"><i class="ico-close-pop"></i></button>
+        <div class="pop-body">
+          <ul class="list-dot st2">
+            <li>
+              동일한 상품 또는 서로 다른 상품 포함하여 총 수량이 승차인원과 같아야 합니다.
+              <br>[예시] – 승차인원 5명 예약한다면?
+              <br>A상품(1개) + B상품(4개) = 총 5개 상품 선택
+            </li>
+            <li>위시리스트에서 선택해서 결합해도 승차 할인 가능합니다.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--팝업:휠체어석 이용동의-->
+  <div class="popup-wrap" id="pop-handicap-seats-agree">
+    <div class="dim"></div>
+    <div class="pop-wrap">
+      <div class="popup">
+        <div class="pop-header"><strong class="tit">휠체어석 이용동의</strong></div>
+        <div class="pop-body">
+          
+          <div class="pop-guide-wrap">
+            <ul class="list-dot">
+              <li class="keep-all">장애인, 유공자 등 휠체어 이용자에 한하여 이용하실 수 있습니다.</li>
+              <li class="keep-all">정당한 이용자가 아닌 경우, 철도사업법에 따라 부가운임을 징수합니다.</li>
+            </ul>
+            <div class="txt">위 내용에 동의하십니까?</div>
+          </div>
+
+        </div>
+        
+        <div class="pop-footer">
+          <div class="btn-wrap">
+            <button type="button" class="btn" onclick="popClose('#pop-handicap-seats-agree');btmPopClose('#pop-handicap-seats');initHandicapSeats();">취소</button>
+            <button type="button" class="btn c-pupple" onclick="popClose('#pop-handicap-seats-agree');btmPopClose('#pop-handicap-seats');initHandicapSeats();">동의</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+    
+
+</body>
+
+</html>
