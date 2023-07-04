@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<title></title>
+
+<link rel=" shortcut icon" href="../images/favicon/favicon.ico">
+<link rel="icon" href="../images/favicon/favicon.ico">
+<link rel="icon" href="../images/favicon/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../images/favicon/favicon-57.png" sizes="57x57">
+<link rel="icon" href="../images/favicon/favicon-72.png" sizes="72x72">
+<link rel="icon" href="../images/favicon/favicon-152.png" sizes="152x152">
+<link rel="apple-touch-icon" href="../images/favicon/favicon.png" />
+
+<link type="text/css" rel="stylesheet" href="../css/style.css" />
+<link type="text/css" rel="stylesheet" href="../css/swiper.min.css" />
+<script src="../js/jquery-3.6.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/ui.js"></script>
+<!-- 퍼블만 사용-->
+<script src="../js/ui-pub.js"></script>
+
+<!-- 애플페이 -->
+<script src="https://applepay.cdn-apple.com/jsapi/v1/apple-pay-sdk.js"></script>
+
+</head> 
+<body>
+<!-- wrap -->
+<div class="wrap">
+  <header class="header">
+    <div class="wrapper">
+      <div class="left">
+        <a href="main.html" class="btn-back btn-txt"><i class="ico-back"></i><span class="txt">승차권</span></a>
+      </div>
+      <h1 class="tit-header">SRT 예매</h1>
+      <div class="right">
+        <button type="button" class="btn-menu" onclick="gnbMenu();"><i class="ico-menu"></i></button>
+      </div>
+    </div>
+  </header>
+  <!-- content -->
+  <div class="content">
+    <div class="tit-wrap top-sticky">
+      <h2 class="tit-type3"><span>결제하기</span>
+      </h2>
+      <div class="float-right">
+        <div class="step-process">
+          <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="on"></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- 결제하기 -->
+    <div class="payment-wrap">
+      <!-- 승차권1 -->
+      <div class="payment-ticket-wrap">
+        <h3 class="tit-type2">
+          <i class="ico-ticket"></i>
+          <span class="c-pupple">승차권1</span>
+          <div class="right">
+            6호차 4C(어른)
+          </div>
+        </h3>
+        <div class="payment-desc">
+           <strong class="tit">결제상세</strong>
+           <ul class="list">
+            <li>승차권 금액<div class="right">52,900원</div></li>
+            <li>기본 운임 할인<div class="right">-900원</div></li>
+           </ul>
+           <div class="total">
+            <span class="label">승차권 결제 예정 금액<!-- <i class="ico-question"></i> --></span>
+            <div class="right">41,600원</div>
+           </div>
+        </div>
+      </div>
+
+      <div class="line-bar2"></div>
+
+      <!-- 승차권2 -->      
+      <div class="payment-ticket-wrap">
+        <h3 class="tit-type2">
+          <i class="ico-ticket"></i>
+          <span class="c-pupple">승차권2</span>
+          <div class="right">
+            6호차 4C(어른)
+          </div>
+        </h3>
+        <div class="payment-desc">
+           <strong class="tit">결제상세</strong>
+           <ul class="list">
+            <li>승차권 금액<div class="right">52,900원</div></li>
+            <li>기본 운임 할인<div class="right">-900원</div></li>
+            <li class="c-blue">결합상품 구매조건 혜택 (20%)<div class="right">-10,400원</div></li>
+           </ul>
+           <div class="total">
+            <span class="label">승차권 결제 예정 금액<!-- <i class="ico-question"></i> --></span>
+            <div class="right">41,600원</div>
+           </div>
+        </div>
+      </div>
+
+     <div class="line-bar"></div>
+     <dl class="dl-box">
+      <dt>할인받기</dt>
+      <dd>
+        <div class="f-wrap">
+          <span>-10%</span>
+          <button type="button" class="btn-type5 st7 round f-12" onclick="loadSaleOptions()">선택하기</button>
+        </div>
+      </dd>
+     </dl>
+     <div class="line-bar"></div>
+
+     <dl class="dl-box">
+      <dt>정상 운임 금액</dt>
+      <dd>104,000원</dd>
+     </dl>
+     <dl class="dl-box">
+      <dt>할인금액</dt>
+      <dd class="c-blue">-20,800원</dd>
+     </dl>
+     <dl class="dl-box c-pupple">
+      <dt>오늘 결제 예정 금액</dt>
+      <dd>73,200원</dd>
+     </dl>
+
+     <div class="line-bar"></div>
+
+     <!-- 결제수단 -->
+     <dl class="payment-method">
+      <dt>결제수단 선택
+       <p class="txt">주문 내역을 확인하고, 결제에 동의합니다.</p>
+      </dt>
+      <dd>
+       <ul class="method-list">
+         <li>
+           <button type="button" style="background-color:#FF7E00;">내통장결제</button>
+         </li>
+         <li>
+           <button type="button" style="background-color:#0071E3;">신용/체크카드</button>
+         </li>
+         <li>
+            <apple-pay-button class="apple-pay-button" buttonstyle="black" type="check-out" locale="ko-KR"></apple-pay-button>
+          </li>
+       </ul>
+      </dd>
+    </dl>
+
+    </div>
+    <!-- // payment-wrap -->
+  </div>
+  <!-- // content -->
+
+</div>
+<!-- // wrap -->
+
+<script>
+  //승차권 발권 동의
+  loadInclude('pop-ticket-agree', null, function(){
+    popOpen('#pop-ticket-agree');
+  });
+
+    
+  // 세일옵션
+  saleType = 'normal';  
+  function loadSaleOptions(){
+    loadInclude('sale-options', null, function(){
+      btmPopOpen('#pop-sale');
+    });
+  }
+
+</script>
+
+</body>
+</html>
