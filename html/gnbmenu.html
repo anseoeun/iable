@@ -1,0 +1,117 @@
+<div class="gnb-menu-wrap">
+  <div class="header">
+    <div class="wrapper">
+      <div class="left">
+        <a href="main.html" class="logo"><i class="ico-logo"></i></a>
+      </div>
+      <div class="right">
+        <a href="javascript:void(0);" class="btn-close"><i class="ico-close"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="menu-body">
+    <!-- welcome(로그인전) -->
+    <div class="welcome" style="display:none;">
+      <strong class="tit">
+        기차타는 즐거움,
+        <br>SRT플레이 입니다.
+      </strong>
+      <div class="btn"><a href="4.my_main.html">마이페이지</a></div>
+    </div>
+    <!-- // welcome -->
+    <!-- welcome(로그인후) -->
+    <div class="welcome">
+      <a href="4-2.storage_box.html#ticket" class="btn-ticket-check">
+        <span class="icon"><i class="ico-ticket-srt"></i></span>
+        <span>승차권 확인</span>
+      </a>
+      <strong class="tit">
+        좋은 하루 되세요!
+        <br><em>홍길동</em>님. 반갑습니다 :)
+      </strong>
+      <div class="btn"><a href="4.my_main.html">마이페이지</a></div>
+    </div>
+    <!-- // welcome -->
+    <!-- banner-link -->
+    <div class="banner-link">
+      <a href="8.login_main.html" class="link" style="display:none;">
+        <div class="left">로그인이 필요해요!</div>
+        <div class="right"><i class="ico-arr-circle"></i></div>
+      </a>
+      <a href="javascript:void(0);" class="link event">
+        <img src="../images/temp/temp-gnb-evt.jpg" alt="">
+      </a>
+    </div>
+    <!-- // banner-link -->
+    <div class="quick-menu">
+      <ul>
+        <li>
+          <a href="1-1.book_home.html">
+            <span class="tooltip-wrap">
+              <div class="tooltip"><span>예매혜택<i class="ico-down"></i></span></div>
+              <i class="ico-train2"></i>
+              <span class="txt">승차권 예매</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="2.schedules.html">
+            <i class="ico-time"></i>
+            <span class="txt">시간표 조회</span>
+          </a>
+        </li>
+        <li>
+          <a href="4-2.storage_box.html#coupon">
+            <i class="ico-sale-coupon"></i>
+            <span class="txt">할인쿠폰</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- gnb-menu -->
+    <div class="gnb-menu">
+      <h2 class="tit-type2">티플여행</h2>
+      <ul class="menu row">
+        <li><a href="3-1.trip.html#train"><span class="icon"><i class="ico-gnb-travel"></i></span><sapn class="txt">여행/레저</sapn></a></li>
+        <li><a href="3-1.trip.html#hotel"><span class="icon"><i class="ico-gnb-hotel"></i></span><sapn class="txt">호텔/숙박</sapn></a></li>
+        <li><a href="3-1.trip.html#show"><span class="icon"><i class="ico-gnb-show"></i></span><sapn class="txt">공연/전시</sapn></a></li>
+      </ul>
+      <!-- <ul class="menu">
+        <li><a href="3.tiple_main_1.html"><span class="icon"><i class="ico-gnb-smile"></i></span><sapn class="txt">여행/레저  |  호텔/숙박  |  공연/전시</sapn></a></li>
+        <li><a href="3-4.ecoupon.html"><span class="icon"><i class="ico-gnb-e-coupon"></i></span><sapn class="txt">E쿠폰</sapn></a></li>
+      </ul> -->
+      <h2 class="tit-type2">고객센터</h2>
+      <ul class="menu">
+        <li><a href="4-5.notice.html"><span class="icon"><i class="ico-gnb-alarm"></i></span><sapn class="txt">공지사항</sapn></a></li>
+        <li><a href="4-6.faq.html"><span class="icon"><i class="ico-gnb-list"></i></span><sapn class="txt">자주묻는질문</sapn></a></li>
+        <li><a href="4-7.write_us.html"><span class="icon"><i class="ico-gnb-balloon-pen"></i></span><sapn class="txt">1:1 문의</sapn></a></li>
+      </ul>
+      <h2 class="tit-type2">설정</h2>
+      <ul class="menu">
+        <!-- <li><a href="4-4.setting.html"><span class="icon"><i class="ico-gnb-section"></i></span><sapn class="txt">즐겨찾는 구간</sapn></a></li> -->
+        <li><a href="9.join.html"><span class="icon"><i class="ico-gnb-join"></i></span><sapn class="txt">회원가입</sapn></a></li>
+        <li><a href="javascript:void(0);"><span class="icon"><i class="ico-gnb-logout"></i></span><sapn class="txt">로그아웃</sapn></a></li>
+      </ul>
+    </div>
+    <!-- sns-menu -->
+    <div class="sns-menu">
+      <ul>
+        <li><a href="https://www.instagram.com/srtplay/"><i class="ico-sns-instagram"></i></a></li>
+        <li><a href="https://pf.kakao.com/_xocxiYxb"><i class="ico-sns-kakao"></i></a></li>
+        <li><a href="https://www.youtube.com/@tiple_official"><i class="ico-sns-youtube"></i></a></li>
+        <li><a href="https://m.blog.naver.com/enable0915"><i class="ico-sns-blog"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  //퍼블용
+  if(location.href.includes('70discount')){
+    $('.gnb-menu-wrap a').each(function(){
+      if($(this).attr('href').includes('javascript:void')) return;
+      $(this).attr('href', '../'+$(this).attr('href'))
+    });
+  }
+
+</script>
