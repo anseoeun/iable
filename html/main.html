@@ -243,9 +243,19 @@
           </div>
           <!-- 배너 -->
           <div class="banner-wrap">
-            <div class="banner-slide-list" id="slide-tip">
+            <div class="banner-slide-list st-center" id="slide-tip">
               <div class="swiper-container">
                   <ul class="swiper-wrapper">
+                      <li class="swiper-slide">
+                        <a href="guide_pet_with_srt.html">
+                          <img src="../images/banner/banner-tip-travel.jpg" alt="">
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="guide_seat_recommend.html">
+                          <img src="../images/banner/banner-tip-seat.jpg" alt="">
+                        </a>
+                      </li>
                       <li class="swiper-slide">
                         <a href="guide_pet_with_srt.html">
                           <img src="../images/banner/banner-tip-travel.jpg" alt="">
@@ -517,13 +527,10 @@
 
   // srt 이용 꿀팀
   slider('#slide-tip', {
-    loop: true,
-    autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
-    },
     freeMode: false,
-    slidesPerView: 1,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    spaceBetween: 8,
     pagination: {
       el: "#slide-tip .swiper-pagination",
       clickable: true,
