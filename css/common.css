@@ -595,6 +595,10 @@ button.btn-type7 .ico-srtplay{position:relative;top:-1px;}
 .full-wrap .auto-wrap.bg-gray:last-child{margin-bottom:-10px;}
 
 .error-wrap{width:calc(100% + 40px);margin-left:-20px;min-height:calc(100vh - 30px);padding:50px 0 60px;display:flex;justify-content:center;align-items:center;}
+.error-delay{font-size:15px;  color:#000;text-align:center;padding:30px 0;}
+.error-delay b{color:#7030a0;display:block;margin-bottom:3px;}
+.error-delay .btn{margin-top:20px;}
+.error-delay .btn a{display:inline-flex;height:50px;background:#F6F7F9;width:155px;align-items: center;border-radius:6px;;text-align:center;justify-content: center;}
 
 /* step */
 .step-process ol {display:flex;flex-direction:row;align-items:center;}
@@ -1066,6 +1070,9 @@ form + .banner-wrap,
 .banner-wrap .banner-slide-list{overflow:hidden;}
 .banner-wrap .banner-slide-list li img{border-radius:6px;}
 .banner-wrap .banner-slide-list.r-st2{border-radius:10px 10px 0 0;}
+.banner-wrap .banner-slide-list.st-center .swiper-slide{width: 80%;}
+.banner-wrap .banner-slide-list.st-center .swiper-slide:first-child{margin-left:-20%;}
+.banner-wrap .banner-slide-list.st-center .swiper-slide:last-child{margin-right:-20%;}
 
 .banner-wrap2{overflow:hidden;width:calc(100% + 40px);margin-left:-20px;}
 .banner-wrap2 .line-bar{width:100%;margin-left:0;}
