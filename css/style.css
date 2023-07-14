@@ -667,6 +667,12 @@
 .visual-tple strong{font-size:18px;display:block;line-height:1.5;position:absolute;top:25px;left:20px;}
 .visual-tple + .slide-type2{margin-top:-43px;}
 
+.tple-store-wrap .visual{width: calc(100% + 40px);margin-left:-20px;overflow:hidden;}
+.tple-store-wrap .banner-wrap{width: calc(100% + 40px);margin-left:-20px;overflow:hidden;}
+.tple-store-wrap .banner-wrap .banner-slide-list li img{border-radius:0;}
+.tple-store-wrap .tit-wrap{margin-bottom:17px;}
+.tple-store-wrap .recomend-product-wrap{margin-top:30px;;}
+
 /* 인기여행지 */
 /* .tple-popular-wrap *:not(.line-bar) + .tit-wrap{margin-top:45px;} */
 .tple-popular-wrap .tit-wrap + .slide-type3{margin-top:-5px;}
