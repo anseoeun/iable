@@ -147,35 +147,24 @@
         <p class="txt">주문 내역을 확인하고, 결제에 동의합니다.</p>
        </dt>
        <dd>
-        <ul class="method-list">
-          <li>
-            <button type="button" style="background-color:#FF7E00;">내통장결제</button>
-          </li>
-          <li>
-            <button type="button" style="background-color:#0071E3;">신용/체크카드</button>
-          </li>
-          <li>
-            <apple-pay-button class="apple-pay-button" buttonstyle="black" type="check-out" locale="ko-KR"></apple-pay-button>
-          </li>
-          <li>
-            <button type="button" class="st2">
-              <div class="both-wrap">
-                <div class="both">
-                    <strong>PIN Pay</strong>
-                    <span></span>
-                </div>
-                <div class="both">
-                    <b>3천원 캐시백</b>
-                    <span>(첫 결제 고객대상)</span>
-                </div>
-              </div>
-            </button>
-          </li>
-        </ul>
+        <div class="method-list">
+          <button type="button"><i class="cash"></i><span>내통장결제</span></button>
+          <button type="button"><i class="card"></i><span>신용카드</span></button>
+          <button type="button" >PIN Pay</button>
+          <!-- <ul class="list">
+            <li><apple-pay-button class="apple-pay-button" buttonstyle="white" type="check-out" locale="ko-KR" lang="ko-KR" aria-hidden="true" style="display:block"></apple-pay-button></li>
+            <li><button type="button" ><img src="../images/common/ico-applepay.png" alt="" class="applepay"></button></li>
+            <li><button type="button" ><img src="../images/common/ico-npay.png" alt="" class="npay"></button></li>
+            <li><button type="button" ><img src="../images/common/ico-cacaopay.png" alt="" class="cacaopay"></button></li>
+            <li><button type="button" ><img src="../images/common/ico-toss.png" alt="" class="toss"></button></li>
+            <li><button type="button" ><img src="../images/common/ico-payco.png" alt="" class="payco"></button></li>
+            <li><button type="button" >PIN Pay</button></li>
+          </ul> -->
+         </div>
        </dd>
      </dl>
 
-     <!-- PIN Pay 안내 -->
+     <!-- PIN Pay 안내
      <div class="guide-pinpay on">
       <div class="tit">
         <button type="button" onclick="pipayGuide()">
@@ -202,7 +191,7 @@
      </div>     
 
     </div>
-    <!-- // payment-wrap -->
+   // payment-wrap -->
   </div>
   <!-- // content -->
 
