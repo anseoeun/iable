@@ -790,7 +790,7 @@ function tabMenuScroll(tab, gap){
 
     aniing = true;
     $('html, body').animate({
-     scrollTop: pos - gap
+     scrollTop: pos - gap+1
     }, function(){
       $(window).scrollStopped(function(){
         aniing = false
@@ -811,6 +811,8 @@ function tabMenuScroll(tab, gap){
         if(sct > pos - gap) {
           $('[data-tab]').parent().removeClass('on');
           $('[data-tab='+id+']').parent().addClass('on');
+        }else{
+          $('[data-tab='+id+']').parent().removeClass('on');
         }
       })
   });

@@ -546,7 +546,7 @@
 .payment-method dd{position:relative;}
 
 
-.payment-method dd .method-list button{height:50px;border-radius:6px;border:1px solid #000;font-size:15px;font-weight:500;width:100%; color:#000;}
+.payment-method dd .method-list button{height:50px;border-radius:6px;border:1px solid #737987;font-size:15px;font-weight:500;width:100%; color:#000;}
 .payment-method dd .method-list .apple-pay-button{width:100%;-webkit-appearance: -apple-pay-button; --apple-pay-button-height: 50px; --apple-pay-button-border-radius: 6px; --apple-pay-button-padding: 8px 0; --apple-pay-button-box-sizing: border-box; -apple-pay-button-type: donate; -apple-pay-button-style: white; border:1px solid #000;border-radius:6px;}
 .payment-method dd .method-list button{max-width: 100%;}
 .payment-method dd .method-list > button ~ button{margin-top:10px;}
@@ -676,12 +676,6 @@
 .visual-tple .bg img{width:100%;}
 .visual-tple strong{font-size:18px;display:block;line-height:1.5;position:absolute;top:25px;left:20px;}
 .visual-tple + .slide-type2{margin-top:-43px;}
-
-.tple-store-wrap .visual{width: calc(100% + 40px);margin-left:-20px;overflow:hidden;}
-.tple-store-wrap .banner-wrap{width: calc(100% + 40px);margin-left:-20px;overflow:hidden;}
-.tple-store-wrap .banner-wrap .banner-slide-list li img{border-radius:0;}
-.tple-store-wrap .tit-wrap{margin-bottom:17px;}
-.tple-store-wrap .recomend-product-wrap{margin-top:30px;;}
 
 /* 인기여행지 */
 /* .tple-popular-wrap *:not(.line-bar) + .tit-wrap{margin-top:45px;} */

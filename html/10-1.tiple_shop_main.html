@@ -23,6 +23,9 @@
 <!-- 퍼블만 사용-->
 <script src="../js/ui-pub.js"></script>
 
+<!-- 티플상생상점만 적용 -->
+<link type="text/css" rel="stylesheet" href="../css/tiple-shop.css" />
+
 </head>
 <body>
 <!-- wrap -->
@@ -30,8 +33,9 @@
   <header class="header">
     <div class="wrapper">
       <div class="left">
-        <a href="main.html" class="btn-back btn-txt"><i class="ico-back"></i><span class="txt">상생상점</span></a>
+        <a href="main.html" class="btn-back btn-txt"><i class="ico-back"></i></a>
       </div>
+      <h1 class="tit-header">티플 상생상점</h1>
     </div>
   </header>
   <!-- content -->
@@ -42,56 +46,37 @@
         <div class="visual"><img src="../images/common/visual-winwin-store.jpg" alt=""></div>
         <!-- // 비주얼 -->
        
-        <!-- <div class="tab-type4 top-sticky" data-top="50">
+        <div class="tab-tshop top-sticky" data-top="50">
           <ul>
-            <li class="on"><a href="4-5.notice.html">추천 상점</a></li>
-            <li><a href="4-6.faq.html">빠른 배송</a></li>
-            <li><a href="4-8.inquiry.html">지금 도착</a></li>
+            <li><a href="javascript:void(0);" data-tab="tab1">추천 상점</a></li>
+            <li><a href="javascript:void(0);"data-tab="tab2">빠른 배송</a></li>
+            <li><a href="javascript:void(0);"data-tab="tab3">지금 도착</a></li>
           </ul>
         </div>
 
-        <div class="banner-wrap">
-          <div class="banner-slide-list" id="banner">
-            <div class="swiper-container">
-                <ul class="swiper-wrapper">
-                    <li class="swiper-slide">
-                      <a href="javascript:void(0);">
-                        <img src="../images/temp/temp-banner-store.jpg" alt="">
-                      </a>
-                    </li>
-                    <li class="swiper-slide">
-                      <a href="javascript:void(0);">
-                        <img src="../images/temp/temp-banner-store.jpg" alt="">
-                      </a>
-                    </li>
-                    <li class="swiper-slide">
-                      <a href="javascript:void(0);">
-                        <img src="../images/temp/temp-banner-store.jpg" alt="">
-                      </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="swiper-pagination"></div>
+        <!-- store-product-wrap -->
+        <div class="store-product-wrap" data-id="tab1">
+          <div class="tit-wrap">
+            <h2 class="tit">최저가, 단 7일간 9,900원 (배송무료) 최저가, 단 7일간 9,900원 (배송무료)</h2>
+            <p class="txt">이달의 추천 상점을 소개해요 이달의 추천 상점을 소개해요 이달의 추천 상점을 소개해요</p>
           </div>
-        </div> -->
-
-        <!-- 티플 추천 상생상점 -->
-        <div class="recomend-product-wrap">
-          <div class="tit-wrap vt">
-            <div class="left">
-              <h2 class="tit-type4">티플 추천 상생상점</h2>
-              <p class="txt light">이달의 추천 상점을 소개해요</p>
-            </div>
-            <div class="right">
-              <a href="3-5.popular.html" class="btn-plus-more"><i class="ico-plus-more"></i></a>
+          <div class="product-exp">
+            <div class="img"><img src="../images/temp/temp-banner-store.jpg" alt=""></div>
+            <div class="text">
+              <b>색다른 명품 후두과자 세트 색다른 명품 후두과자 세트 색다른 명품 후두과자 세트</b>
+              <p class="txt">
+                호두 명가 호두앤 호두과자에서 단독 특가로 구성한 한정 수량, 한정 기한 내 판매합니다. 인기 호두과자 시리즈 4가지 종류를 함께 맛볼 수 있어 좋고, 선물용으로도 잘 어울려요.
+                호두 명가 호두앤 호두과자에서 단독 특가로 구성한 한정 수량, 한정 기한 내 판매합니다. 인기 호두과자 시리즈 4가지 종류를 함께 맛볼 수 있어 좋고, 선물용으로도 잘 어울려요.
+                호두 명가 호두앤 호두과자에서 단독 특가로 구성한 한정 수량, 한정 기한 내 판매합니다. 인기 호두과자 시리즈 4가지 종류를 함께 맛볼 수 있어 좋고, 선물용으로도 잘 어울려요.
+              </p>
             </div>
           </div>
           <div class="product-list">
             <ul>
               <li class="soldout">
-                <a href="3-1-1.trip_detail.html" class="product-type3">
+                <a href="javascript:void(0);" class="product-type3">
                   <div class="img">
-                    <img src="../images/temp/temp-product3.jpg" alt="">
+                    <img src="../images/temp/temp-store-product.jpg" alt="">
                   </div>
                   <div class="desc">
                     <span class="label c-pupple">[판매기간] ~2023. 7. 10.</span>
@@ -105,9 +90,9 @@
                 </a>
               </li>
               <li>
-                <a href="3-1-1.trip_detail.html" class="product-type3">
+                <a href="javascript:void(0);" class="product-type3">
                   <div class="img">
-                    <img src="../images/temp/temp-product3.jpg" alt="">
+                    <img src="../images/temp/temp-store-product.jpg" alt="">
                   </div>
                   <div class="desc">
                     <span class="label c-pupple">[판매기간] ~2023. 7. 10.</span>
@@ -121,9 +106,9 @@
                 </a>
               </li>
               <li>
-                <a href="3-1-1.trip_detail.html" class="product-type3">
+                <a href="javascript:void(0);" class="product-type3">
                   <div class="img">
-                    <img src="../images/temp/temp-product3.jpg" alt="">
+                    <img src="../images/temp/temp-store-product.jpg" alt="">
                   </div>
                   <div class="desc">
                     <span class="label c-pupple">[판매기간] ~2023. 7. 10.</span>
@@ -137,9 +122,9 @@
                 </a>
               </li>
               <li>
-                <a href="3-1-1.trip_detail.html" class="product-type3">
+                <a href="javascript:void(0);" class="product-type3">
                   <div class="img">
-                    <img src="../images/temp/temp-product3.jpg" alt="">
+                    <img src="../images/temp/temp-store-product.jpg" alt="">
                   </div>
                   <div class="desc">
                     <span class="label c-pupple">[판매기간] ~2023. 7. 10.</span>
@@ -155,16 +140,129 @@
             </ul>
           </div>
         </div>
-        <!-- // 티플 추천 상생상점 -->
+        <!-- // store-product-wrap -->
 
-        <div class="line-bar mg45"></div>
+        <!-- store-product-wrap -->
+        <div class="store-product-wrap" data-id="tab2">
+          <div class="tit-wrap">
+            <h2 class="tit">SRT처럼 빠른 배송</h2>
+            <p class="txt">지금 주문하면, 바로 출발해요</p>
+          </div>
+          <div class="product-exp">
+            <div class="img"><img src="../images/temp/temp-banner-store.jpg" alt=""></div>
+            <div class="text">
+              <b>색다른 명품 후두과자 세트</b>
+              <p class="txt">
+                호두 명가 호두앤 호두과자에서 단독 특가로 구성한 한정 수량, 한정 기한 내 판매합니다. 인기 호두과자 시리즈 4가지 종류를 함께 맛볼 수 있어 좋고, 선물용으로도 잘 어울려요.
+                호두 명가 호두앤 호두과자에서 단독 특가로 구성한 한정 수량, 한정 기한 내 판매합니다. 인기 호두과자 시리즈 4가지 종류를 함께 맛볼 수 있어 좋고, 선물용으로도 잘 어울려요.
+                호두 명가 호두앤 호두과자에서 단독 특가로 구성한 한정 수량, 한정 기한 내 판매합니다. 인기 호두과자 시리즈 4가지 종류를 함께 맛볼 수 있어 좋고, 선물용으로도 잘 어울려요.
+              </p>
+            </div>
+          </div>
+          <div class="product-list">
+            <ul>
+              <li class="soldout">
+                <a href="javascript:void(0);" class="product-type3">
+                  <div class="img">
+                    <img src="../images/temp/temp-store-product.jpg" alt="">
+                  </div>
+                  <div class="desc">
+                    <span class="label c-pupple">[판매기간] ~2023. 7. 10.</span>
+                    <span class="tit">부산 아쿠아리움 입장권 아쿠아리움 (2줄까지) 부산 아쿠아리움 입장권 아쿠아리움 (2줄까지)부산 아쿠아리움 입장권 아쿠아리움 (2줄까지)</span>
+                    <span class="account">
+                      <div class="price-org">44,000</div>
+                      <span class="sale">10%<i class="ico-sale-dowm"></i></span>
+                      <span class="price">40,000<span class="won">원</span></span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" class="product-type3">
+                  <div class="img">
+                    <img src="../images/temp/temp-store-product.jpg" alt="">
+                  </div>
+                  <div class="desc">
+                    <span class="label c-pupple">[판매기간] ~2023. 7. 10.</span>
+                    <span class="tit">부산 아쿠아리움 입장권 아쿠아리움 (2줄까지) 부산 아쿠아리움 입장권 아쿠아리움 (2줄까지)부산 아쿠아리움 입장권 아쿠아리움 (2줄까지)</span>
+                    <span class="account">
+                      <!-- <div class="price-org">44,000</div> -->
+                      <span class="sale">10%<i class="ico-sale-dowm"></i></span>
+                      <span class="price">40,000<span class="won">원</span></span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- // store-product-wrap -->
+
+        <!-- store-product-wrap -->
+        <div class="store-product-wrap" data-id="tab3">
+          <div class="tit-wrap">
+            <h2 class="tit">신상 도착!</h2>
+            <p class="txt">착한 가격으로 선보이는 신상품만 모았어요</p>
+          </div>
+          <div class="product-exp">
+            <div class="img"><img src="../images/temp/temp-banner-store.jpg" alt=""></div>
+            <div class="text">
+              <b>색다른 명품 후두과자 세트</b>
+              <p class="txt">
+                호두 명가 호두앤 호두과자에서 단독 특가로 구성한 한정 수량, 한정 기한 내 판매합니다. 인기 호두과자 시리즈 4가지 종류를 함께 맛볼 수 있어 좋고, 선물용으로도 잘 어울려요.
+                호두 명가 호두앤 호두과자에서 단독 특가로 구성한 한정 수량, 한정 기한 내 판매합니다. 인기 호두과자 시리즈 4가지 종류를 함께 맛볼 수 있어 좋고, 선물용으로도 잘 어울려요.
+                호두 명가 호두앤 호두과자에서 단독 특가로 구성한 한정 수량, 한정 기한 내 판매합니다. 인기 호두과자 시리즈 4가지 종류를 함께 맛볼 수 있어 좋고, 선물용으로도 잘 어울려요.
+              </p>
+            </div>
+          </div>
+          <div class="product-list">
+            <ul>
+              <li class="soldout">
+                <a href="javascript:void(0);" class="product-type3">
+                  <div class="img">
+                    <img src="../images/temp/temp-store-product.jpg" alt="">
+                  </div>
+                  <div class="desc">
+                    <span class="label c-pupple">[판매기간] ~2023. 7. 10.</span>
+                    <span class="tit">부산 아쿠아리움 입장권 아쿠아리움 (2줄까지) 부산 아쿠아리움 입장권 아쿠아리움 (2줄까지)부산 아쿠아리움 입장권 아쿠아리움 (2줄까지)</span>
+                    <span class="account">
+                      <div class="price-org">44,000</div>
+                      <span class="sale">10%<i class="ico-sale-dowm"></i></span>
+                      <span class="price">40,000<span class="won">원</span></span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);" class="product-type3">
+                  <div class="img">
+                    <img src="../images/temp/temp-store-product.jpg" alt="">
+                  </div>
+                  <div class="desc">
+                    <span class="label c-pupple">[판매기간] ~2023. 7. 10.</span>
+                    <span class="tit">부산 아쿠아리움 입장권 아쿠아리움 (2줄까지) 부산 아쿠아리움 입장권 아쿠아리움 (2줄까지)부산 아쿠아리움 입장권 아쿠아리움 (2줄까지)</span>
+                    <span class="account">
+                      <!-- <div class="price-org">44,000</div> -->
+                      <span class="sale">10%<i class="ico-sale-dowm"></i></span>
+                      <span class="price">40,000<span class="won">원</span></span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- // store-product-wrap -->
 
         <div class="noti-wrap">
-          <strong class="tit3">구매 전, 유의사항</strong>
+          <div class="line-bar"></div>
+          <strong class="tit3">유의사항</strong>
           <ul class="list-dot st2">
-            <li>주문내역의 고객님의 정보는 회원탈퇴 후에도 소비자보호에 관한 법률 시행령이 정한 일정기간 동안 보존됩니다.</li>
-            <li>회원탈퇴 시 보유하신 콘텐츠(승차권, 쿠폰, 실물 및 모바일 콘텐츠 등)가 삭제됩니다.</li>
-            <li>환불신청 등 서비스가 진행중인 경우 모든 처리가 완료된 후 탈퇴가 가능합니다.</li>
+            <li>SRT플레이는 통신판매의 당사자가 아니며, 개별 판매자가 판매하는 상품의 품질, 주문, 배송 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.</li>
+            <li>상품의 배송/반품/교환/취소/환불 문의는 해당 상점 문의처로 문의해 주세요.</li>
+            <li>본 상생상점 판매서비스의 기획전, 특가 판매 등은 사정에 따라 사전 안내없이 변경 및 조기 종료될 수 있습니다.</li>
+            <li>특가 판매기간 종료 및 수량 소진에 따라 주문 마감된 상품은 해당 상점에서 다른 조건으로 구매하실 수 있습니다.(판매자마다 상이함.)</li>
+            <li>상생상점에 표기된 상품정보는 해당 판매상점의 가격변경이 있을 경우 표기와 차이가 발생될 수 있습니다.</li>
           </ul>
         </div>
         
@@ -172,25 +270,17 @@
       <!-- // tple-store-wrap -->
   </div>
   <!-- // content -->
-  <footer class="footer2">
-    <i class="ico-logo"></i>
-    <p class="info">© enable Corp. 대표번호 : 1588-3652</p>
-  </footer>
 </div>
 <!-- // wrap -->
 
 <script>
-    slider('#banner', {
-      loop: true,
-      
-      freeMode: false,
-      slidesPerView: 1,
-      pagination: {
-        el: "#banner .swiper-pagination",
-        clickable: true,
-      },
-    });
+    tabMenuScroll('.tab-tshop', 132)
 
+    //footer include
+    loadInclude('footer', null, function(){
+      $('.footer').addClass('notch');
+      icon()
+    });
 
 </script>
 
