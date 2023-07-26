@@ -13,17 +13,23 @@
               <input type="text" id="station-pos-input" placeholder="출발역 검색">
               <button type="button" class="btn-search"><i class="ico-search"></i></button>
             </div>
-            <button type="button" class="btn-resent" onclick="btmPopClose('#pop-station');btmPopOpen('#pop-resent', resentStationCheck)">최근 이용</button>
+            <button type="button" class="btn-map-station" onclick="btmPopClose('#pop-station');btmPopOpen('#pop-map');alertOpen('환승노선은<br>SRT 앱/홈페이지에서만 가능합니다.', ['확인']);"><i class="ico-map-station"></i></button>
+            <button type="button" class="btn-resent" onclick="btmPopClose('#pop-station');btmPopOpen('#pop-resent', resentStationCheck)">최근 조회</button>
           </div>
           <div class="tab-type2 top-sticky2 line-bottom">
             <ul>
               <li class="on"><a href="javascript:void(0);">전체</a></li>
               <li><a href="javascript:void(0);">경부선</a></li>
               <li><a href="javascript:void(0);">호남선</a></li>
+              <li><a href="javascript:void(0);">경부선</a></li>
+              <li><a href="javascript:void(0);">호남선</a></li>
+              <li><a href="javascript:void(0);">경부선</a></li>
+              <li><a href="javascript:void(0);">호남선</a></li>
+              <li><a href="javascript:void(0);">경부선</a></li>
+              <li><a href="javascript:void(0);">호남선</a></li>
+              <li><a href="javascript:void(0);">경부선</a></li>
+              <li><a href="javascript:void(0);">호남선</a></li>
             </ul>
-            <div class="right">
-              <button type="button" class="btn-map-station" onclick="btmPopClose('#pop-station');btmPopOpen('#pop-map');alertOpen('환승노선은<br>SRT 앱/홈페이지에서만 가능합니다.', ['확인']);"><i class="ico-map-station"></i></button>
-            </div>
           </div>
             
           <ul class="list-check-box2">

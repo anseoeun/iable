@@ -62,90 +62,117 @@
 
     <!-- 결제하기 -->
     <div class="payment-wrap">
-      <!-- 상품(1) -->      
+      <!-- 승차권1 -->      
       <div class="payment-ticket-wrap">
         <h3 class="tit-type2">
           <i class="ico-ticket"></i>
-          <span class="c-pupple">상품(1)</span>
+          <span class="c-pupple">승차권1</span>
           <div class="right">
             6호차 4C(어른)
           </div>
         </h3>
         <div class="payment-desc">
            <strong class="tit">결제상세</strong>
-           <ul class="list st2">
-            <li>승차권 정상가(①)<div class="right">52,900원</div></li>
-            <li>티플상품 정상가(②)<div class="right">10,000원</div>
-              <ul>
-                <li>부산 해운대 스파마린 1인권(대인, 구명조끼 포함)</li>
-              </ul>
-            </li>
+           <ul class="list">
+            <li>승차권 금액<div class="right">52,900원</div></li>
+            <li>기본 운임 할인<div class="right">-900원</div></li>
+            <li class="c-blue">결합상품 구매조건 혜택 (20%)<div class="right">-10,400원</div></li>
            </ul>
-           <dl class="dl-box">
-            <dt>합계(①+②)</dt>
-            <dd>62,900원</dd>
-           </dl>
-           <dl class="dl-box">
-            <dt class="c-blue">할인 혜택</dt>
-            <dd class="c-blue">-20,000원</dd>
-           </dl>
-           <dl class="dl-box">
-            <dt>결제 금액</dt>
-            <dd>42,900원</dd>
-           </dl>
+           <div class="total">
+            <span class="label">승차권 결제 예정 금액<!-- <i class="ico-question"></i> --></span>
+            <div class="right">41,600원</div>
+           </div>
+        </div>
+        <!--결합상품 -->
+        <h3 class="tit-type2">
+          <i class="ico-sale"></i>
+          <span class="c-pupple">결합상품</span>
+          <div class="right">
+            해피머니) 온라인 1천원권
+          </div>
+        </h3>
+        <div class="payment-desc">
+          <strong class="tit">결제상세</strong>
+          <ul class="list">
+           <li>상품 금액<div class="right">2,200원</div></li>
+           <li>할인금액<div class="right">200원</div></li>
+           <li>합계<div class="right">2,000원</div></li>
+          </ul>
+          <div class="total">
+           <span class="label">결합상품 결제 예정 금액</span>
+           <div class="right">2,000원</div>
+          </div>
         </div>
       </div>
       
       <div class="line-bar2"></div>
 
-      <!-- 상품(2) -->      
+      <!-- 승차권2 -->      
       <div class="payment-ticket-wrap">
         <h3 class="tit-type2">
           <i class="ico-ticket"></i>
-          <span class="c-pupple">상품(2)</span>
+          <span class="c-pupple">승차권2</span>
           <div class="right">
             6호차 4C(어른)
           </div>
         </h3>
         <div class="payment-desc">
+           <strong class="tit">결제상세</strong>
+           <ul class="list">
+            <li>승차권 금액<div class="right">52,900원</div></li>
+            <li>기본 운임 할인<div class="right">-900원</div></li>
+            <li class="c-blue">결합상품 구매조건 혜택 (20%)<div class="right">-10,400원</div></li>
+           </ul>
+           <div class="total">
+            <span class="label">승차권 결제 예정 금액<!-- <i class="ico-question"></i> --></span>
+            <div class="right">41,600원</div>
+           </div>
+        </div>
+        <!--결합상품 -->
+        <h3 class="tit-type2">
+          <i class="ico-sale"></i>
+          <span class="c-pupple">결합상품</span>
+          <div class="right">
+            해피머니) 온라인 1천원권
+          </div>
+        </h3>
+        <div class="payment-desc">
           <strong class="tit">결제상세</strong>
-          <ul class="list st2">
-           <li>승차권 정상가(①)<div class="right">52,900원</div></li>
-           <li>티플상품 정상가(②)<div class="right">10,000원</div>
-             <ul>
-               <li>부산 해운대 스파마린 1인권(대인, 구명조끼 포함)</li>
-             </ul>
-           </li>
+          <ul class="list">
+           <li>상품 금액<div class="right">2,200원</div></li>
+           <li>할인금액<div class="right">200원</div></li>
+           <li>합계<div class="right">2,000원</div></li>
           </ul>
-          <dl class="dl-box">
-           <dt>합계(①+②)</dt>
-           <dd>62,900원</dd>
-          </dl>
-          <dl class="dl-box">
-           <dt class="c-blue">할인 혜택</dt>
-           <dd class="c-blue">-20,000원</dd>
-          </dl>
-          <dl class="dl-box">
-           <dt>결제 금액</dt>
-           <dd>42,900원</dd>
-          </dl>
-       </div>
-       
+          <div class="total">
+           <span class="label">결합상품 결제 예정 금액</span>
+           <div class="right">2,000원</div>
+          </div>
+             </div>
       </div>
-     
+
+     <div class="line-bar"></div>
+     <dl class="dl-box">
+      <dt>쿠폰적용</dt>
+      <dd>
+        <div class="f-wrap">
+          <span>-10%</span>
+          <button type="button" class="btn-type5 st7 round f-12" onclick="btmPopOpen('#pop-sale');">선택하기</button>
+        </div>
+      </dd>
+     </dl>
      <div class="line-bar"></div>
 
      <dl class="dl-box">
-      <dt>정상금액[(1)+(2)]</dt>
-      <dd>125,800원</dd>
+      <dt>정상 운임 금액</dt>
+      <dd>104,000원</dd>
      </dl>
      <dl class="dl-box">
-      <dt>총 할인금액</dt>
-      <dd class="c-blue">-40,000원</dd>
+      <dt>결합구매혜택</dt>
+      <dd class="c-blue">-20,800원</dd>
      </dl>
      <dl class="dl-box c-pupple">
-      <dt>결제 예정 금액</dt>
-      <dd>85,800원</dd>
+      <dt>오늘 결제 예정 금액</dt>
+      <dd>73,200원</dd>
      </dl>
 
      <div class="line-bar"></div>
@@ -156,25 +183,35 @@
         <p class="txt">주문 내역을 확인하고, 결제에 동의합니다.</p>
        </dt>
        <dd>
-        <div class="method-list">
-          <div class="row">
-            <button type="button"><i class="cash"></i><span>내통장결제</span></button>
-            <button type="button"><i class="card"></i><span>신용카드</span></button>
-          </div>
-          <ul class="list">
-            <!-- <li><apple-pay-button class="apple-pay-button" buttonstyle="white" type="check-out" locale="ko-KR" lang="ko-KR" aria-hidden="true" style="display:block"></apple-pay-button></li> -->
-            <li><button type="button" ><img src="../images/common/ico-applepay.png" alt="" class="applepay"></button></li>
-            <li><button type="button" ><img src="../images/common/ico-npay.png" alt="" class="npay"></button></li>
-            <li><button type="button" ><img src="../images/common/ico-cacaopay.png" alt="" class="cacaopay"></button></li>
-            <li><button type="button" ><img src="../images/common/ico-toss.png" alt="" class="toss"></button></li>
-            <li><button type="button" ><img src="../images/common/ico-payco.png" alt="" class="payco"></button></li>
-            <li><button type="button" >PIN Pay</button></li>
-          </ul>
-         </div>
+        <ul class="method-list">
+          <li>
+            <button type="button" style="background-color:#FF7E00;">내통장결제</button>
+          </li>
+          <li>
+            <button type="button" style="background-color:#0071E3;">신용/체크카드</button>
+          </li>
+          <li>
+            <apple-pay-button class="apple-pay-button" buttonstyle="black" type="check-out" locale="ko-KR"></apple-pay-button>
+          </li>
+          <li>
+            <button type="button" class="st2">
+              <div class="both-wrap">
+                <div class="both">
+                    <strong>PIN Pay</strong>
+                    <span></span>
+                </div>
+                <div class="both">
+                    <b>3천원 캐시백</b>
+                    <span>(첫 결제 고객대상)</span>
+                </div>
+            </div>
+            </button>
+          </li>          
+        </ul>
        </dd>
      </dl>
 
-     <!-- PIN Pay 안내 
+     <!-- PIN Pay 안내 -->
      <div class="guide-pinpay on">
       <div class="tit">
         <button type="button" onclick="pipayGuide()">
@@ -199,7 +236,6 @@
         </div>
       </div>
      </div>
-     !-- PIN Pay 안내 -->
 
     </div>
     <!-- // payment-wrap -->

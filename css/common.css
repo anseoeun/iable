@@ -141,6 +141,11 @@ body.notch:after{content:'';display:block;height:calc(0px + env(safe-area-inset-
 .footer .list-footer-info dd .undeerline{display:inline-block;text-decoration: underline;margin-left:10px;font-weight:300;}
 .footer .copyright {margin-top:30px;}
 
+.footer2{padding:40px 20px;display:flex;justify-content:center;align-items:center;flex-direction: column;border-top:1px solid #E4E8F1;margin-top:40px;}
+.footer2 .ico-logo{width:111px;height:30px;}
+.footer2 .ico-logo svg path{fill:#7030A0}
+.footer2 .info{font-size:13px; color:#737987;margin-top:15px;}
+
 /* 아이폰 안전영역 
 body:after{content:'';display:block;height:calc(0px + env(safe-area-inset-bottom))}
 .footer.fixed .manu-bar{padding-bottom:env(safe-area-inset-bottom);}
@@ -453,6 +458,18 @@ button.btn-type7 .ico-srtplay{position:relative;top:-1px;}
 .tab-type3 ul li:not(.on) a{background:#fff; }
 .tab-type3 ul li.on button,
 .tab-type3 ul li.on a{ color:#fff;}
+
+.tab-type4{width:calc(100% + 40px);margin-left:-20px;background:#fff;border-bottom:1px solid #E4E8F1;border-top:1px solid #E4E8F1;}
+.tab-type4 ul{background:#fff;white-space: nowrap;overflow-x:auto;}
+.tab-type4 ul::-webkit-scrollbar{display:none;}
+.tab-type4 ul{display:flex;}
+.tab-type4 ul li{flex:1;}
+.tab-type4 ul li ~ li{border-left:1px solid #E4E8F1;}
+.tab-type4 ul li:first-child{margin-left:0;}
+.tab-type4 ul li:last-child{margin-right:0;}
+.tab-type4 ul li .line,
+.tab-type4 ul li button,
+.tab-type4 ul li a{display:block;position:relative;height:50px;line-height:48px;font-size:14px;color:#000;text-align:center;;width:100%;}
 
 /* input type */
 .inp-toggle{position:relative;display:inline-block;cursor:pointer;white-space:nowrap;display:inline-flex;flex-direction:row;align-items:center;vertical-align: middle;width:50px;height:26px;border-radius:25px;overflow:hidden;}
@@ -785,7 +802,6 @@ button.btn-type7 .ico-srtplay{position:relative;top:-1px;}
 
  /* product */
 .product-list ul{display:grid;grid-template-columns: 1fr 1fr; grid-gap:30px 20px}
-
 .product-list2 ul li ~ li{margin-top:15px;}
 
 .product-type1{position:relative;display:flex;align-items:stretch;border: 1px solid #E4E8F1;border-radius: 9px;background:#fff;min-height: 100px;}
@@ -914,9 +930,9 @@ button.btn-type7 .ico-srtplay{position:relative;top:-1px;}
 .product-type3 .desc .tit {-webkit-line-clamp:2;min-height: 2.8em;}
 .product-type3 .desc .account {position:relative;margin-top:10px;padding-top:15px;text-align:right;display:flex;align-items:center;justify-content: flex-start;flex-wrap: wrap;}
 .product-type3 .desc .account .price-org {position:absolute;top:0;left:0;color:#ACAAAA;font-size:12px;text-decoration: line-through;font-weight:300;}
-.product-type3 .desc .account .sale {font-size:16px; color:#F05050;display:inline-flex;align-items:center;font-weight:700;margin-right:7px;}
+.product-type3 .desc .account .sale {font-size:16px; color:#F05050;display:inline-flex;align-items:center;font-weight:700;}
 .product-type3 .desc .account .sale .ico-sale-dowm {width:9px;height:12px;margin-left:3px;}
-.product-type3 .desc .account .price {font-weight:700;font-size:16px;}
+.product-type3 .desc .account .price {margin-left:7px;font-weight:700;font-size:16px;}
 .product-type3 .desc .account .price .won{font-size:12px;font-weight:400;margin-left:1px;}
 
 .product-type4{display:flex;align-items: center;}
