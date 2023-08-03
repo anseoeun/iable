@@ -1248,12 +1248,6 @@ function scrollLeft(obj){
 }
 
 
-function eventEnd(){
-  if($('.event-end-layer').length > 0 && !$('.event-end-layer').is(':hidden')){
-    $('html, body').addClass('hidden');
-  }
-}
-
 function pipayGuide(){
   if($('.guide-pinpay .guide-pinpay-detail').is(':hidden')){
     $('.guide-pinpay').addClass('on');
@@ -1290,8 +1284,7 @@ $(function(){
   scrollLeft('.tab-type1 ul');
   scrollLeft('.tab-type2 ul');
   scrollLeft('.sale-seat-wrap .seat-list');
-  eventEnd();
-
+  
   setTimeout(topSticky, 100);
 });
 

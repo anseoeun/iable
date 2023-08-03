@@ -551,18 +551,23 @@
 
 
 .payment-method dd .method-list button{height:50px;border-radius:6px;border:1px solid #737987;font-size:15px;font-weight:500;width:100%; color:#000;}
-.payment-method dd .method-list .apple-pay-button{width:100%;-webkit-appearance: -apple-pay-button; --apple-pay-button-height: 50px; --apple-pay-button-border-radius: 6px; --apple-pay-button-padding: 7px 0; --apple-pay-button-box-sizing: border-box; -apple-pay-button-type: donate; -apple-pay-button-style: white; border:1px solid #000;border-radius:6px;}
+.payment-method dd .method-list .apple-pay-button{width:100%;-webkit-appearance: -apple-pay-button; --apple-pay-button-height: 50px; --apple-pay-button-border-radius: 6px; --apple-pay-button-padding: 7px 0; --apple-pay-button-box-sizing: border-box; -apple-pay-button-type: donate; -apple-pay-button-style: white; border:1px solid #737987;border-radius:6px;}
 .payment-method dd .method-list button{max-width: 100%;}
-.payment-method dd .method-list > button ~ button{margin-top:10px;}
 .payment-method dd .method-list button .ico-card{position:relative;top:-1px;}
 .payment-method dd .method-list button i{margin-right:5px;}
-.payment-method dd .method-list button span{display:inline-block;line-height:1.8;}
-.payment-method dd .method-list .row{display:flex;align-items:center;}
-.payment-method dd .method-list .row button{flex:1;}
-.payment-method dd .method-list .row button ~ button{margin-left:10px;}
-.payment-method dd .method-list > * ~ .list{margin-top:10px;}
-.payment-method dd .method-list .list {display:grid;grid-template-columns: repeat(3, 1fr);grid-gap:10px}
-.payment-method dd .method-list .list li{overflow:hidden;}
+.payment-method dd .method-list button span{display:inline-block;line-height:1.4;}
+.payment-method dd .method-list button .both-box{display:flex;flex-direction:row;align-items:center;width:100%;}
+.payment-method dd .method-list button .both-box strong{font-size:15px;}
+.payment-method dd .method-list button .both-box .both{flex:1;height:50px;display:flex;flex-direction: column;justify-content:center;align-items:center;font-size:13px}
+.payment-method dd .method-list button .both-box .both b{font-weight:700;}
+.payment-method dd .method-list button.pinpay .both-box strong{padding-left:20px;}
+.payment-method dd .method-list .list > * ~ *{margin-top:10px;}
+.payment-method dd .method-list .list2{display:flex;align-items:center;}
+.payment-method dd .method-list .list2 button{flex:1;}
+.payment-method dd .method-list .list2 button ~ button{margin-left:10px;}
+.payment-method dd .method-list .list3 {display:grid;grid-template-columns: repeat(3, 1fr);grid-gap:10px}
+.payment-method dd .method-list .list3 li{overflow:hidden;}
+.payment-method dd .method-list > * ~  [class*=list]{margin-top:10px;}
 .payment-method dd .method-list .cash{display:inline-block;width:32px;height:22px;background:url('../images/common/ico-cash.png') no-repeat 0 0;background-size:100% 100%;vertical-align: middle;position:relative;top:-1px}
 .payment-method dd .method-list .card{display:inline-block;width:18px;height:16px;background:url("data:image/svg+xml,%3Csvg width='39' height='32' viewBox='0 0 39 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 7.66039C0 3.42967 3.46618 0 7.74194 0H30.4516C34.7274 0 38.1936 3.42967 38.1936 7.66039V24.3396C38.1936 28.5703 34.7274 32 30.4516 32H7.74194C3.46618 32 0 28.5703 0 24.3396V7.66039ZM7.74194 3.06416C5.17648 3.06416 3.09677 5.12196 3.09677 7.66039V24.3396C3.09677 26.878 5.17648 28.9358 7.74194 28.9358H30.4516C33.0171 28.9358 35.0968 26.878 35.0968 24.3396V7.66039C35.0968 5.12196 33.0171 3.06416 30.4516 3.06416H7.74194Z' fill='%23222222'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M36.6451 11.7458H1.54834V8.68164H36.6451V11.7458Z' fill='%23222222'/%3E%3Cpath d='M26.8911 25.4528C29.1715 25.4528 31.0202 23.6237 31.0202 21.3673C31.0202 19.1109 29.1715 17.2817 26.8911 17.2817C24.6107 17.2817 22.7621 19.1109 22.7621 21.3673C22.7621 23.6237 24.6107 25.4528 26.8911 25.4528Z' fill='%23BBBBBB'/%3E%3Cpath d='M21.7299 25.4528C24.0103 25.4528 25.8589 23.6237 25.8589 21.3673C25.8589 19.1109 24.0103 17.2817 21.7299 17.2817C19.4495 17.2817 17.6008 19.1109 17.6008 21.3673C17.6008 23.6237 19.4495 25.4528 21.7299 25.4528Z' fill='%23DCDCDC'/%3E%3C/svg%3E%0A") no-repeat 0 0;background-size:100% 100%;vertical-align: middle;position:relative;top:-1px}
 .payment-method dd .method-list .applepay{height:18px;}
@@ -605,7 +610,7 @@
 .sr-link-complete-wrap .box-type1{margin-top:20px;}
 
 /* 메인배너 */
-.main-banner{margin: 20px 0 35px;}
+.main-banner{margin:20px 0 45px}
 .main-banner a{display:flex;align-items:center;}
 .main-banner .text {flex:1;text-align:right;overflow:hidden;}
 .main-banner .text b {font-size:13px;font-weight:500; color:#000;display:block;overflow:hidden;word-wrap: break-word;	word-break: keep-all;height:1.2em;}
@@ -786,11 +791,11 @@
 .event-list li.end a:after{content:'';display:block;position:absolute;top:0;left:0;width:100%;height:100%;background: rgba(0, 0, 0, 0.5);}
 
 .event-detail-img-wrap{width:calc(100% + 40px);margin-left:-20px;margin-bottom:-20px;}
-.event-detail-img-wrap .event-end-layer{position:fixed;top:50px;left:0;width:100%;height:100%;min-width:320px;z-index:50;background:rgba(0,0,0,0.5);}
+.event-detail-img-wrap .event-end-layer{position:fixed;top:50px;left:0;width:100%;height:100%;min-width:320px;z-index:50;background:rgba(0,0,0,0.2);}
 .event-detail-img-wrap .event-end-layer .noti-box{position:absolute;top:50%;left:50%;width:210px;height:210px;border-radius:100%;background:#fff;transform:translate(-50%, -50%);-webkit-transform:translate(-50%, -50%);display:flex;flex-direction: column;justify-content:center;align-items:center;text-align:center;}
+.event-detail-img-wrap .event-end-layer .noti-box .close{position:absolute;top:0;right:20px;width:40px;height:40px;border-radius:100%;background:#000 url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.748738 3.58579C-0.032311 2.80474 -0.0323117 1.53841 0.748737 0.757359C1.52979 -0.0236896 2.79612 -0.0236896 3.57716 0.757359L26.9117 24.0919C27.6927 24.8729 27.6927 26.1393 26.9117 26.9203C26.1306 27.7014 24.8643 27.7014 24.0833 26.9203L0.748738 3.58579Z' fill='white'/%3E%3Cpath d='M23.9203 0.585787C24.7014 -0.195262 25.9677 -0.195262 26.7487 0.585786C27.5298 1.36683 27.5298 2.63316 26.7487 3.41421L3.41421 26.7487C2.63317 27.5298 1.36683 27.5298 0.585786 26.7487C-0.195262 25.9677 -0.195262 24.7014 0.585786 23.9203L23.9203 0.585787Z' fill='white'/%3E%3C/svg%3E%0A") no-repeat 50% 50%;background-size:auto 15px;}
 .event-detail-img-wrap .event-end-layer .noti-box .ico-train-srt{width:60px;height:33px;}
 .event-detail-img-wrap .event-end-layer .noti-box .txt{margin-top:20px;font-size:14px;line-height:1.4;}
-
 .pc .event-detail-img-wrap .event-end-layer{width:414px;left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);margin-left:216px;}
 @media all and (max-width:900px){
 	.pc .event-detail-img-wrap .event-end-layer{margin-left:0;}
