@@ -85,6 +85,11 @@
 .receipt-desc .qr-code{position:absolute;top:16px;right:20px;}
 
 /* 승차권 관련 */
+.train-info-noti{padding:12px 20px;text-align:center;border-bottom:1px solid #E4E8F1;width:calc(100% + 40px);margin-left:-20px;}
+.train-info-noti p{font-size:13px;margin-bottom:13px;line-height:1.4;}
+.train-info-noti p em{vertical-align:baseline; color:#F05050;}
+.train-info-noti img{max-width: 100%;}
+
 .trip-info{position:relative;display:flex;align-items:center;padding:20px 0;flex-wrap: wrap;width:100%;}
 .trip-info .date{position:absolute;top:21px;left:50%; color:#ACAAAA;font-size:14px;transform:translateX(-50%);-webkit-transform:translateX(-50%);line-height:1em;}
 .trip-info .date ~ .way .ico-waygo{position:relative;top:8px;}
