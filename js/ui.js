@@ -410,7 +410,12 @@ function footer(){
 function topSticky(){
   $('.content > .top-sticky:first-child').addClass('fixed');
   $('.content > .member-wrap > .top-sticky:first-child').addClass('fixed');
-  
+
+  setTimeout(function(){
+    $('.top-sticky').css('top', '');
+    $('html, body').scrollTop(0);
+  }, 500);
+
   $('.top-sticky').each(function(){
     let $obj = $(this);
     let basePos = $obj.offset().top;
@@ -418,7 +423,6 @@ function topSticky(){
     let objMargin = $obj.css('margin-top');
     let objH = $obj.outerHeight()
     let objClass = $obj.attr('class').replace('top-sticky', '');  
-
 
     let f = ()=>{
       let sct = $('html, body').scrollTop();
@@ -596,6 +600,7 @@ function selectOpen(id, data, callback, update){
   $('.btn-select-wrap .select-option').hide();
 
   let selected = window.event.currentTarget.querySelector('span');
+  let cls = $(event.currentTarget).data('option-class')
 
   function makeOption(){
     let list = function(){
@@ -606,7 +611,7 @@ function selectOpen(id, data, callback, update){
       return html;
     }
 
-    $select = $('<div class="popup-wrap select-pop" id="'+id+'">' +
+    $select = $('<div class="popup-wrap select-pop '+cls+'" id="'+id+'">' +
           '<div class="dim"></div>' +
           '<ul class="select-option">' + list() +'</ul>' +
       '</div>');

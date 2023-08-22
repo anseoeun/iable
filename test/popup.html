@@ -74,9 +74,47 @@
               disabled: false
             },
           ]
+          const routeOption = [
+            {
+              value: '1',
+              option: '전체 운행노선',
+              disabled: false
+            },
+            {
+              value: '2',
+              option: '경부선',
+              disabled: false
+            },
+            {
+              value: '3',
+              option: '호남선',
+              disabled: false
+            },
+            {
+              value: '4',
+              option: '경전선',
+              disabled: false
+            },
+            {
+              value: '5',
+              option: '전라선',
+              disabled: false
+            },
+            {
+              value: '6',
+              option: '동해선',
+              disabled: false
+            },
+          ]
         </script>        
         <button type="button" class="btn-select" onclick="selectOpen('select1', inquiryOption, function(val, text){ console.log(val);})"><span>질문 선택</span> <i class="ico-arr-select"></i></button>
-        <button type="button" class="btn-select c-pupple" onclick="selectOpen('select1', inquiryOption, function(val, text){ console.log(val);})"><span>질문 선택</span> <i class="ico-arr-select"></i></button>
+        <button type="button" class="btn-select" onclick="selectOpen('select1', inquiryOption, function(val, text){ console.log(val);})"><span>질문 선택</span> <i class="ico-arr-select"></i></button>
+        <br>
+        <br>
+
+        <h2>---select옵션 라인스타일---</h2>
+        <button type="button" class="btn-select" data-option-class="option-st2" onclick="selectOpen('select1', routeOption, function(val, text){ console.log(val);})"><span>전체 운행노선</span> <i class="ico-arr-select2"></i></button>
+
         <br>
         <br>
         <div class="btn-select-wrap">
