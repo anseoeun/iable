@@ -32,7 +32,13 @@
 <div class="wrap">
   <header class="header">
     <div class="wrapper">
-      <div class="left"><a href="javascript:history.back();" class="btn-back"><i class="ico-back"></i></a></div>
+      <div class="left">
+        <a href="javascript:history.back();" class="btn-back"><i class="ico-back"></i></a>
+        <span class="tit-txt hide"></span>
+      </div>
+      <div class="right">
+        <button type="button" class="btn-menu" onclick="gnbMenu();"><i class="ico-menu"></i></button>
+      </div>
     </div>
   </header>
   <!-- content -->
@@ -47,7 +53,7 @@
         </ol>
       </div>
       <!-- text-main -->
-      <div class="text-main">
+      <div class="text-main" data-id="header-tit">
         <h1 class="tit-type1">
           회원가입
         </h1>

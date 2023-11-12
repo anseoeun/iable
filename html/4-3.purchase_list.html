@@ -35,46 +35,41 @@
   <header class="header">
     <div class="wrapper">
       <div class="left">
-        <a href="4-1.my_profile.html" class="btn-back btn-txt"><i class="ico-back"></i><span class="txt">마이페이지</span></a>
+        <a href="main.html" class="btn-back"><i class="ico-back"></i></a>
+        <span class="tit-txt hide"></span>
       </div>
       <div class="right">
-        <a href="main.html" class="btn-home"><i class="ico-home"></i></a>
+        <button type="button" class="btn-menu" onclick="gnbMenu();"><i class="ico-menu"></i></button>
       </div>
     </div>
   </header>
   <!-- content -->
   <div class="content full-wrap">
     <!-- text-main -->
-    <div class="text-main">
-      <h1 class="tit-type1">
-        구매내역
-      </h1>
-      <p class="txt">
-        홍길동님의 구매 현황입니다.
-      </p>
+    <div class="text-main" data-id="header-tit">
+      <h1 class="tit-type1">구매내역</h1>
     </div>
     <!-- // text-main -->
     <!-- tab-type1 -->
     <div class="tab-type1 top-sticky">
       <ul>
-        <li class="on"><a href="javascript:void(0);" onclick="targetInclude(this.parentNode, '[data-id=buying-list]', '4-3.purchase-sale-ticket.html');$('.date-search-wrap').show();">티플승차권</a></li>
-        <li><a href="javascript:void(0);" onclick="targetInclude(this.parentNode, '[data-id=buying-list]', '4-3.purchase-ticket.html');$('.date-search-wrap').show();">일반승차권</a></li>
-        <li><a href="javascript:void(0);" onclick="targetInclude(this.parentNode, '[data-id=buying-list]', '4-3.purchase-product.html');$('.date-search-wrap').hide();">티플상품</a></li>
+        <li class="on"><a href="javascript:void(0);" onclick="targetInclude(this.parentNode, '[data-id=buying-list]', '4-3.purchase-ticket.html');$('.tab-type2').removeClass('hide');">티플승차권</a></li>
+        <li><a href="javascript:void(0);" onclick="targetInclude(this.parentNode, '[data-id=buying-list]', '4-3.purchase-product.html');$('.tab-type2').addClass('hide');">티플상품</a></li>
         <!-- <li><a href="javascript:void(0);" onclick="targetInclude(this.parentNode, '[data-id=buying-list]', '4-3.purchase-sale-coupon.html');$('.date-search-wrap').hide();">할인쿠폰</a></li> -->
       </ul>
     </div>
-    
+    <!-- tab-type2 -->
+    <div class="tab-type2 top-sticky bg-gray" data-top="95">
+      <ul>
+        <li class="on"><a href="javascript:void(0);" onclick="targetInclude(this.parentNode, '[data-id=buying-list]', '4-3.purchase-ticket.html');$('.tab-type2').removeClass('hide');">전체</a></li>
+        <li><a href="javascript:void(0);" onclick="targetInclude(this.parentNode, '[data-id=buying-list]', '4-3.purchase-ticket.html');$('.tab-type2').removeClass('hide');">일반승차권</a></li>
+        <li><a href="javascript:void(0);" onclick="targetInclude(this.parentNode, '[data-id=buying-list]', '4-3.purchase-ticket.html');$('.tab-type2').removeClass('hide');">티플승차권</a></li>
+        <li><a href="javascript:void(0);" onclick="targetInclude(this.parentNode, '[data-id=buying-list]', '4-3.purchase-giftcard.html');$('.tab-type2').removeClass('hide');">금액권</a></li>
+      </ul>
+    </div>
     <div class="auto-wrap bg-gray">
-      <div class="date-search-wrap">
-        <h2 class="tit-type7 c-light-gray">승차일기준</h2>
-        <div class="inp-date">
-          <button type="button" class="date" id="startDay" onclick="btmPopOpen('#pop-calendar', calSet('#startDay'), closeCalendar)">2023. 1. 20.</button>
-          <div class="dash">~</div>
-          <button type="button" class="date" id="endDay" onclick="btmPopOpen('#pop-calendar', calSet('#endDay'), closeCalendar)">2023. 2. 20.</button>
-          <button class="btn-search">조회</button>
-        </div>
-      </div>
 
+            
       <div class="list-box" data-id="buying-list">
 
       </div>
@@ -196,11 +191,20 @@
 
 <script>
   //할인승차권탭 호출
-   targetInclude(this.parentNode, '[data-id=buying-list]', '4-3.purchase-sale-ticket.html')
+   targetInclude(this.parentNode, '[data-id=buying-list]', '4-3.purchase-ticket.html')
 
 
   function callback(type){ //callback 필요없을시 제거
     alert(type);
+  }
+
+  tabOn();
+  function tabOn(){
+    $('.tab-type2 li a').on('click', function(){
+      $('.tab-type2 li').removeClass('on');
+      $(this).parents('li').addClass('on');
+      $(window).scrollTop(0);
+    });
   }
 
   function calSet(id){

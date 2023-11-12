@@ -32,26 +32,35 @@
 <div class="wrap">
   <header class="header">
     <div class="wrapper">
-      <div class="left"><a href="javascript:history.back();" class="btn-back"><i class="ico-back"></i></a></div>
+      <div class="left">
+        <a href="javascript:history.back();" class="btn-back"><i class="ico-back"></i></a>
+        <span class="tit-txt hide"></span>
+      </div>
+      <div class="right">
+        <button type="button" class="btn-menu" onclick="gnbMenu();"><i class="ico-menu"></i></button>
+      </div>
     </div>
   </header>
   <!-- content -->
   <div class="content">
     <div class="member-wrap full-wrap">
-      
+      <!-- text-main -->
+      <div class="text-main" data-id="header-tit">
+        <h1 class="tit-type1">
+          회원가입
+        </h1>
+      </div>
+      <!-- // text-main -->
+      <h2 class="tit-type3 top-sticky"><span>회원정보</span></h2>            
       <!-- text-main -->
       <div class="text-main">
         <h1 class="tit-type1">
           가입된 휴대폰 번호입니다.
           <br>회원정보 확인 후 이용해 주세요.
         </h1>
-        <p class="txt">
-          휴대폰 번호와 함께 ID를 확인하세요.
-        </p>
       </div>
       <!-- // text-main -->
 
-      <h2 class="tit-type2">회원정보</h2>
       <div class="list-match">
         <ul>
           <li>

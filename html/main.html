@@ -5,7 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
 <meta name="format-detection" content="telephone=no"/>
-<meta name="theme-color" content="#7030A0">
+<!-- <meta name="theme-color" content="#7030A0"> -->
 <title></title>
 
 <link rel="shortcut icon" href="../images/favicon/favicon.ico">
@@ -20,6 +20,7 @@
 <link type="text/css" rel="stylesheet" href="../css/swiper.min.css" />
 <script src="../js/jquery-3.6.1.min.js"></script>
 <script src="../js/swiper.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
 <script src="../js/ui.js"></script>
 <!-- 퍼블만 사용-->
 <script src="../js/ui-pub.js"></script>
@@ -28,92 +29,74 @@
 <body>
 <!-- wrap -->
 <div class="wrap">
-  <header class="header">
+  <header class="header transparent scroll-white">
     <div class="wrapper">
       <div class="left">
         <a href="main.html" class="logo"><i class="ico-logo"></i></a>
       </div>
       <div class="right">
+        <button type="button" class="btn-chatbot"><i class="ico-chatbot"></i></button>
         <button type="button" class="btn-menu" onclick="gnbMenu();"><i class="ico-menu"></i></button>
       </div>
     </div>
   </header>
   <!-- content -->
   <div class="content">
-      <!-- tab-type1 -->
-      <div class="tab-type1 top-sticky">
-        <div class="f-wrap">
-          <ul>
-            <li class="on"><a href="main.html">승차권</a></li>
-            <li><a href="3.tiple_main_1.html">티플여행</a></li>
-            <li><a href="4.my_main.html">마이페이지</a></li>
-          </ul>
-          <div class="right">
-            <a href="javascript:void(0);" class="btn-alarm"><i class="ico-alarm"></i></a>
-          </div>
-        </div>
-      </div>
-      <!-- tab-type1 -->
       <!-- main-wrap -->
       <div class="main-wrap">
         <!-- 비주얼 -->
         <div class="visual-slide">
           <div class="swiper-container">
               <ul class="swiper-wrapper">
-                  <li class="swiper-slide">
+                <li class="swiper-slide" data-bg="#F1F2F6">
                     <a href="javascript:void(0);">
                       <img src="../images/temp/temp-main-banner.jpg" alt="">
                     </a>
                   </li>
-                  <li class="swiper-slide">
+                  <li class="swiper-slide" data-bg="#FFF4D0">
                     <a href="javascript:void(0);">
                       <img src="../images/temp/temp-main-banner2.jpg" alt="">
                     </a>
                   </li>
-                  <li class="swiper-slide">
+                  <li class="swiper-slide" data-bg="#F1F2F6">
                     <a href="javascript:void(0);">
                       <img src="../images/temp/temp-main-banner.jpg" alt="">
                     </a>
                   </li>
-                  <li class="swiper-slide">
+                  <li class="swiper-slide" data-bg="#FFF4D0">
                     <a href="javascript:void(0);">
                       <img src="../images/temp/temp-main-banner2.jpg" alt="">
                     </a>
                   </li>
               </ul>
           </div>
+          <div class="swiper-gage"><span class="bar"></span></div>
           <div class="swiper-menu">
             <span class="fraction"></span>
             <button class="play-start" style="display: none;"><i class="ico-play-start"></i></button>
             <button class="play-stop"><i class="ico-play-stop"></i></button>
-            <a href="6.event_list.html" class="more-view"><i class="ico-more-view"></i></a>
+            <!-- <a href="6.event_list.html" class="more-view"><i class="ico-more-view"></i></a> -->
           </div>
         </div>
-        <!-- // 비주얼 -->
-        <div class="main-banner">
-          <a href="https://bit.ly/44gNpxz" target="_blank">
-            <div class="text">
-              <b>100% 수제 영양간식 '감자빵&고구마빵'</b>
-              <em>밀가루 NO! 방부제 NO!</em>
-              <span>티플이 소상공인과 중소기업을 응원해요</span>
-            </div>
-            <div class="img">
-              <img src="../images/temp/temp-banner4.png" alt="">
-            </div>
-          </a>
-        </div>
+        <!-- // 비주얼 -->  
         <!-- list-category -->
-        <div class="list-category">
+        <div class="list-category st3">
           <ul>
             <li>
               <a href="1-1.book_home.html">
-                <span class="icon tooltip-wrap">
-                  <div class="tooltip"><span>예매혜택<i class="ico-down"></i></span></div>
-                  <i class="ico-cate-srt"></i>
-                </span>
-                <span class="txt">승차권 예매</span>
+                <span class="icon"><i class="ico-cate-srt"></i></span>
+                <span class="txt">승차권 예매<span>
+                  <span class="tooltip-wrap">
+                    <div class="tooltip st-line"><span>예매혜택<i class="ico-down"></i></span></div>
+                  </span>
               </a>
             </li>
+            <!-- <li>
+              <a href="javascript:void(0);">
+                <span class="icon"><i class="ico-cate-giftcard"></i> </span>
+                <span class="txt">모바일 금액권<span class="dot"></span></span>
+              </a>
+            </li> -->
             <li>
               <a href="2.schedules.html">
                 <span class="icon"><i class="ico-cate-time"></i></span>
@@ -121,21 +104,22 @@
               </a>
             </li>
             <li>
-              <a href="4-2.storage_box.html#coupon">
-                <span class="icon"><i class="ico-cate-coupon"></i></span>
-                <span class="txt">할인쿠폰</span>
+              <a href="3.tiple_main_1.html">
+                <span class="icon"><i class="ico-stroage-travel"></i></span>
+                <span class="txt">티플여행</span>
               </a>
             </li>
-            <li>
-              <a href="4-2.storage_box.html#ticket">
-                <span class="icon"><i class="ico-cate-ticket"></i></span>
-                <span class="txt">승차권 확인</span>
-              </a>
-            </li>
+            <li><a href="10-1.tiple_shop_main.html"><span class="icon"><i class="ico-cate-store"></i></span><span class="txt">상생스토어</span></a></li>
           </ul>
         </div>
         <!-- // list-category -->
-
+        <div class="main-noti">
+          <a href="javascript:void(0);">
+            <span class="label">공지</span>
+            <span class="txt">승차권 예약 발매일 조정 알림발매일 조정 알림 승차권 예약 발매일 조정 알림발매일 조정 알림</span>
+            <span class="arr"></span>
+          </a>
+        </div>      
         <!-- 배너 -->
         <div class="banner-wrap">
           <div class="banner-slide-list" id="slide-banner">
@@ -146,11 +130,11 @@
                         <img src="../images/banner/banner-per-sale.jpg" alt="">
                       </a>
                     </li>
-                    <!-- <li class="swiper-slide">
+                    <li class="swiper-slide">
                       <a href="javascript:void(0);">
                         <img src="../images/banner/banner-plus-coupon.jpg" alt="">
                       </a>
-                    </li> -->
+                    </li>
                 </ul>
             </div>
             <div class="swiper-pagination"></div>
@@ -234,35 +218,100 @@
         </div>
         지금, 인기 여행지 -->
 
-        <!-- SRT 이용 꿀팁 -->
+        <!-- 오늘의 티플 매거진 -->
+        <div class="tple-magazine-wrap">
+          <div class="tit-wrap vt">
+            <div class="left">
+              <p class="txt light">홍길동님을 위한</p>
+              <h2 class="tit-type4">오늘의 티플 매거진</h2>
+            </div>
+            <div class="right bottom">
+              <a href="3-6.magagine.html" class="btn-plus-more"><i class="ico-plus-more"></i></a>
+            </div>
+          </div>
+          <!-- slide-type1 -->
+          <div class="slide-type1 st6" id="slide-magazine">
+            <div class="swiper-container">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <a href="3-6-1.magagine_detail.html">
+                        <div class="img"><img src="../images/temp/temp-event3.jpg" alt=""></div>
+                        <div class="txt">경주/신경주역 경주/신경주역경주/신경주역경주/신경주역경주/신경주역경주/신경주역</div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <a href="3-6-1.magagine_detail.html">
+                        <div class="img"><img src="../images/temp/temp-event3.jpg" alt=""></div>
+                        <div class="txt">경주/신경주역</div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <a href="3-6-1.magagine_detail.html">
+                        <div class="img"><img src="../images/temp/temp-event3.jpg" alt=""></div>
+                        <div class="txt">경주/신경주역</div>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+          <!-- // slide-type1 -->
+        </div>
+        <!-- // 오늘의 티플 매거진 -->     
+
+        <!-- 여행 카운슬러 추천 -->
+        <div class="travel-counselor-wrap">
+          <div class="tit-wrap vt">
+            <div class="left">
+              <h2 class="tit-type4">여행 카운슬러 추천</h2>
+              <p class="txt light">여행 카운슬러의 추천 여행지</p>
+            </div>
+            <div class="right">
+              <a href="3-7.counselor.html" class="btn-plus-more"><i class="ico-plus-more"></i></a>
+            </div>
+          </div>
+          <div class="video-counselor">
+            <div class="video">
+              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VTlya_WjY8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="text">
+              <b>SRT 타고 떠나는 당일치기 나들이나들이 SRT 타고 떠나는 당일치기 나들이나들이</b>
+              <p class="sub-txt">- 여행 카운슬러 추천 -</p>
+            </div>
+          </div>
+        </div>
+        <!-- // 여행 카운슬러 추천 -->
+
+        <!-- 열차 이용 꿀팁 -->
         <div class="srt-tip-wrap">
           <div class="tit-wrap vt">
             <div class="left">
-              <h2 class="tit-type4">SRT 이용 꿀팁</h2>
-              <p class="txt light">기차로 떠나는 여행을 만나세요.</p>
+              <h2 class="tit-type4">열차 이용 꿀팁</h2>
+              <p class="txt light">SRT 이럴 땐, 이렇게 이용하세요.</p>
+            </div>
+            <div class="right">
+              <a href="javascript:void(0);" class="btn-plus-more"><i class="ico-plus-more"></i></a>
             </div>
           </div>
-          <!-- 배너 -->
-          <div class="banner-wrap">
-            <div class="banner-slide-list st-center" id="slide-tip">
-              <div class="swiper-container">
-                  <ul class="swiper-wrapper">
-                      <li class="swiper-slide">
-                        <a href="guide_pet_with_srt.html">
-                          <img src="../images/banner/banner-tip-travel.jpg" alt="">
-                        </a>
-                      </li>
-                      <li class="swiper-slide">
-                        <a href="guide_seat_recommend.html">
-                          <img src="../images/banner/banner-tip-seat.jpg" alt="">
-                        </a>
-                      </li>
-                  </ul>
-              </div>
-              <!-- <div class="swiper-pagination"></div> -->
+          <div class="slide-type1 st5" id="slide-tip">
+            <div class="swiper-container">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <a href="javascript:void(0);">
+                        <div class="img">
+                          <img src="../images/temp/temp-banner-pet.jpg" alt="">
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <a href="javascript:void(0);">
+                        <div class="img">
+                          <img src="../images/temp/temp-banner-pet.jpg" alt="">
+                        </div>
+                      </a>
+                    </li>
+                </ul>
             </div>
           </div>
-          <!-- // 배너 -->
         </div>
         <!-- // SRT 이용 꿀팁 -->
 
@@ -326,31 +375,47 @@
         <div class="help-wrap">
           <h3 class="tit-type4 align-c">홍길동님, 도움이 필요하신가요?</h3>
           <!-- list-category -->
-          <div class="list-category st2">
+          <div class="list-category-ver">
             <ul>
+              <li>
+                <a href="4-5.notice.html">
+                  <span class="icon"><i class="ico-cate-noti"></i></span>
+                  <div class="desc">
+                    <b>공지사항</b>
+                    <p class="txt">이벤트 당첨 결과, 긴급한 서비스 점검 등 
+                      <br>안내사항을 확인하세요.</p>
+                  </div>
+                </a>
+              </li>
               <li>
                 <a href="4-6.faq.html">
                   <span class="icon"><i class="ico-cate-faq"></i></span>
-                  <span class="txt">FAQ</span>
+                  <div class="desc">
+                    <b>자주 묻는 질문</b>
+                    <p class="txt">결제 취소, 환불, 할인, 시설문의 등 
+                      <br>주요 질문과 답변을 살펴보세요.</p>
+                  </div>
                 </a>
               </li>
               <li>
                 <a href="4-7.write_us.html">
                   <span class="icon"><i class="ico-cate-qna"></i></span>
-                  <span class="txt">1:1 문의</span>
+                  <div class="desc">
+                    <b>1:1 문의</b>
+                    <p class="txt">운영시간이 아니어도 좋아요.
+                      <br>서비스 개선과 요청사항을 등록해 주세요.</p>
+                  </div>
                 </a>
               </li>
               <li>
                 <a href="javascript:void(0);">
                   <span class="icon"><i class="ico-cate-chatbot"></i></span>
-                  <span class="txt">쳇봇 문의</span>
+                  <div class="desc">
+                    <b>챗봇 상담</b>
+                    <p class="txt">세심한 도움이 필요할 때 문의하세요. 
+                      <br>최대한 빠르게 도와드릴게요.</p>
+                  </div>
                 </a>
-              </li>
-              <li>
-                <button type="buton" onclick="popOpen('#pop-call');">
-                  <span class="icon"><i class="ico-cate-call"></i></span>
-                  <span class="txt">전화 상담</span>
-                </button>
               </li>
             </ul>
           </div>
@@ -380,9 +445,9 @@
                 <a href="https://pf.kakao.com/_xocxiYxb">
                   <div class="desc">
                     <div class="txt">
-                      정차역 인근 여행지 집중 탐방! 
-                      <br>SRT와 여행하는 새로운 친구를
-                      <br>만나보세요.
+                      이미 수십만 친구와 여행소식을
+                      <br>나누고, 챗봇 채팅으로 함께하고
+                      <br>있어요. 
                     </div>
                     <div class="go"><span>바로가기</span><i class="ico-arr-right2"></i></div>
                   </div>
@@ -440,32 +505,6 @@
   <!-- // content -->
 
 
-  <!--전화상담-->
-  <div class="popup-wrap guide-pop" id="pop-call">
-    <div class="dim"></div>
-    <div class="pop-wrap">
-      <div class="popup">
-        <button type="button" class="btn-close"><i class="ico-close-pop"></i></button>
-        <div class="pop-body st2">
-          
-          <div class="pop-text-st1">
-            <i class="ico-call"></i>
-            <div class="text">
-              전화로 문의하실 때는,
-              <br>평일 10시-17시(점심 12시~13시 제외)
-              <br>1588-8366 번으로 연락해 주세요.
-            </div>
-          </div>
-        </div>
-        <div class="pop-footer">
-          <div class="btn-wrap">
-            <a href="tel:1588-8366" class="btn-type1 st1">고객센터 연결하기</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- 아이폰 툴팁 -->
   <div class="tooltip-home">
     <button type="button" class="close" onclick="$('.tooltip-home').hide();"><i class="ico-close"></i></button>
@@ -478,6 +517,18 @@
     </div>
   </div>
 
+  <!-- 내티켓 툴팁 -->
+  <div class="tooltip-myticket">
+    <!-- <button type="button" class="close"><i class="ico-close"></i></button> -->
+    <div class="inner">
+      <i class="ico-ticket-srt2"></i>
+      <div class="desc">
+        <p>[ D-3 ] 승차권(수서 > 울산통도사, SRT301)</p>
+        <p>2023. 00. 00.(화) 14:00 출발</p>
+      </div>
+    </div>
+  </div>
+
 </div>
 <!-- // wrap -->
 
@@ -487,7 +538,12 @@
     $('.footer').addClass('notch');
   });
 
-  slider('.visual-slide', {
+visualSlide();
+function visualSlide(){
+
+  let gage = 0;
+  let autoTimer = false;
+  let visualSlide = slider('.visual-slide', {
     loop: true,
     autoplay: {
         delay: 3500,
@@ -498,8 +554,40 @@
     pagination: {
       el: ".visual-slide .fraction",
       type: "fraction",
-    },         
+    },    
+    on: {
+        slideChangeTransitionStart: function () {
+          gage = 0;
+          setGage()
+        }
+      }     
   });
+
+  setGage();
+  function setGage(){
+    if(gage >= 100) {
+      gage = 0;
+    }
+    clearInterval(autoTimer);
+    autoTimer = setInterval(function(){
+      if(gage >= 100) {
+        gage = 0;
+        visualSlide.slideNext();
+      }
+      gage += 1;
+      $('.swiper-gage .bar').css('width', gage +'%');
+    }, 35)
+  }  
+
+  $('.visual-slide .play-stop').on('click', function(){
+    clearInterval(autoTimer)
+  });
+
+  $('.visual-slide .play-start').on('click', function(){
+    setGage()
+  });
+}
+
 
   //상단 배너
   slider('#slide-banner', {
@@ -516,8 +604,12 @@
   //인기여행지
   slider('#slide-favorite');
 
+  //매거진
+  slider('#slide-magazine');
+
   // srt 이용 꿀팀
-  slider('#slide-tip', {
+//SRT 이용 팁 배너
+slider('#slide-tip', {
     freeMode: false,
     centeredSlides: true,
     slidesPerView: 'auto',
@@ -526,7 +618,7 @@
       el: "#slide-tip .swiper-pagination",
       clickable: true,
     },
-  });  
+}); 
 
   // 하단배너
   slider('#slide-etc', {
@@ -539,9 +631,21 @@
       clickable: true,
     },
   });  
-
   
-
+  //내티켓 툴팁
+  tooltipMyticket();
+  function tooltipMyticket(){
+	  $('.tooltip-myticket').show();
+    setTimeout(function(){
+      $('.tooltip-myticket').addClass('on');
+    }, 1000);
+    setTimeout(function(){
+      $('.tooltip-myticket').removeClass('on');
+    }, 5000);
+    setTimeout(function(){
+        $('.tooltip-myticket').hide();
+    }, 5500);
+  }
 
 </script>
 

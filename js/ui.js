@@ -1,6 +1,6 @@
 
 let root = '/assets/'
-if(location.href.includes('seoeunan')) root = '/iable/'
+if(location.href.includes('seoeunan')) root = '/iable2/'
 if(location.href.includes(':55') && location.href.includes('html')) root = '/'
 
 
@@ -102,8 +102,15 @@ function iphoneNotch(){
   }
 }
 
+
 function pageScrolling(){
   let stickyPos = $('.top-sticky').length > 0 ? $('.top-sticky').offset().top : 0;
+  let titlePos = 0;
+
+  if($('[data-id="header-tit"] .tit-type1').length > 0){
+    titlePos = $('[data-id="header-tit"] .tit-type1').offset().top - ($('.header').height() - $('[data-id="header-tit"] .tit-type1').height());
+    $('.header .tit-txt.hide').text($('[data-id="header-tit"] .tit-type1').text())
+  }
 
   $(document).on('scroll', function(){
     
@@ -120,6 +127,12 @@ function pageScrolling(){
       if(stickyPos != 0){
         if(top > stickyPos - 50) $('header').addClass('attach-sticky')
         else $('header').removeClass('attach-sticky')
+      }
+
+      if(top > titlePos){
+        $('.header .tit-txt.hide').fadeIn();
+      }else{
+        $('.header .tit-txt.hide').fadeOut();
       }
     });
 }
@@ -388,6 +401,8 @@ function slider(obj, option, callback){
   }else{
     $(obj).find('.swiper-pagination').remove();
   }
+
+  return swiper;
 }
 
 
@@ -413,7 +428,7 @@ function topSticky(){
 
   setTimeout(function(){
     $('.top-sticky').css('top', '');
-    $('html, body').scrollTop(0);
+    // $('html, body').scrollTop(0); // 상생스토어오류관련
   }, 500);
 
   $('.top-sticky').each(function(){

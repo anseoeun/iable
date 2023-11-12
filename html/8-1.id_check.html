@@ -33,17 +33,31 @@
 <div class="wrap">
   <header class="header">
     <div class="wrapper">
-      <div class="left"><a href="javascript:history.back();" class="btn-back"><i class="ico-back"></i></a></div>
+      <div class="left">
+        <a href="javascript:history.back();" class="btn-back"><i class="ico-back"></i></a>
+        <span class="tit-txt hide"></span>
+      </div>
+      <div class="right">
+        <button type="button" class="btn-menu" onclick="gnbMenu();"><i class="ico-menu"></i></button>
+      </div>
     </div>
   </header>
   <!-- content -->
   <div class="content">
     <div class="member-wrap full-wrap">
       <!-- text-main -->
-      <div class="text-main">
+      <div class="text-main" data-id="header-tit">
         <h1 class="tit-type1">
-          이메일을 입력해 주세요.
+          로그인
         </h1>
+      </div>
+      <!-- // text-main -->
+      <h2 class="tit-type3 top-sticky"><span>이메일 입력</span></h2>
+      <!-- text-main -->
+      <div class="text-main">
+        <h3 class="tit-type1">
+          이메일을 입력해 주세요.
+        </h3>
         <p class="txt">
           로그인 또는 회원가입에 필요합니다.
         </p>

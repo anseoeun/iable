@@ -30,7 +30,8 @@
   <header class="header">
     <div class="wrapper">
       <div class="left">
-        <a href="main.html" class="logo"><i class="ico-logo"></i></a>
+        <a href="javascript:history.back();" class="btn-back"><i class="ico-back"></i></a>
+        <span class="tit-txt hide"></span>
       </div>
       <div class="right">
         <button type="button" class="btn-menu" onclick="gnbMenu();"><i class="ico-menu"></i></button>
@@ -39,199 +40,130 @@
   </header>
   <!-- content -->
   <div class="content">
-      <!-- tab-type1 -->
-      <div class="tab-type1 top-sticky">
-        <div class="f-wrap">
-          <ul>
-            <li><a href="main.html">승차권</a></li>
-            <li><a href="3.tiple_main_1.html">티플여행</a></li>
-            <li class="on"><a href="4.my_main.html">마이페이지</a></li>
-          </ul>
-          <div class="right">
-            <a href="javascript:void(0);" class="btn-alarm"><i class="ico-alarm"></i></a>
-          </div>
-        </div>
-      </div>
-      <!-- tab-type2 -->
       <!-- mypage-wrap -->
       <div class="mypage-wrap">
+        <!-- text-main -->
+        <div class="text-main" data-id="header-tit">
+          <h1 class="tit-type1">
+            마이티플
+          </h1>
+        </div>
+        <!-- // text-main -->
         <!-- 로그인전 -->
         <div class="mypage-login">
-          <img src="../images/common/bg-mypage-login.jpg" alt="" class="bg">
-          <div class="cont">
-            <div class="tit">로그인 및 회원가입이<br>필요합니다.</div>
-            <div class="login-menu">
-              <p class="txt">지금 플레이하세요.</p>
-              <div class="btns">
-                <button type="button" class="btn-type4 st1">로그인</button>
-              </div>
-            </div>
-          </div>
+          <span class="thumb"></span>
+          <spna class="txt">안녕하세요. 홍길동 님.</spna>
+          <div class="right"><button class="btn-login">로그인</button></div>
         </div>
         <!-- 로그인후 -->
         <div class="mypage-login">
-          <img src="../images/common/bg-mypage-login.jpg" alt="" class="bg">
-          <div class="cont">
-            <a href="4-1.my_profile.html" class="btn-setting"><i class="ico-set"></i><span>내 정보관리</span></a>
-            <div class="tit">홍길동 님!<br>만나서 반가워요.</div>
-            <div class="login-menu">
-              <p class="txt"><a href="javascript:void(0);">SR 계정 연동하기 > </a></p>
-              <div class="btns">
-                <button type="button" disabled  class="btn-type4 st5">SR</button>
-                <button type="button" class="btn-type4 st5">SR</button>
-                <button type="button" disabled class="btn-type4 st6">카카오</button>
-                <button type="button" class="btn-type4 st6">카카오</button>
-              </div>
-            </div>
-          </div>
+          <span class="thumb"></span>
+          <spna class="txt">로그인이 필요합니다.</spna>
+          <div class="right"><a href="4-1.my_profile.html" class="btn-setting">내 정보 관리</a></div>
         </div>
 
+        <!-- 배너 -->
+        <div class="banner-wrap">
+          <a href="70discount/index.html">
+            <img src="../images/banner/banner-per-sale.jpg" alt="">
+          </a>
+        </div>
+        <!-- // 배너 -->
 
-        <!-- 지금 티플 핫 이벤트! -->
-        <div class="hot-event-wrap">
-          <div class="tit-wrap">
-            <h3 class="tit-type4">지금 티플 핫 이벤트!</h3>
+        <div class="my-info-box">
+          <div class="row">
+            <span class="label">내 연동 계정</span>
             <div class="right">
-              <a href="javascript:void(0);" class="btn-plus-more"><i class="ico-plus-more"></i></a>
+              <button class="btn1" disabled>SR</button>
             </div>
           </div>
-          <div class="event-slide-list">
-            <div class="swiper-container">
-                <ul class="swiper-wrapper">
-                    <li class="swiper-slide">
-                      <a href="javascript:void(0);">
-                        <div class="img"><img src="../images/temp/temp-banner3.png" alt=""></div>
-                      </a>
-                    </li>
-                    <li class="swiper-slide">
-                      <a href="javascript:void(0);">
-                        <div class="img"><img src="../images/temp/temp-banner3.png" alt=""></div>
-                      </a>
-                    </li>
-                    <li class="swiper-slide">
-                      <a href="javascript:void(0);">
-                        <div class="img"><img src="../images/temp/temp-event.jpg" alt=""></div>
-                      </a>
-                    </li>
-                </ul>
+          <div class="row">
+            <span class="label">내 승차권<span class="sub">(*최근예정)</span></span>
+            <div class="right">
+              <button class="btn2" disabled>확인</button>
             </div>
           </div>
         </div>
-        <!-- // hot-event-wrap -->        
-        
-          <!-- 보관함 -->
-          <div class="stroage-menu-wrap">
-            <h3 class="tit-type4">보관함</h3>
-            <div class="list-category">
-              <ul>
-                <li>
-                  <a href="4-2.storage_box.html#ticket">
-                    <span class="icon"><i class="ico-stroage-ticket"></i></span>
-                    <span class="txt">승차권</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="4-2.storage_box.html#coupon">
-                    <span class="icon"><i class="ico-stroage-coupon"></i></span>
-                    <span class="txt">할인쿠폰</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="4-2.storage_box.html#tple">
-                    <span class="icon"><i class="ico-stroage-travel"></i></span>
-                    <span class="txt">티플상품</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="5.wish_list.html">
-                    <span class="icon"><i class="ico-stroage-favorite"></i></span>
-                    <span class="txt">위시리스트</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
 
-          <!-- 구매내역 -->
-          <div class="my-buying-list-wrap">
-            <h3 class="tit-type4">구매내역</h3>
-            <div class="list-menu">
-              <ul>
-                <li>
-                  <a href="4-3.purchase_list.html">
-                    <div class="icon"><i class="ico-sale-ticket"></i></div>
-                    <span class="txt">할인승차권</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="4-3.purchase_list.html">
-                    <div class="icon"><i class="ico-normal-ticket"></i></div>
-                    <span class="txt">일반승차권</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="4-3.purchase_list.html">
-                    <div class="icon"><i class="ico-srt-coupon"></i></div>
-                    <span class="txt">티플상품</span>
-                  </a>
-                </li>
-              </ul>
+        <div class="my-info-box">
+          <div class="row">
+            <span class="label">내 연동 계정</span>
+            <div class="right">
+              <button class="btn1">SR</button>
             </div>
           </div>
+          <div class="row">
+            <span class="label">SR 계정 연동이 필요해요.</span>
+            <div class="right">
+              <button class="btn2">SR 연동<i class="ico-arr-right3"></i></button>
+            </div>
+          </div>
+          <div class="row">
+            <span class="label">내 승차권<span class="sub">(*최근예정)</span></span>
+            <div class="right">
+              <button class="btn2" onclick="$(this).hide();$('.marquee').show().addClass('on');">확인</button>
+              <div class="marquee"><span>평택지제-울산통도사</span></div>
+            </div>
+          </div>
+        </div>
 
-          <!-- 설정 -->
-          <div class="my-setting-wrap">
-            <h3 class="tit-type4">설정</h3>
-            <div class="list-menu">
-              <ul>
-                <li>
-                  <a href="4-4.setting.html">
-                    <div class="icon"><i class="ico-exchantge"></i></div>
-                    <span class="txt">즐겨찾는 구간 등록</span>
-                  </a>
-                </li>
-              </ul>
+        <div class="my-info-box">
+          <div class="row tit-row">
+            <span class="label"><b class="tit">보관함</b></span>
+            <div class="right">
+              <button class="btn2">장바구니</button>
             </div>
           </div>
+          <div class="row menu-row">
+            <a href="javascript:void(0);">승차권</a>
+            <a href="javascript:void(0);">모바일 금액권</a>
+            <a href="javascript:void(0);">할인쿠폰</a>
+          </div>
+          <div class="row menu-row">
+            <a href="javascript:void(0);">티플여행</a>
+          </div>
+        </div>
 
-          <!-- 도움이 필요하세요? -->
-          <div class="my-help-menu-wrap">
-            <h3 class="tit-type4">도움이 필요하세요?</h3>
-            <div class="list-menu2">
-              <ul>
-                <li>
-                  <a href="4-5.notice.html">
-                    <div class="icon"><i class="ico-help-noti"></i></div>
-                    <div class="desc">
-                      <strong class="tit">공지사항</strong>
-                      <p class="txt">이벤트 당첨 결과, 서비스 점검 등으로<br>빠른 안내를 확인하세요.</p>
-                    </div>
-                    <i class="ico-arr-right2"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="4-6.faq.html">
-                    <div class="icon"><i class="ico-help-list"></i></div>
-                    <div class="desc">
-                      <strong class="tit">자주 묻는 질문</strong>
-                      <p class="txt">결제, 취소/환불, 할인, 시설문의 등<br>주요 질문과 답변을 먼저 살펴보세요.</p>
-                    </div>
-                    <i class="ico-arr-right2"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="4-7.write_us.html">
-                    <div class="icon"><i class="ico-help-pen"></i></div>
-                    <div class="desc">
-                      <strong class="tit">1:1 문의</strong>
-                      <p class="txt">세심한 도움이 필요할 때 문의하세요.<br>최대한 빠르게 도와드릴게요.</p>
-                    </div>
-                    <i class="ico-arr-right2"></i>
-                  </a>
-                </li>
-              </ul>
+        <div class="my-info-box">
+          <div class="row tit-row">
+            <span class="label"><b class="tit">구매내역</b></span>
+          </div>
+          <div class="row menu-row">
+            <a href="javascript:void(0);">티플승차권</a>
+            <a href="javascript:void(0);">일반승차권</a>
+            <a href="javascript:void(0);">모바일 금액권</a>
+          </div>
+          <div class="row menu-row">
+            <a href="javascript:void(0);">티플여행</a>
+          </div>          
+        </div>
+
+        <div class="my-info-box">
+          <div class="row">
+            <div class="tit-wrap">
+              <b class="tit">고객센터</b>
+              <p class="txt">SRT플레이 이용에 불편하거나 궁금함을 도와드립니다.</p>
             </div>
           </div>
+          <ul class="list">
+            <li><a href="javascript:void(0);">공지사항</a></li>
+            <li><a href="javascript:void(0);">자주 묻는 질문</a></li>
+            <li><a href="javascript:void(0);">1:1 문의</a></li>
+            <li><a href="javascript:void(0);"><i class="ico-chatbot3"></i>챗봇</a></li>
+          </ul>
+        </div>
+
+        <div class="my-info-box">
+          <div class="row tit-row">
+            <span class="label"><b class="tit">설정</b></span>
+          </div>
+          <ul class="list">
+            <li><a href="javascript:void(0);">배송지 등록/관리</a></li>
+          </ul>
+        </div>
+
+        <button class="my-info-box"><b class="tit">로그아웃</b></button>
+
 
       </div>
       <!-- // mypage-wrap -->
@@ -241,13 +173,6 @@
 <!-- // wrap -->
 
 <script>
-    //footer include
-    loadInclude('footer', null, function(){
-      $('.footer').addClass('notch');
-    });
-
-    //지금 티플 핫 이벤트! 슬라이드
-    slider('.event-slide-list');
 
   //퍼블용
   if(location.href.match('#login')){

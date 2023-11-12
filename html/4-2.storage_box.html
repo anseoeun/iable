@@ -28,31 +28,28 @@
   <header class="header">
     <div class="wrapper">
       <div class="left">
-        <a href="4.my_main.html" class="btn-back btn-txt"><i class="ico-back"></i><span class="txt">마이페이지</span></a>
+        <a href="main.html" class="btn-back"><i class="ico-back"></i></a>
+        <span class="tit-txt hide"></span>
       </div>
       <div class="right">
-        <a href="main.html" class="btn-home"><i class="ico-home"></i></a>
+        <button type="button" class="btn-menu" onclick="gnbMenu();"><i class="ico-menu"></i></button>
       </div>
     </div>
   </header>
   <!-- content -->
   <div class="content full-wrap">
     <!-- text-main -->
-    <div class="text-main">
-      <h1 class="tit-type1">
-        보관함
-      </h1>
-      <p class="txt">
-        홍길동님의 보유 현황입니다.
-      </p>
+    <div class="text-main" data-id="header-tit">
+      <h1 class="tit-type1">보관함</h1>
     </div>
     <!-- // text-main -->
     <!-- tab-type1 -->
     <div class="tab-type1 top-sticky">
       <ul>
         <li class="on"><a href="javascript:void(0);" onclick="targetInclude(this.parentNode, '[data-id=storage-list]', '4-2.storage-ticket.html')">승차권</a></li>
-        <li><a href="javascript:void(0);" onclick="targetInclude(this.parentNode, '[data-id=storage-list]', '4-2.storage-coupon.html')">할인쿠폰</a></li>
+        <li><a href="javascript:void(0);" onclick="targetInclude(this.parentNode, '[data-id=storage-list]', '4-2.storage-giftcard.html')">모바일 금액권</a></li>
         <li><a href="javascript:void(0);" onclick="targetInclude(this.parentNode, '[data-id=storage-list]', '4-2.storage-product.html')">티플상품</a></li>
+        <!-- <li><a href="javascript:void(0);" onclick="targetInclude(this.parentNode, '[data-id=storage-list]', '4-2.storage-coupon.html')">할인쿠폰</a></li> -->
       </ul>
     </div>
     <div class="auto-wrap bg-gray" data-id="storage-list">
@@ -63,43 +60,10 @@
 </div>
 <!-- // wrap -->
 
-<!--쿠폰등록-->
-<div class="popup-wrap guide-pop" id="coupon-regist">
-  <div class="dim"></div>
-  <div class="pop-wrap">
-    <div class="popup">
-      <button type="button" class="btn-close"><i class="ico-close-pop"></i></button>
-      <div class="pop-body">
-        <p class="txt">
-          쿠폰을 정상적으로 등록했습니다.
-          <br>마이페이지 > 보관함 > 할인쿠폰          
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--쿠폰발급-->
-<div class="popup-wrap guide-pop" id="coupon-issue">
-  <div class="dim"></div>
-  <div class="pop-wrap">
-    <div class="popup">
-      <button type="button" class="btn-close"><i class="ico-close-pop"></i></button>
-      <div class="pop-body">
-        <p class="txt">
-          쿠폰이 발급되었습니다.
-          <br>마이페이지 > 보관함 > 할인쿠폰
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
 
 <script>
   //승차권탭 호출
   targetInclude(this.parentNode, '[data-id=storage-list]', '4-2.storage-ticket.html')
-
 
   //퍼블용
   if(location.href.match('#ticket')){

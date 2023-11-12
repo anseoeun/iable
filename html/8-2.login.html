@@ -28,72 +28,49 @@
 
 </head>
 <body>
-<!-- wrap -->
-<div class="wrap">
-  <header class="header">
-    <div class="wrapper">
-      <div class="left"><a href="javascript:history.back();" class="btn-back"><i class="ico-back"></i></a></div>
-    </div>
-  </header>
-  <!-- content -->
-  <div class="content">
-    <div class="member-wrap full-wrap">
-      
-      <!-- text-main -->
-      <div class="text-main">
-        <h1 class="tit-type1">
-          로그인
-        </h1>
-        <p class="txt">
-          남* 회원님. 반갑습니다!
-        </p>
-      </div>
-      <!-- // text-main -->
-
-      <div class="form-type-wrap">
-        <div class="form-type1 has-value">
-          <span class="label">아이디</span>
-          <div class="f-wrap">
-            <input type="email" class="auto" id="input-email" value="welcome@srtplay.com" disabled>
-            <i class="ico-val-check"></i>
-          </div>
+  <!-- wrap -->
+  <div class="wrap bg-login">
+    <header class="header">
+      <div class="wrapper">
+        <div class="left">
+          <a href="javascript:history.back();" class="btn-back"><i class="ico-back"></i></a>
         </div>
-        <div class="form-type1">
-          <span class="label">비밀번호<span class="hide"> : 영문+숫자+특수기호(.!@#$%*/)포함 8~15자리</span></span>
-          <div class="f-wrap">
-            <input type="password" class="auto" id="input-pw" data-id="inpchk" maxlength="15">
-            <i class="ico-val-check" style="display:none;"></i>
-            <button class="btn-val-view">
-              <i class="ico-val-view"></i>
-              <i class="ico-val-view-off"></i>
-            </button>
-          </div>
-          <div class="txt-guide-wrap">
-            <p class="txt-error">비밀번호가 일치하지 않습니다.</p>
-          </div>
+        <div class="right">
+          <button type="button" class="btn-menu" onclick="gnbMenu();"><i class="ico-menu"></i></button>
         </div>
       </div>
-      <div class="auto-login-check">
-        <label class="inp-check">
-          <input type="checkbox" checked>
-          <span class="ic"><i></i></span>
-          <span class="t">자동 로그인</span>
-        </label>
-      </div>
-
-
-      <div class="end-content">
-        <div class="btn-wrap">
-          <div class="full align-c"><a href="8-2-1.authentication.html" class="btn-line">비밀번호를 잊으셨나요?</a></div>
-          <button class="btn-type1 st1" onclick="location.href='main.html'" disabled data-id="active"><span>로그인</span></button>
-          <button class="btn-type1 st1" onclick="location.href='8-2-3.dormant.html'" disabled data-id="active"><span>로그인(휴면계정)</span></button>
+    </header>	
+    <!-- content -->
+    <div class="content">
+      <div class="member-wrap full-wrap">
+        <!-- text-login-intro -->
+        <div class="text-login-intro">
+          <h1 class="tit-type1">
+            기차타는 즐거움
+          </h1>
+          <p class="txt">
+            120만 회원고객님과 함께
+            <br>티플(SRT플레이)만의 혜택을 누리세요.
+          </p>
         </div>
+        <!-- // text-login-intro -->
+  
+  
+        <div class="end-content">
+          <div class="btn-login-start-wrap">
+            <a href="javascript:void(0);" class="btn-cacao-start"><span class="txt">카카오톡으로 시작하기</span></a>
+            <a href="8-1.id_check.html" class="btn-srt-start"><span class="txt">SRT플레이로 시작하기</span></a>
+            <div class="or"><span>또는</span></div>
+            <a href="javascript:void(0);" class="btn-type1 st5"><span class="txt">휴대폰 번호로 로그인</span><span class="tag-adver">광고</span></a>
+          </div>
+        </div>
+  
       </div>
     </div>
+    <!-- // content -->
   </div>
-  <!-- // content -->
-</div>
-<!-- // wrap -->
-
-</body>
+  <!-- // wrap -->
+  
+  
+  </body>
 </html>

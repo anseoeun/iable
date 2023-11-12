@@ -33,23 +33,29 @@
   <header class="header">
     <div class="wrapper">
       <div class="left">
-        <a href="4-1.my_profile.html" class="btn-back btn-txt"><i class="ico-back"></i><span class="txt">내 정보관리</span></a>
+        <a href="4-1.my_profile.html" class="btn-back"><i class="ico-back"></i></a>
+        <span class="tit-txt hide"></span>
       </div>
       <div class="right">
-        <a href="main.html" class="btn-home"><i class="ico-home"></i></a>
+        <button type="button" class="btn-menu" onclick="gnbMenu();"><i class="ico-menu"></i></button>
       </div>
     </div>
   </header>
   <!-- content -->
   <div class="content">
     <div class="member-wrap full-wrap">
-      <h1 class="tit-type3 top-sticky"><span>이름변경</span></h1>
+      <!-- text-main -->
+      <div class="text-main" data-id="header-tit">
+        <h1 class="tit-type1">내 정보 관리</h1>
+      </div>
+      <!-- // text-main -->      
+      <h2 class="tit-type3 top-sticky"><span>이름 변경</span></h2>
       <!-- text-main -->
       <div class="text-main">
-        <h2 class="tit-type1">
+        <h3 class="tit-type1">
           홍길동 님의
           <br>이름을 변경하실 수 있어요.
-        </h2>
+        </h3>
         <p class="txt">
           법적 이름과 다른 경우 서비스 이용이 제한될 수 있습니다.
         </p>

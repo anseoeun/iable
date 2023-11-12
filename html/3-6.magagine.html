@@ -30,22 +30,49 @@
   <header class="header">
     <div class="wrapper">
       <div class="left">
-        <a href="javascript:history.back();" class="btn-back btn-txt"><i class="ico-back"></i></a>
+        <a href="main.html" class="btn-back"><i class="ico-back"></i></a>
+        <span class="tit-txt hide"></span>
       </div>
-      <h1 class="tit-header">오늘의 티플 매거진</h1>
+      <div class="right">
+        <button type="button" class="btn-menu" onclick="gnbMenu();"><i class="ico-menu"></i></button>
+      </div>
     </div>
   </header>
   <!-- content -->
   <div class="content">
       <!-- tple-magagine-wrap -->
       <div class="tple-magagine-wrap">
-        <!-- 탭 -->
-        <div class="tab-type2 top-sticky">
-          <ul>
-            <li class="on"><a href="javascript:void(0);">경주</a></li>
-            <li><a href="javascript:void(0);">여행꿀팁</a></li>
-            <li><a href="javascript:void(0);">반려견</a></li>
-          </ul>
+        <!-- text-main -->
+        <div class="text-main" data-id="header-tit">
+          <h1 class="tit-type1">오늘의 티플 매거진</h1>
+        </div>
+        <!-- // text-main -->
+        <div class="search-tab-wrap top-sticky" data-top="50">
+          <div class="search-wrap">
+            <div class="left">
+              <div class="inp-search">
+                <input type="text" placeholder="지역명 또는 계절을 검색해보세요." id="han" onkeyup="chk_han('han')"">
+                <button class="btn"><i class="ico-search"> </i></button>
+              </div>
+              <script>
+                function chk_han(id) {
+                    var regexp = /[a-z0-9]|[ \[\]{}()<>?|`~!@#$%^&*-_+=,.;:\"'\\]/g;
+                    var value = $("#"+id).val();
+                    if (regexp.test(value)) {
+                        $("#"+id).val(value.replace(regexp, ''));
+                    }
+                }
+              </script>
+            </div>
+          </div>
+          <!-- 탭 -->
+          <div class="tab-type2">
+            <ul>
+              <li class="on"><a href="javascript:void(0);">경주</a></li>
+              <li><a href="javascript:void(0);">여행꿀팁</a></li>
+              <li><a href="javascript:void(0);">반려견</a></li>
+            </ul>
+          </div>
         </div>
         <div class="line-bar3"></div>
         <div class="magazine-list">

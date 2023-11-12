@@ -32,18 +32,26 @@
 <div class="wrap">
   <header class="header">
     <div class="wrapper">
-      <div class="left"><a href="javascript:history.back();" class="btn-back"><i class="ico-back"></i></a></div>
+      <div class="left">
+        <a href="javascript:history.back();" class="btn-back"><i class="ico-back"></i></a>
+        <span class="tit-txt hide"></span>
+      </div>
+      <div class="right">
+        <button type="button" class="btn-menu" onclick="gnbMenu();"><i class="ico-menu"></i></button>
+      </div>
     </div>
   </header>
   <!-- content -->
   <div class="content">
     <div class="member-wrap full-wrap">
-      
+      <!-- text-main -->
+      <div class="text-main" data-id="header-tit">
+        <h1 class="tit-type1">로그인</h1>
+      </div>
+      <!-- // text-main -->
       <!-- text-main -->
       <div class="text-main">
-        <h1 class="tit-type1">
-          비밀번호 재설정
-        </h1>
+        <h2 class="tit-type3 top-sticky"><span>비밀번호 재설정</span></h2>
         <p class="txt">
           새로운 비밀번호를 입력해 주세요.
           <br>영문+숫자+특수기호(.!@#$%*/)포함 8~15자리 구성

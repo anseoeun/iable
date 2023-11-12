@@ -3,7 +3,7 @@ function gnbMenu(){
   function evt(){
     let wrapstyle = $('.wrap').attr('style');
     $('body, html').scrollTop(0);
-    $('body, .wrap').css('overflow', 'hidden');
+    $('html, body, .wrap').css('overflow', 'hidden');
     $('.wrap').css('position', 'relative');
     $('.gnb-menu-wrap').show();
     $('.gnb-menu-wrap .menu-body').scrollTop(0);
@@ -17,7 +17,7 @@ function gnbMenu(){
       }, 250, function() {
         setTimeout(function(){
           $('.gnb-menu-wrap').hide();
-          $('body, .wrap').css('overflow', '');
+          $('html, body, .wrap').css('overflow', '');
           $('.wrap').attr('style', wrapstyle);
         }, 100)
       });

@@ -3,6 +3,9 @@
 
 .visual{width: calc(100% + 40px);margin-left:-20px;overflow:hidden;margin-bottom:-25px;}
 
+.banner-wrap,
+.banner-wrap2{margin-bottom:20px;}
+
 .tab-tshop{position:relative;width:calc(100% + 40px);margin-left:-20px;z-index: 1;padding:0 20px;background:none;box-shadow: none;}
 .tab-tshop.attached{background:#fff;}
 .tab-tshop ul{background:#fff;white-space: nowrap;overflow-x:auto;border:1px solid #E4E8F1;}

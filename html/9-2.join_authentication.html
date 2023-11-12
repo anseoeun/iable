@@ -32,7 +32,13 @@
 <div class="wrap">
   <header class="header">
     <div class="wrapper">
-      <div class="left"><a href="javascript:history.back();" class="btn-back"><i class="ico-back"></i></a></div>
+      <div class="left">
+        <a href="javascript:history.back();" class="btn-back"><i class="ico-back"></i></a>
+        <span class="tit-txt hide"></span>
+      </div>
+      <div class="right">
+        <button type="button" class="btn-menu" onclick="gnbMenu();"><i class="ico-menu"></i></button>
+      </div>
     </div>
   </header>
   <!-- content -->
@@ -47,15 +53,13 @@
         </ol>
       </div>
       <!-- text-main -->
-      <div class="text-main">
+      <div class="text-main" data-id="header-tit">
         <h1 class="tit-type1">
-          휴대폰 번호 입력
+          회원가입
         </h1>
-        <p class="txt">
-          정확하게 입력해야 할 필수 정보입니다.
-        </p>
       </div>
       <!-- // text-main -->
+      <h2 class="tit-type3 top-sticky"><span>휴대폰 번호 입력</span></h2>      
 
       <div class="form-type-wrap">
         <div class="form-type1">

@@ -3,6 +3,7 @@
 /* icon */
 [class*=ico-]{display:inline-block;background-size:100% 100% !important;vertical-align: middle;}
 [class*=ico-] svg{width:100%;height:100%;vertical-align:top;}
+[class*=ico-] svg image{width:100%;height:100%;vertical-align:top;}
 
 .ico-logo{width:80px;height:21px;}
 .text-login-intro .logo .ico-logo{width:100px;height:27px;}
@@ -19,8 +20,9 @@
 .ico-gnb-join{width:22px;height:21px;}
 .ico-gnb-logout{width:22px;height:20px;}
 
-.ico-back{width:18px;height:18px;}
+.ico-back{width:18px;height:19px;}
 .ico-close{width:18px;height:18px;}
+.ico-close2{width:18px;height:18px;}
 .ico-cacao{width:20px;height:20px;}
 .ico-train-srt{width:26px;height:14px;}
 .ico-val-check{width:18px;height:18px;}
@@ -29,6 +31,7 @@
 
 .ico-arr-right{width:15px;height:15px;}
 .ico-arr-right2{width:20px;height:20px;}
+.ico-arr-right3{width:9px;height:10px;}
 .ico-arr-link{width:10px;height:17px;}
 .ico-arr-list{width:15px;height:8px;}
 .ico-arr-more{width:9px;height:14px;}
@@ -61,7 +64,7 @@
 .ico-noti2{width:15px;height:13px;}
 .ico-question{width:16px;height:16px;}
 .ico-home{width:19px;height:19px;}
-.ico-menu{width:17px;height:21px;}
+.ico-menu{width:24px;height:18px;}
 .ico-warning{width:16px;height:18px;}
 .ico-prd-menu{width:20px;height:4px;}
 .ico-sale-dowm{width:7px;height:11px;}
@@ -86,7 +89,7 @@
 .ico-set {width:13px;height:13px;}
 .ico-stroage-ticket {width:35px;height:26px;}
 .ico-stroage-coupon {width:35px;height:26px;}
-.ico-stroage-travel {width:23px;height:35px;}
+.ico-stroage-travel {width:21px;height:31px;}
 .ico-stroage-favorite {width:30px;height:30px;}
 .ico-sale-ticket {width:24px;height:22px;}
 .ico-normal-ticket {width:24px;height:22px;}
@@ -95,7 +98,6 @@
 .ico-help-noti {width:23px;height:24px;}
 .ico-help-list {width:25px;height:22px;}
 .ico-help-pen {width:25px;height:25px;}
-.ico-alarm{width:20px;height:21px;}
 .ico-train {width:22px;height:27px;}
 .ico-train2 {width:27px;height:33px;}
 .ico-reserve {width:25px;height:23px;}
@@ -117,10 +119,11 @@
 .ico-time{width:30px;height:30px;}
 .ico-sale-coupon{width:35px;height:26px;}
 .ico-ticket-srt{width:33px;height:33px;}
+.ico-ticket-srt2{width:36px;height:27px;}
 .ico-down{width:6px;height:10px;}
 .ico-delete{width:24px;height:24px;}
-.ico-play-start{width:11px;height:13px;}
-.ico-play-stop{width:10px;height:14px;}
+.ico-play-start{width:10px;height:11px;}
+.ico-play-stop{width:10px;height:11px;}
 .ico-more-view{width:16px;height:15px;}
 .ico-mapidx{width:9px;height:12px;}
 .ico-movie-play{width:70px;height:43px;}
@@ -128,17 +131,22 @@
 .ico-cate-hotel {width:29px;height:35px;}
 .ico-cate-show {width:33px;height:32px;}
 .ico-cate-ecoupon {width:33px;height:31px;}
-.ico-cate-srt {width:35px;height:20px;}
-.ico-cate-time {width:32px;height:32px;}
+.ico-cate-srt {width:34px;height:22px;}
+.ico-cate-time {width:29px;height:29px;}
 .ico-cate-coupon {width:35px;height:26px;}
 .ico-cate-ticket {width:35px;height:26px;}
-.ico-cate-faq {width:30px;height: 26px;}
+.ico-cate-noti {width:30px;height: 26px;}
+.ico-cate-faq {width:30px;height: 30px;}
 .ico-cate-qna{width:30px;height:29px;}
-.ico-cate-chatbot{width:30px;height:30px;}
+.ico-cate-chatbot{width:35px;height:26px;}
 .ico-cate-call{width:30px;height:26px;}
+.ico-cate-giftcard{width:36px;height:25px;}
+.ico-cate-store{width:29px;height:30px;}
 .ico-heart {width:14px;height:13px;}
 .ico-heart2-off {width:20px;height:17px;}
 .ico-heart2-on {width:20px;height:17px;}
+.ico-heart3-off {width:20px;height:17px;}
+.ico-heart3-on {width:20px;height:17px;}
 .ico-homeup {width:11px;height:15px;}
 .ico-smile {width:15px;height:15px;}
 .ico-wheelchair {width:12px;height:15px;}
@@ -151,3 +159,8 @@
 .ico-clip{width:11px;height:11px;}
 .ico-won{width:18px;height:17px;}
 .ico-iphone-home-plus{width:45px;height:30px;}
+.ico-chatbot{width:25px;height:21px;}
+.ico-chatbot2{width:32px;height:30px}
+.ico-chatbot3{width:22px;height:17px}
+.ico-mytiple{width:32px;height:32px}
+.ico-myticket{width:37px;height:31px}
