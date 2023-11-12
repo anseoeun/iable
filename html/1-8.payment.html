@@ -118,6 +118,36 @@
         </div>
       </dd>
      </dl>
+
+     <!-- 모바일금액권 관련  결제 영역 -->
+     <div class="line-bar"></div>
+     <div class="payment-giftcard-desc">
+        <div class="desc">
+          <div class="tit">
+            <strong>할인받기</strong>
+          </div>
+          <div class="list-desc">
+            <a href="javascript:void(0);" class="link" onclick="btmPopOpen('#pop-giftcard');"></a>
+            <b>SRT 모바일 금액권 <i class="ico-question"></i></b>
+            <span class="sub">금액권 이용시, <em><span>최대 12% 할인 예매</span></em></span>
+          </div>
+          <ul class="list">
+            <li>승차권 1. 금액권 적용<div class="right">-25,000원</div></li>
+            <li>승차권 2. 금액권 적용<div class="right">-32,000원</div></li>
+          </ul>
+        </div>
+
+        <div class="desc">
+          <div class="tit">
+            <!-- <a href="javascript:void(0);" class="link"></a> -->
+            <strong>일반쿠폰</strong>
+            <span class="tit-sub">공공 할인 또는 할인 쿠폰을 통한 할인</span>
+          </div>
+        </div>
+      </div>
+      <!-- // 모바일금액권 관련  결제 영역 -->
+
+
      <div class="line-bar"></div>
 
      <dl class="dl-box">
@@ -166,6 +196,122 @@
   </div>
   <!-- // content -->
 
+
+  <!-- 모바일 금액권 적용 -->
+  <div class="btm-popup-wrap full" id="pop-giftcard" >
+    <div class="pop-wrap">
+      <div class="popup">
+        <div class="pop-header">
+          <strong class="tit">모바일 금액권 적용</strong>
+          <button type="button" class="btn-close" onclick="giftcardCloseInit();"><i class="ico-close"></i></button>
+        </div>
+        <div class="pop-body bg-gray">
+          <div class="mobile-giftcard-setting">
+            <!-- sale-seat-wrap -->
+            <div class="sale-seat-wrap">
+              <div class="bg">
+                <ul class="seat-list">
+                  <li><button class="seat-st">7A<i class="ico-check2"></i></button></li>
+                  <li><button class="seat-st on">7A</button></li>
+                  <li><button class="seat-st">7A</button></li>
+                  <li><button class="seat-st">7A</button></li>
+                  <li><button class="seat-st">7A</button></li>
+                  <li><button class="seat-st">7A</button></li>
+                  <li><button class="seat-st">7A</button></li>
+                  <li><button class="seat-st">7A</button></li>
+                </ul>
+                <div class="text">
+                  <p class="txt">할인대상 : 5호차 7A 어른</p>
+                  <p class="txt">할인적용 : 할인없음</p>
+                </div>
+                <p class="txt c-light-gray">좌석 당 1개의 금액권만 사용할 수 있습니다.</p>
+              </div>
+      
+              <ul class="list-check-box3">
+                <li>
+                  <label class="inp-check st3">
+                    <input type="checkbox" name="check-none">
+                    <span class="ic"><i></i></span>
+                    <div class="txt-box">
+                      <div class="txt">선택안함</div>
+                    </div>
+                  </label>
+                </li>
+              </ul>        
+            </div>
+            <!-- // sale-seat-wrap -->
+            <div class="list-coupon">
+              <ul>
+                <li>
+                  <div class="completed">
+                    <div>7A<br>적용완료</div>
+                  </div>
+                  <button class="coupon-type1">
+                    <div class="inner-wrap">
+                      <strong class="tit">SRT 50,000원 금액권</strong>
+                      <div class="txt">일반승차권 최소 결제 금액 7,900원</div>
+                      <div class="txt">2023. 8. 2. ~ 2023. 9. 12.</div>
+                      <div class="price">
+                        <b>23,000원</b>
+                        <span class="tag">보유잔액</span>
+                      </div>
+                    </div>
+                  </button>
+                </li>
+                <li>
+                  <button class="coupon-type1">
+                    <div class="inner-wrap">
+                      <strong class="tit">SRT 50,000원 금액권</strong>
+                      <div class="txt">일반승차권 최소 결제 금액 7,900원</div>
+                      <div class="txt">2023. 8. 2. ~ 2023. 9. 12.</div>
+                      <div class="price">
+                        <b>23,000원</b>
+                        <span class="tag">보유잔액</span>
+                      </div>
+                    </div>
+                  </button>
+                </li>
+                <li>
+                  <button class="coupon-type1">
+                    <div class="inner-wrap">
+                      <strong class="tit">SRT 50,000원 금액권</strong>
+                      <div class="txt">일반승차권 최소 결제 금액 7,900원</div>
+                      <div class="txt">2023. 8. 2. ~ 2023. 9. 12.</div>
+                      <div class="price">
+                        <b>23,000원</b>
+                        <span class="tag">보유잔액</span>
+                      </div>
+                    </div>
+                  </button>
+                </li>
+                <li>
+                  <button class="coupon-type1">
+                    <div class="inner-wrap">
+                      <strong class="tit">SRT 50,000원 금액권</strong>
+                      <div class="txt">일반승차권 최소 결제 금액 7,900원</div>
+                      <div class="txt">2023. 8. 2. ~ 2023. 9. 12.</div>
+                      <div class="price">
+                        <b>23,000원</b>
+                        <span class="tag">보유잔액</span>
+                      </div>
+                    </div>
+                  </button>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+        <div class="pop-footer bg-gray">
+          <div class="btn-wrap">
+            <button type="button" class="btn-type1 st1" data-id="coupon-active" disabled onclick="btmPopClose('#pop-giftcard');giftcardCloseInit();">적용하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
 </div>
 <!-- // wrap -->
 
@@ -184,6 +330,55 @@
     });
   }
 
+</script>
+
+
+
+<script>
+  //모바일 금액권 팝업
+  $('.seat-list button').on('click', function(){
+    $('.seat-list button').removeClass('on');
+    $(this).addClass('on');
+  });
+
+  toggleClassList('.list-coupon li button');
+  giftcardBtnActive();
+
+  function giftcardBtnActive(){
+    $('.coupon-type1').on('click', function(){
+      $('[data-id="coupon-active"]').removeAttr('disabled');
+      $('[name="check-none"]').prop('checked', false);
+    });
+    $('[name="check-none"]').on('change', function(){
+      $('.list-coupon li button').removeClass('on');
+      if($(this).is(':checked')){
+        $('[data-id="coupon-active"]').removeAttr('disabled');
+      }else{
+        $('[data-id="coupon-active"]').attr('disabled', 'disabled');
+      }
+      // 
+    });
+  }
+
+  
+  //초기화    
+  function giftcardCloseInit(){
+    $('.coupon-type1').removeClass('on');
+    $('[name="check-none"]').prop('checked', false);
+    $('[data-id="coupon-active"]').attr('disabled', 'disabled'); 
+  }  
+
+
+
+
+  //퍼블용
+  if(location.href.match('#giftcard')){
+    $('.payment-giftcard-desc').prev('.line-bar').prev('.dl-box').remove();
+    $('.payment-giftcard-desc').prev('.line-bar').remove();
+  }else{
+    $('.payment-giftcard-desc').prev('.line-bar').remove();
+    $('.payment-giftcard-desc').remove();
+  }
 </script>
 
 </body>

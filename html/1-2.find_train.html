@@ -401,6 +401,26 @@
       </div>
     </div>
   </div>
+  <!-- 예약하기 -->
+  <div class="btm-popup-wrap" id="pop-reserve" >
+    <div class="pop-wrap">
+      <div class="popup">
+        <div class="pop-header">
+          <strong class="tit">예약하기</strong>
+          <button type="button" class="btn-close"><i class="ico-close"></i></button>
+        </div>
+        <div class="pop-body">
+          <div class="pop-reserve-wrap">
+            <button class="btn-type1 st1"><span>일반승차권<small>(금액권 적용)</small> 예약</span></button>
+            <p class="noti">홍길동 님은 사용할 수 있는 금액권이 있습니다.</p>
+            <button class="btn-type1 st2" id="btn-tiple"><span>티플승차권 예약</span></button>
+            <button class="btn-type1 st3"><span>일반승차권 예약</span></button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 다른 날 선택하기 -->
   <div class="fixed-footer-wrap" data-id="other-select">
@@ -433,6 +453,15 @@
    setTimeout(() => {
       loadingHide();
    }, 300);
+
+   //예약, 티플예약 버튼
+   $('.btn-normal').on('click', function(){
+    btmPopOpen('#pop-reserve');$('#btn-tiple').hide();
+   });
+   $('.btn-sale').on('click', function(){
+    btmPopOpen('#pop-reserve');$('#btn-tiple').show();
+   });
+   
 
   //퍼블용
   if(location.href.match('#nodata')){

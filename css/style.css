@@ -2,6 +2,7 @@
 @import url('base.css');
 @import url('common.css');
 @import url('icon.css');
+@import url('giftcard.css');
 
 /* member-wrap */
 .text-login-intro{padding:15px 0;}
@@ -695,7 +696,7 @@
 .quick-menu ul {display:flex;align-items:center;padding:0 20px;}
 .quick-menu ul li {flex:1;text-align:center;}
 .quick-menu ul li a {display:inline-block;}
-.quick-menu ul li a  [class*=ico-] svg path{fill:#1f2125}
+/* .quick-menu ul li a [class*=ico-] svg path{fill:#1f2125} */
 .quick-menu ul li a .txt {position:relative;display:block;margin-top:8px;font-size: 13px;}
 .quick-menu ul li a .txt .dot{position:absolute;top:-5px;right:-7px;width:5px;height:5px;border-radius:100%;background:#FF0000;}
 .quick-menu.st2 {border-radius: 12px;margin-bottom:15px;padding:0 0;}

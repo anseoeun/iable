@@ -2,39 +2,132 @@
 
   <div class="regist-coupon">
     <input type="text" placeholder="번호(띄어쓰기, ‘-’없이) 입력" oninput="autoSpace(this)" maxlength="14">
-    <button type="button" disabled onclick="toastOpen('정상적으로 등록했습니다.');">확인</button>
+    <button type="button" disabled onclick="toastOpen('정상적으로 등록했습니다.');popOpen('#pop-giftcard-guide');">확인</button>
     <p class="txt">SRT플레이 이외 판매처에서 구입하셨거나<br>선물받은 SRT 모바일 금액권 및 할인쿠폰 번호를 등록하세요.</p>
     <p class="txt-error">잘못된 코드 또는 이미 사용된 코드입니다.</p>
   </div>
 
   <!-- 등록 상품(사용가능) -->
-  <h2 class="tit-type7"><b>등록 상품</b><span class="light">(사용가능)</span></h2>
+  <div class="tit-wrap">
+    <h2 class="tit-type7"><b>등록 상품</b><span class="light">(사용가능)</span></h2>
+    <div class="right">
+      <span class="remind-check">
+        잔엑표시
+        <label class="inp-toggle st2">
+          <input type="checkbox"  /> 
+          <span class="ic"></span>
+          <span class="bg"></span>
+        </label>
+      </span>
+    </div>
+  </div>
+
   <ul>
     <li>
-      <div class="coupon-type1">
-        <div class="inner-wrap">
-          <strong class="tit">[모바일 금액권] – SRT 승차권 할인</strong>
-          <div class="txt">SRT플레이 일반승차권 예매 시</div>
-          <div class="txt">2022. 8. 2. ~ 2022. 9. 12.</div>
-          <div class="sale">
-            <em>50,000원</em>
-            <span class="tag">일반승차권 전용</span>
+      <div class="gift-card-wrap">
+        <div class="gift-card">
+          <div class="front">
+            <i class="ico-logo"></i>
+            <div class="card-text">
+              <span class="label">
+                SRT 
+                <br>모바일 금액권
+              </span>
+              <b class="price">50,000원</b>
+            </div>
+          </div>
+          <div class="back">
+            <div class="giftcard-noti">
+              <b class="tit">알아두세요!</b>
+              <p class="txt">결합상품과 함께 할인이 적용되는 티플승차권은 SRT 금액권 적용이 불가합니다. (일반승차권 전용)</p>
+              <p class="txt">최저 운임구간(운임료 7,900원 이하)는 SRT 금액권이 적용되지 않습니다.</p>
+              <p class="txt">SRT플레이 이외 타 발권매체(SRT 앱, SR 홈페이지 등)에서  승차권을 취소하면 차감된 금액이 복원되지 않습니다.</p>
+            </div>
           </div>
         </div>
+        <button class="btn-flip">
+          <div class="arrow"></div>
+        </button>
       </div>
     </li>
     <li>
-      <div class="coupon-type1 disabled">
-        <div class="inner-wrap">
-          <strong class="tit">[모바일 금액권] – SRT 승차권 할인</strong>
-          <div class="txt">SRT플레이 일반승차권 예매 시</div>
-          <div class="txt">2022. 8. 2. ~ 2022. 9. 12.</div>
-          <div class="sale">
-            <em>50,000원</em>
-            <span class="tag">일반승차권 전용</span>
+      <div class="gift-card-wrap">
+        <div class="gift-card">
+          <div class="front">
+            <i class="ico-logo"></i>
+            <div class="card-text">
+              <span class="label">
+                SRT 
+                <br>모바일 금액권
+              </span>
+              <b class="price">50,000원</b>
+            </div>
+          </div>
+          <div class="back">
+            <div class="giftcard-noti">
+              <b class="tit">알아두세요!</b>
+              <p class="txt">결합상품과 함께 할인이 적용되는 티플승차권은 SRT 금액권 적용이 불가합니다. (일반승차권 전용)</p>
+              <p class="txt">최저 운임구간(운임료 7,900원 이하)는 SRT 금액권이 적용되지 않습니다.</p>
+              <p class="txt">SRT플레이 이외 타 발권매체(SRT 앱, SR 홈페이지 등)에서  승차권을 취소하면 차감된 금액이 복원되지 않습니다.</p>
+            </div>
           </div>
         </div>
+        <button class="btn-flip">
+          <div class="arrow"></div>
+        </button>
       </div>
     </li>
   </ul>
 </div>
+
+
+  <!--거절하기-->
+  <div class="popup-wrap" id="pop-giftcard-guide">
+    <div class="dim"></div>
+    <div class="pop-wrap">
+      <div class="popup">
+        <div class="pop-body">
+          <div class="pop-guide-wrap">
+            <div class="gift-card-guide">
+              <div class="img">
+                <img src="../images/giftcard/gift-card-guide.png" alt="">
+              </div>
+              <div class="txt">홍길동님께서 선물한 금액권을
+                <br>등록하시면 양도 및 재등록이 불가합니다.</div>
+            </div>
+        </div>
+        </div>
+        <div class="pop-footer">
+          <div class="btn-wrap">
+            <button type="button" class="btn" onclick="popClose('#pop-giftcard-guide');popOpen('#pop-giftcard-guide2');">거절하기</button>
+            <button type="button" class="btn c-pupple" onclick="popClose('#pop-giftcard-guide');">등록하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+    
+  <!--선물 거절하기-->
+  <div class="popup-wrap" id="pop-giftcard-guide2">
+    <div class="dim"></div>
+    <div class="pop-wrap">
+      <div class="popup">
+        <div class="pop-body">
+          <div class="pop-guide-wrap">
+            <div class="gift-card-guide">
+              <div class="txt">선물 거절 시 구매자 결제수단으로
+                <br>자동 환불 처리되며, 사용이 불가합니다.</div>
+              <div class="txt"><b>정말 거절하시겠습니까?</b></div>
+            </div>
+        </div>
+        </div>
+        <div class="pop-footer">
+          <div class="btn-wrap">
+            <button type="button" class="btn" onclick="popClose('#pop-giftcard-guide2');">선물 거절하기</button>
+            <button type="button" class="btn c-pupple" onclick="popClose('#pop-giftcard-guide2');">선물 등록하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  

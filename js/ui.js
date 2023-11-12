@@ -1280,6 +1280,19 @@ function pipayGuide(){
   }
 }
 
+function flipCard(){
+  $('.btn-flip').click(function() {
+    $(this).prev('.gift-card').toggleClass('flipped');
+    $(this).addClass('btn-flip-click');
+    $(this).find('.arrow').toggleClass('arrow_rotate');
+
+    $(this).on('transitionend', function() {
+      $(this).removeClass('btn-flip-click');
+      $(this).addClass('btn-flip_back');
+    });
+  });
+}
+
 // load  
 $(function(){
   pcCheck();
@@ -1304,6 +1317,7 @@ $(function(){
   scrollLeft('.tab-type1 ul');
   scrollLeft('.tab-type2 ul');
   scrollLeft('.sale-seat-wrap .seat-list');
+  flipCard();
   
   setTimeout(topSticky, 100);
 });

@@ -342,6 +342,7 @@ body:after{content:'';display:block;height:calc(0px + env(safe-area-inset-bottom
 .tit-type5{font-size:17px;font-weight: 500;}
 .tit-type6{font-size:15px;font-weight:500;}
 .tit-type7{font-weight:400;}
+.tit-type7 b{font-weight:500;}
 .tit-type7 + *{margin-top:10px;}
 .tit-type7 + .inp-date{margin-top:7px;}
 
@@ -532,6 +533,10 @@ button.btn-type7 .ico-srtplay{position:relative;top:-1px;}
 .inp-toggle input:checked ~ .ic{left:26px}
 .inp-toggle input:checked ~ .bg{background-color: #7030A0;}
 .inp-toggle input:checked ~ .bg:after{left:0;background-image: url("data:image/svg+xml,%3Csvg width='22' height='26' viewBox='0 0 22 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='3.14143' cy='19.5' rx='2.77778' ry='2.5' fill='white'/%3E%3Cellipse cx='3.14143' cy='7.5' rx='2.77778' ry='2.5' fill='white'/%3E%3Cpath d='M14.8081 2C14.8081 2 20.3636 5.53571 20.3636 13C20.3636 20.4643 14.8081 24 14.8081 24' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E%0A");background-position:left 8px top 50%;}
+.inp-toggle.st2{width:35px;height:20px;}
+.inp-toggle.st2 .ic{width:16px;height:16px;top:2px;left:2px;}
+.inp-toggle.st2 input:checked ~ .ic{left:17px}
+.inp-toggle.st2 .bg:after{display:none;}
 
 .inp-check{position:relative;display:inline-block;cursor:pointer;white-space:nowrap;display:inline-flex;flex-direction:row;align-items:center;vertical-align: middle;}
 .inp-check .inp{display:inline-block;position:relative;vertical-align:middle;}
@@ -1048,6 +1053,11 @@ button.btn-type7 .ico-srtplay{position:relative;top:-1px;}
 /* coupon */
 .list-coupon  li ~ li{margin-top:10px;}
 .list-coupon .tit-type7:not(:first-child){margin-top:30px;}
+.list-coupon .tit-wrap:not(:first-child){margin-top:30px;}
+.list-coupon .tit-wrap .right{margin-top:0;}
+.list-coupon .tit-wrap .remind-check{font-size:14px; color:#1F2125;display:inline-flex;align-items:center;}
+.list-coupon .tit-wrap .remind-check .inp-toggle{margin-left:5px;}
+.list-coupon .tit-wrap + *{margin-top:10px;}
 
 .coupon-type1{display:block;width:100%;text-align:left;position:relative;min-height:140px;box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);border-radius:9px;background:#fff;border:1px solid rgba(0, 0, 0, 0);}
 .coupon-type1:before{content:'';display:block;position:absolute;top:50%;right:-14px;width:25px;height:25px;border-radius:25px;background:#F2F4F6;transform:translateY(-50%);-webkit-transform:translateY(-50%);box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.05);} 

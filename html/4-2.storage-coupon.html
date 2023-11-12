@@ -1,14 +1,17 @@
 <div class="list-coupon">
 
-  <h2 class="tit-type7 c-light-gray">할인쿠폰 등록</h2>
+  <!-- <h2 class="tit-type7 c-light-gray">할인쿠폰 등록</h2> -->
   <div class="regist-coupon">
-    <input type="text" placeholder="쿠폰 코드(띄어쓰기, -없이) 입력" oninput="autoSpace(this)" maxlength="14">
-    <button type="button" disabled onclick="popOpen('#coupon-regist');">등록</button>
+    <input type="text" placeholder="번호(띄어쓰기, -없이) 입력" oninput="autoSpace(this)" maxlength="14">
+    <button type="button" disabled onclick="popOpen('#coupon-regist');">확인</button>
+    <p class="txt">SRT플레이 이외 판매처에서 구입하셨거나<br>선물받은 SRT 모바일 금액권 및 할인쿠폰 번호를 등록하세요.</p>
     <p class="txt-error">잘못된 코드 또는 이미 사용된 코드입니다.</p>
   </div>
 
-  <!-- 등록된 쿠폰(사용가능) -->
-  <h2 class="tit-type7 c-light-gray">등록된 쿠폰(사용가능)</h2>
+  <!-- 등록 상품 -->
+  <h2 class="tit-type7">
+    <b>등록 상품</b><span class="light">(사용가능)</span>
+  </h2>
   <ul>
     <li>
       <div class="coupon-type1">
