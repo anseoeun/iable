@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 @import url('base.css');
 @import url('common.css');
@@ -19,13 +20,21 @@
 .btn-login-start-wrap > [class*=btn-] [class*=ico-arr-]{margin-left:auto;}
 .btn-login-start-wrap > [class*=btn-] .txt:first-child{text-align:center;display: block;width:100%;}
 .btn-login-start-wrap > [class*=btn-] .tag-adver{opacity:0.5;position:absolute;top:7px;right:7px;display:flex;align-items: center;padding:0 6px;height:17px;border-radius: 3px;border:1px solid #fff; color:#fff;font-size:10px;font-weight:500;padding-bottom:1px;}
+.btn-login-start-wrap > [class*=btn-] .tag-adver2{opacity:0.8;font-weight:500;font-size:10px;vertical-align:middle;position:relative;top:2px;margin-left:5px;}
 .btn-login-start-wrap > .or{position:relative;text-align:center;margin-top:10px;}
 .btn-login-start-wrap > .or:before{content:'';display:block;position:absolute;top:50%;left:0;width:100%;height:1px;background:#E4E8F1;}
 .btn-login-start-wrap > .or span{position:relative;display:inline-block;background:#F6F7F9;padding:0 8px; color:#1F2125;}
 .btn-login-start-wrap > .btn-cacao-start{background:#F9DB00; color:#3E1918;}
-.btn-login-start-wrap > .btn-srt-start{background:#F6F7F9;border:1px solid #7030A0; color:#7030A0;}
+.btn-login-start-wrap > .btn-cacao-start .arr{background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_6461_2137)'%3E%3Cpath d='M0.822672 14.0741L29.1773 14.0741C29.6271 14.0741 30 14.4471 30 14.8968C30 15.3465 29.6271 15.7195 29.1773 15.7195L0.822672 15.7195C0.372946 15.7195 3.8473e-06 15.3465 3.88662e-06 14.8968C3.92593e-06 14.4471 0.372946 14.0741 0.822672 14.0741Z' fill='%233E1918'/%3E%3Cpath d='M17.3968 2.29348C17.6052 2.29348 17.8136 2.37026 17.9781 2.53479L29.7587 14.3154C30.0768 14.6335 30.0768 15.16 29.7587 15.4781L17.9781 27.2587C17.66 27.5768 17.1335 27.5768 16.8154 27.2587C16.4973 26.9406 16.4973 26.4141 16.8154 26.096L28.0147 14.8968L16.8154 3.6975C16.4973 3.3794 16.4973 2.85289 16.8154 2.53479C16.9799 2.37026 17.1884 2.29347 17.3968 2.29348Z' fill='%233E1918'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_6461_2137'%3E%3Crect width='30' height='25.2066' fill='white' transform='translate(30 27.5) rotate(-180)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");}
 .btn-login-start-wrap > .btn-cacao-start .ico-arr-right svg path{fill:#3E1918}
+.btn-login-start-wrap > .btn-srt-start{background:#F6F7F9;border:1px solid #7030A0; color:#7030A0;}
+.btn-login-start-wrap > .btn-srt-start .arr{background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_6461_2150)'%3E%3Cpath d='M0.822673 14.0741L29.1773 14.0741C29.6271 14.0741 30 14.4471 30 14.8968C30 15.3465 29.6271 15.7195 29.1773 15.7195L0.822672 15.7195C0.372947 15.7195 3.43483e-06 15.3465 3.47415e-06 14.8968C3.51346e-06 14.4471 0.372947 14.0741 0.822673 14.0741Z' fill='%237030A0'/%3E%3Cpath d='M17.3968 2.29348C17.6052 2.29348 17.8136 2.37026 17.9781 2.53479L29.7587 14.3154C30.0768 14.6335 30.0768 15.16 29.7587 15.4781L17.9781 27.2587C17.66 27.5768 17.1335 27.5768 16.8154 27.2587C16.4973 26.9406 16.4973 26.4141 16.8154 26.096L28.0147 14.8968L16.8154 3.6975C16.4973 3.3794 16.4973 2.85289 16.8154 2.53479C16.9799 2.37026 17.1884 2.29348 17.3968 2.29348V2.29348Z' fill='%237030A0'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_6461_2150'%3E%3Crect width='30' height='25.2066' fill='white' transform='translate(30 27.5) rotate(-180)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");}
 .btn-login-start-wrap > .btn-srt-start .ico-arr-right svg path{fill:#7030A0}
+.btn-login-start-wrap > .btn-simple-login{background:#37D243; color:#fff;}
+.btn-login-start-wrap > .btn-simple-login .arr{background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_6461_2142)'%3E%3Cpath d='M0.822673 14.0741L29.1773 14.0741C29.6271 14.0741 30 14.4471 30 14.8968C30 15.3465 29.6271 15.7195 29.1773 15.7195L0.822672 15.7195C0.372947 15.7195 3.43483e-06 15.3465 3.47415e-06 14.8968C3.51346e-06 14.4471 0.372947 14.0741 0.822673 14.0741Z' fill='%233E1918'/%3E%3Cpath d='M17.3968 2.29348C17.6052 2.29348 17.8136 2.37026 17.9781 2.53479L29.7587 14.3154C30.0768 14.6335 30.0768 15.16 29.7587 15.4781L17.9781 27.2587C17.66 27.5768 17.1335 27.5768 16.8154 27.2587C16.4973 26.9406 16.4973 26.4141 16.8154 26.096L28.0147 14.8968L16.8154 3.6975C16.4973 3.3794 16.4973 2.85289 16.8154 2.53479C16.9799 2.37026 17.1884 2.29348 17.3968 2.29348V2.29348Z' fill='%233E1918'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_6461_2142'%3E%3Crect width='30' height='25.2066' fill='white' transform='translate(30 27.5) rotate(-180)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");}
+.btn-login-start-wrap >  .icon{width:28px;display:inline-block;}
+.btn-login-start-wrap >  [class*=btn-]{position:relative;}
+.btn-login-start-wrap >  [class*=btn-] .arr{position:absolute;top:50%;right:20px;width:15px;height:15px;background-repeat:no-repeat;background-position:50% 50%;background-size:auto 100%;transform:translateY(-50%);}
 
 /* 혜택/마케팅 동의 */
 .marketing-alarm-wrap .agree{display:flex;height:50px;align-items:center;justify-content: space-between;border-bottom:1px solid #E4E8F1;}
@@ -64,8 +73,8 @@
 .service-improvement .etc-opinion textarea{padding:15px;border: 1px solid #E4E8F1;  border-radius: 6px;height:90px;width:100%;}
 
 .regist-coupon{display:flex;align-items:center;flex-wrap: wrap;}
-.regist-coupon .txt{ color:#aaaaac;margin-top:5px;}
-.regist-coupon .txt-error{width:100%;color:#f05050;margin-top:5px;}
+.regist-coupon .txt{ color:#aaaaac;margin-top:10px;font-size:13px;}
+.regist-coupon .txt-error{width:100%;color:#f05050;margin-top:10px;;font-size:13px;}
 .regist-coupon input{flex:1;height:50px;background:#fff;padding:0 15px;border-radius:6px;font-weight:500;font-size:16px; color:#7030A0;max-width: calc(100% - 82px);}
 .regist-coupon input::-webkit-input-placeholder {font-weight:400;font-size:14px;}
 .regist-coupon button{display:block;margin-left:7px;height:50px;width:75px; color:#fff;font-weight: 500;font-size:15px;background:#7030A0;border-radius:6px;}

@@ -688,6 +688,8 @@ function countInput(obj, callback, callstop){
   if($(obj).length <= 0) return;
 
 
+
+
   $(obj).each(function(){
     let $obj = $(this);
     let $up = $(this).find('.up');
@@ -697,6 +699,30 @@ function countInput(obj, callback, callstop){
     let maxCnt = $obj.data('max') != undefined ? $obj.data('max') : 1000;
     let cntInputNum =  $obj.find('.num').val();
     let inpval = parseInt($obj.find('input').val());
+
+    if($obj.closest('.inp-num-type3-wrap')){
+      let $upBtn = $obj.find('.btn.up');
+      let $plusBtn = $obj.siblings('.btn.plus');
+      let $minusBtn = $obj.find('.btn.minus');
+      $up.on('click', function(e){return false;});
+      $down.on('click', function(e){return false;});
+      $plusBtn.on('click', function(e){
+        e.stopPropagation();
+        $obj.addClass('on');
+        setTimeout(function(){
+          $plusBtn.hide();
+          $upBtn.show();
+        }, 400)
+        return false;
+      });
+      $minusBtn.on('click', function(e){
+        e.stopPropagation();
+        $obj.removeClass('on');
+        $plusBtn.show();
+        $upBtn.hide();
+        return false;
+      });
+    }    
     
     let countChange = function(v){
       let val = parseInt(v);
@@ -718,6 +744,9 @@ function countInput(obj, callback, callstop){
 
       inpval = val;
       $($input).val(val);
+
+      if(val == 1) $obj.addClass('one');
+      else $obj.removeClass('one');
 
       if(callback) callback($obj, val);
     }
@@ -1281,7 +1310,7 @@ function pipayGuide(){
 }
 
 function flipCard(){
-  $('.btn-flip').click(function() {
+  $(document).on('click', '.btn-flip', function() {
     $(this).prev('.gift-card').toggleClass('flipped');
     $(this).addClass('btn-flip-click');
     $(this).find('.arrow').toggleClass('arrow_rotate');
