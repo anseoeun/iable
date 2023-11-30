@@ -119,33 +119,6 @@
       </dd>
      </dl>
 
-     <!-- 모바일금액권 관련  결제 영역 -->
-     <div class="line-bar"></div>
-     <div class="payment-giftcard-desc">
-        <div class="desc">
-          <div class="tit">
-            <strong>할인받기</strong>
-          </div>
-          <a class="list-desc link" onclick="btmPopOpen('#pop-giftcard');">
-            <b>SRT 모바일 금액권 <i class="ico-question"></i></b>
-            <span class="sub">금액권 이용시, <em><span>최대 12% 할인 예매</span></em></span>
-          </a>
-          <ul class="list">
-            <li>승차권 1. 금액권 적용<div class="right">-25,000원</div></li>
-            <li>승차권 2. 금액권 적용<div class="right">-32,000원</div></li>
-          </ul>
-        </div>
-
-        <div class="desc">
-          <a href="javascript:void(0);" class="tit link">
-            <strong>일반쿠폰</strong>
-            <span class="tit-sub">공공 할인 또는 할인 쿠폰을 통한 할인</span>
-          </a>
-        </div>
-      </div>
-      <!-- // 모바일금액권 관련  결제 영역 -->
-
-
      <div class="line-bar"></div>
 
      <dl class="dl-box">
@@ -366,17 +339,6 @@
     $('[data-id="coupon-active"]').attr('disabled', 'disabled'); 
   }  
 
-
-
-
-  //퍼블용
-  if(location.href.match('#giftcard')){
-    $('.payment-giftcard-desc').prev('.line-bar').prev('.dl-box').remove();
-    $('.payment-giftcard-desc').prev('.line-bar').remove();
-  }else{
-    $('.payment-giftcard-desc').prev('.line-bar').remove();
-    $('.payment-giftcard-desc').remove();
-  }
 </script>
 
 </body>

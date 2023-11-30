@@ -189,6 +189,19 @@
 .srtcard-using-list ul li .price.minus { color:#F05050;}
 .srtcard-using-list ul li .price.plus { color:#0071E3;}
 
+.cash-receipts{padding: 25px 0;}
+.cash-receipts dt { margin-bottom: 15px; display: flex; align-items: center; flex-wrap: wrap; }
+.cash-receipts dt .txt { width: 100%; color: #ACAAAA; font-size: 13px; margin-top: 5px; }
+.cash-receipts dt .right { margin-left: auto; }
+.cash-receipts dd { position: relative; }
+.cash-receipts dd ~ dd{margin-top:25px;}
+.cash-receipts dd .tit{display:block;margin-bottom:8px;font-weight:400;}
+.cash-receipts dd label ~ label{margin-left:20px;}
+.cash-receipts dd .form-type3 ~ .form-type3{margin-top:8px;}
+.cash-receipts .form-type3 input.error{border-color: #F05050;}
+.cash-receipts .form-type3 .txt-error{margin-top:5px; color:#F05050;font-size:13px;}
 
+.cash-receipt-wrap{margin-top:15px;}
+.btn-cash-receipt{margin-bottom:20px;margin-top:10px;}
 
 .pop-guide-wrap .txt b{font-weight:500;}

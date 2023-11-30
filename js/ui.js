@@ -215,6 +215,14 @@ function toggleList(){
         // $view.parents('li').find('.tit').removeAttr('style');
       });
     }
+
+    if($obj.hasClass('list-type1') || $obj.hasClass('list-type2')) {
+      setTimeout(function(){
+        let h1 =  $('.header.attach-sticky').length > 0 ? $('.header').height() : 0;
+        let h2 =  $('.top-sticky.attached').length > 0 ? $('.top-sticky.attached').height() : 0;
+        if(h1 > 0 || h2 > 0) $('html, body').animate({scrollTop: $(e.currentTarget).offset().top - (h1+h2)}, 200);
+      }, 400);
+    }
   });
 }
 

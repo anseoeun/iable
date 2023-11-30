@@ -631,12 +631,12 @@ button.btn-type7 .ico-srtplay{position:relative;top:-1px;}
 .inp-num-type3.on{width:100%;right:0;background:#F3E5FE;} 
 .inp-num-type3.on > *{opacity: 1;}
 
-/* .inp-date{display:flex;align-items:center;}
+.inp-date{display:flex;align-items:center;}
 .inp-date .date{position:relative;background:#fff;border-radius:6px;height:40px;flex:1;border: 1px solid #E4E8F1;padding-right:30px;background: #fff url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M26.2198 31.9394H5.78019C2.58936 31.9394 0 29.35 0 26.1592V8.32878C0 5.13795 2.58936 2.55879 5.78019 2.55879H26.2198C29.4106 2.55879 32 5.14815 32 8.33897V26.1592C32 29.35 29.4106 31.9394 26.2198 31.9394ZM5.78019 4.08794C3.43549 4.08794 1.52915 5.99428 1.52915 8.33897V26.1592C1.52915 28.5039 3.43549 30.4102 5.78019 30.4102H26.2198C28.5645 30.4102 30.4709 28.5039 30.4709 26.1592V8.32878C30.4709 5.98408 28.5645 4.07774 26.2198 4.07774H5.78019V4.08794Z' fill='%231F2125'/%3E%3Cpath d='M12.5334 6.93333C12.0961 6.93333 11.7334 6.5621 11.7334 6.11444V0.818898C11.7334 0.371234 12.0961 0 12.5334 0C12.9707 0 13.3334 0.371234 13.3334 0.818898V6.11444C13.3334 6.5621 12.9707 6.93333 12.5334 6.93333Z' fill='%231F2125'/%3E%3Cpath d='M20.5334 6.93333C20.0961 6.93333 19.7334 6.5621 19.7334 6.11444V0.818898C19.7334 0.371234 20.0961 0 20.5334 0C20.9707 0 21.3334 0.371234 21.3334 0.818898V6.11444C21.3334 6.5621 20.9707 6.93333 20.5334 6.93333Z' fill='%231F2125'/%3E%3C/svg%3E%0A") no-repeat right 10px top 50%;background-size:auto 16px;}
 .inp-date .date input{border:none;width:100%;background: none;height:100%;padding:0 0 0 10px;}
 .inp-date .dash{margin:0 6px;}
 .inp-date .btn-search{height:40px;width:55px;border-radius:6px;margin-left:7px;background:#fff;border: 1px solid #E4E8F1;}
-.date-search-wrap{margin-bottom:13px;} */
+.date-search-wrap{margin-bottom:13px;}
 
 .inp-search{height:38px;border-radius:38px;padding-left:20px;background:#F2F4F6;display:flex;align-items:center;}
 .inp-search input{background: none;padding:0 0;flex:1;overflow:hidden;}
