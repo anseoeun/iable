@@ -29,13 +29,14 @@
 <body>
 <!-- wrap -->
 <div class="wrap">
-  <header class="header transparent scroll-white">
+  <header class="header">
     <div class="wrapper">
       <div class="left">
         <a href="main.html" class="logo"><i class="ico-logo"></i></a>
       </div>
       <div class="right">
-        <button type="button" class="btn-chatbot"><i class="ico-chatbot"></i></button>
+        <!-- <button type="button" class="btn-chatbot"><i class="ico-chatbot"></i></button> -->
+        <button type="button" class="btn-giftcard flip-wrap" onclick="$(this).toggleClass('flipped')"><span class="front">금액권</span><span class="back">준비중</span></button>
         <button type="button" class="btn-menu" onclick="gnbMenu();"><i class="ico-menu"></i></button>
       </div>
     </div>
@@ -48,24 +49,43 @@
         <div class="visual-slide">
           <div class="swiper-container">
               <ul class="swiper-wrapper">
-                <li class="swiper-slide" data-bg="#F1F2F6">
+                <li class="swiper-slide">
                     <a href="javascript:void(0);">
+                      <div class="visual-text">
+                        <span class="tag">TRAVEL</span>
+                        <div class="text">
+                          <span class="txt">SRT와 함께, 카셰어링 초특가!</span>
+                          <b class="tit">투루카로 떠나는 여름여행 
+                            <br>텍스트 2줄 입력</b>
+                        </div>
+                      </div>
                       <img src="../images/temp/temp-main-banner.jpg" alt="">
                     </a>
                   </li>
-                  <li class="swiper-slide" data-bg="#FFF4D0">
+                <li class="swiper-slide">
                     <a href="javascript:void(0);">
-                      <img src="../images/temp/temp-main-banner2.jpg" alt="">
-                    </a>
-                  </li>
-                  <li class="swiper-slide" data-bg="#F1F2F6">
-                    <a href="javascript:void(0);">
+                      <div class="visual-text">
+                        <span class="tag">TRAVEL</span>
+                        <div class="text">
+                          <span class="txt">SRT와 함께, 카셰어링 초특가!</span>
+                          <b class="tit">투루카로 떠나는 여름여행 
+                            <br>텍스트 2줄 입력</b>
+                        </div>
+                      </div>
                       <img src="../images/temp/temp-main-banner.jpg" alt="">
                     </a>
                   </li>
-                  <li class="swiper-slide" data-bg="#FFF4D0">
+                <li class="swiper-slide">
                     <a href="javascript:void(0);">
-                      <img src="../images/temp/temp-main-banner2.jpg" alt="">
+                      <div class="visual-text">
+                        <span class="tag">TRAVEL</span>
+                        <div class="text">
+                          <span class="txt">SRT와 함께, 카셰어링 초특가!</span>
+                          <b class="tit">투루카로 떠나는 여름여행 
+                            <br>텍스트 2줄 입력</b>
+                        </div>
+                      </div>
+                      <img src="../images/temp/temp-main-banner.jpg" alt="">
                     </a>
                   </li>
               </ul>
@@ -79,49 +99,310 @@
           </div>
         </div>
         <!-- // 비주얼 -->  
+        <div class="main-noti">
+          <a href="javascript:void(0);">
+            <span class="label">공지</span>
+            <span class="txt">승차권 예약 발매일 조정</span>
+            <span class="arr"></span>
+          </a>
+        </div>      
+                 
         <!-- list-category -->
         <div class="list-category st3">
           <ul>
             <li>
               <a href="1-1.book_home.html">
                 <span class="icon"><i class="ico-cate-srt"></i></span>
-                <span class="txt">승차권 예매<span>
-                  <span class="tooltip-wrap">
-                    <div class="tooltip st-line"><span>예매혜택<i class="ico-down"></i></span></div>
-                  </span>
+                <span class="txt">승차권 예매</span>
+                <span class="tag">할인혜택</span>
               </a>
             </li>
-            <!-- <li>
-              <a href="javascript:void(0);">
-                <span class="icon"><i class="ico-cate-giftcard"></i> </span>
-                <span class="txt">모바일 금액권<span class="dot"></span></span>
+            <li>
+              <a href="javascript:void(0);" onclick="$(this).toggleClass('flipped')">
+                <i class="ico-cate-giftcard2"></i>
+                <span class="txt">SRT금액권</span>
+                <span class="tag-flip flip-wrap">
+                  <spa class="tag front">BIZ</spa>
+                  <spa class="tag off back">준비중</spa>
+                </span>
               </a>
-            </li> -->
+            </li>            
             <li>
               <a href="2.schedules.html">
-                <span class="icon"><i class="ico-cate-time"></i></span>
-                <span class="txt">시간표 조회</span>
+                <span class="icon"><i class="ico-cate-times"></i></span>
+                <span class="txt">시간표조회</span>
               </a>
             </li>
             <li>
-              <a href="3.tiple_main_1.html">
-                <span class="icon"><i class="ico-stroage-travel"></i></span>
+              <a href="javascript:void(0);">
+                <span class="icon"><i class="ico-cate-trip"></i></span>
                 <span class="txt">티플여행</span>
               </a>
             </li>
-            <li><a href="10-1.tiple_shop_main.html"><span class="icon"><i class="ico-cate-store"></i></span><span class="txt">상생스토어</span></a></li>
+            <li>
+              <a href="javascript:void(0);">
+                <span class="icon"><i class="ico-cate-market"></i></span>
+                <span class="txt">풍요마켓</span>
+              </a>
+            </li>
           </ul>
         </div>
         <!-- // list-category -->
-        <div class="main-noti">
-          <a href="javascript:void(0);">
-            <span class="label">공지</span>
-            <span class="txt">승차권 예약 발매일 조정 알림발매일 조정 알림 승차권 예약 발매일 조정 알림발매일 조정 알림</span>
-            <span class="arr"></span>
-          </a>
-        </div>      
+
+        <!-- 얼리버드 승차권-->
+        <div class="earlybird-ticket-wrap">
+          <div class="tit-wrap">
+            <div class="left">
+              <h2 class="tit-type4">좌석 매진 전, <br>노선별 인기 얼리버드 승차권</h2>
+              <p class="txt light">요일, 열차조정 할인에 따라 결제금액이 다를 수 있어요.</p>
+            </div>
+          </div>
+
+          <div class="earlybird-ticket-list" id="slide-earlybird-ticket">
+            <div class="swiper-container">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <div class="ticket-time-table2">
+                        <table>
+                          <colgroup>
+                              <col style="min-width:28px;width:28px" />
+                              <col style="min-width:70px;width:auto;" />
+                              <col style="width:8px" />
+                              <col style="min-width:70px;width:auto;" />
+                              <col style="width:110px" />
+                          </colgroup>
+                          <tbody>
+                              <tr>
+                                <td><div class="train">3744</div></td>
+                                <td><span class="name">부산</span></td>
+                                <td><span class="arr"></span></td>
+                                <td><span class="name">여수EXPO</span></td>
+                                <td>
+                                  <span class="sale"><span class="per"><span class="num">50</span><span class="unit">%</span></span><i class="ico-down"></i><span class="price">26,500원</span></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><div class="train">374</div></td>
+                                <td><span class="name">부산</span></td>
+                                <td><span class="arr"></span></td>
+                                <td><span class="name">수서</span></td>
+                                <td>
+                                  <span class="sale"><span class="per"><span class="num">50</span><span class="unit">%</span></span><i class="ico-down"></i><span class="price">99,500원</span></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><div class="train">374</div></td>
+                                <td><span class="name">부산</span></td>
+                                <td><span class="arr"></span></td>
+                                <td><span class="name">수서</span></td>
+                                <td>
+                                  <span class="sale"><span class="per"><span class="num">50</span><span class="unit">%</span></span><i class="ico-down"></i><span class="price">99,500원</span></span>
+                                </td>
+                              </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </li>
+                    <li class="swiper-slide">
+                      <div class="ticket-time-table2">
+                        <table>
+                          <colgroup>
+                            <col style="min-width:28px;width:28px" />
+                            <col style="min-width:70px;width:auto;" />
+                            <col style="width:8px" />
+                            <col style="min-width:70px;width:auto;" />
+                            <col style="width:110px" />
+                        </colgroup>
+                          <tbody>
+                              <tr>
+                                <td><div class="train">374</div></td>
+                                <td><span class="name">부산</span></td>
+                                <td><span class="arr"></span></td>
+                                <td><span class="name">수서</span></td>
+                                <td>
+                                  <span class="sale"><span class="per"><span class="num">50</span><span class="unit">%</span></span><i class="ico-down"></i><span class="price">26,500원</span></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><div class="train">374</div></td>
+                                <td><span class="name">부산</span></td>
+                                <td><span class="arr"></span></td>
+                                <td><span class="name">수서</span></td>
+                                <td>
+                                  <span class="sale"><span class="per"><span class="num">50</span><span class="unit">%</span></span><i class="ico-down"></i><span class="price">99,500원</span></span>
+                                </td>
+                              </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </li>
+                    <li class="swiper-slide">
+                      <div class="ticket-time-table2">
+                        <table>
+                          <colgroup>
+                            <col style="min-width:28px;width:28px" />
+                            <col style="min-width:70px;width:auto;" />
+                            <col style="width:8px" />
+                            <col style="min-width:70px;width:auto;" />
+                            <col style="width:110px" />
+                        </colgroup>
+                          <tbody>
+                              <tr>
+                                <td><div class="train">374</div></td>
+                                <td><span class="name">부산</span></td>
+                                <td><span class="arr"></span></td>
+                                <td><span class="name">수서</span></td>
+                                <td>
+                                  <span class="sale"><span class="per"><span class="num">50</span><span class="unit">%</span></span><i class="ico-down"></i><span class="price">26,500원</span></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><div class="train">374</div></td>
+                                <td><span class="name">부산</span></td>
+                                <td><span class="arr"></span></td>
+                                <td><span class="name">수서</span></td>
+                                <td>
+                                  <span class="sale"><span class="per"><span class="num">50</span><span class="unit">%</span></span><i class="ico-down"></i><span class="price">99,500원</span></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><div class="train">374</div></td>
+                                <td><span class="name">부산</span></td>
+                                <td><span class="arr"></span></td>
+                                <td><span class="name">수서</span></td>
+                                <td>
+                                  <span class="sale"><span class="per"><span class="num">50</span><span class="unit">%</span></span><i class="ico-down"></i><span class="price">99,500원</span></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><div class="train">374</div></td>
+                                <td><span class="name">부산</span></td>
+                                <td><span class="arr"></span></td>
+                                <td><span class="name">수서</span></td>
+                                <td>
+                                  <span class="sale"><span class="per"><span class="num">50</span><span class="unit">%</span></span><i class="ico-down"></i><span class="price">99,500원</span></span>
+                                </td>
+                              </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </li>
+                    <li class="swiper-slide">
+                      <div class="ticket-time-table2">
+                        <table>
+                          <colgroup>
+                            <col style="min-width:28px;width:28px" />
+                            <col style="min-width:70px;width:auto;" />
+                            <col style="width:8px" />
+                            <col style="min-width:70px;width:auto;" />
+                            <col style="width:110px" />
+                        </colgroup>
+                          <tbody>
+                              <tr>
+                                <td><div class="train">374</div></td>
+                                <td><span class="name">부산</span></td>
+                                <td><span class="arr"></span></td>
+                                <td><span class="name">수서</span></td>
+                                <td>
+                                  <span class="sale"><span class="per"><span class="num">50</span><span class="unit">%</span></span><i class="ico-down"></i><span class="price">26,500원</span></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><div class="train">374</div></td>
+                                <td><span class="name">부산</span></td>
+                                <td><span class="arr"></span></td>
+                                <td><span class="name">수서</span></td>
+                                <td>
+                                  <span class="sale"><span class="per"><span class="num">50</span><span class="unit">%</span></span><i class="ico-down"></i><span class="price">99,500원</span></span>
+                                </td>
+                              </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </li>
+                    <li class="swiper-slide">
+                      <div class="ticket-time-table2">
+                        <table>
+                          <colgroup>
+                            <col style="min-width:28px;width:28px" />
+                            <col style="min-width:70px;width:auto;" />
+                            <col style="width:8px" />
+                            <col style="min-width:70px;width:auto;" />
+                            <col style="width:110px" />
+                        </colgroup>
+                          <tbody>
+                              <tr>
+                                <td><div class="train">374</div></td>
+                                <td><span class="name">부산</span></td>
+                                <td><span class="arr"></span></td>
+                                <td><span class="name">수서</span></td>
+                                <td>
+                                  <span class="sale"><span class="per"><span class="num">50</span><span class="unit">%</span></span><i class="ico-down"></i><span class="price">26,500원</span></span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><div class="train">374</div></td>
+                                <td><span class="name">부산</span></td>
+                                <td><span class="arr"></span></td>
+                                <td><span class="name">수서</span></td>
+                                <td>
+                                  <span class="sale"><span class="per"><span class="num">50</span><span class="unit">%</span></span><i class="ico-down"></i><span class="price">99,500원</span></span>
+                                </td>
+                              </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <!-- // 얼리버드 승차권 -->
+
+
+        <!-- 이달의 추천상품-->
+        <div class="reocment-product-wrap">
+          <div class="tit-wrap">
+            <div class="left">
+              <p class="txt light">승차권 예약 시, 함께 구매하는</p>
+              <h2 class="tit-type4">티플 추천 상품</h2>
+            </div>
+          </div>
+          <div class="slide-type1 st5" id="slide-recomend">
+            <div class="swiper-container">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                      <a href="javascript:void(0);">
+                        <div class="img">
+                          <img src="../images/temp/temp-this-month-recommend.jpg" alt="">
+                        </div>
+                        <div class="text">
+                          <span class="txt">기차 안, 독서하는 좋은 습관</span>
+                          <b>교보문고 sam1 프리미엄 이용권</b>
+                        </div>
+                      </a>
+                    </li>
+                    <li class="swiper-slide">
+                      <a href="javascript:void(0);">
+                        <div class="img">
+                          <img src="../images/temp/temp-this-month-recommend2.jpg" alt="">
+                        </div>
+                        <div class="text">
+                          <span class="txt">도착역에서 내리면, 스마트한 이동</span>
+                          <b>투루카 이용권(5,000원권)</b>
+                        </div>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+          </div>          
+        </div>
+        <!-- // 이달의 추천상품 -->        
+
+
         <!-- 배너 -->
-        <div class="banner-wrap">
+        <!-- <div class="banner-wrap">
           <div class="banner-slide-list" id="slide-banner">
             <div class="swiper-container">
                 <ul class="swiper-wrapper">
@@ -139,156 +420,110 @@
             </div>
             <div class="swiper-pagination"></div>
           </div>
-        </div>
+        </div> -->
         <!-- // 배너 -->
+         
 
-        <!-- 지금, 인기 여행지 
-          2차때 1차는 일단 제외
-        <div class="favorite-wrap">
-          <div class="tit-wrap vt">
-            <div class="left">
-              <h2 class="tit-type4">지금, 인기 여행지</h2>
-              <p class="txt light">기차로 떠나는 여행을 만나세요.</p>
-            </div>
-            <div class="right">
-              <a href="javascript:void(0);" class="btn-plus-more"><i class="ico-plus-more"></i></a>
-            </div>
-          </div>
-          <div class="slide-type1 st4" id="slide-favorite">
-            <div class="swiper-container">
-                <ul class="swiper-wrapper">
-                    <li class="swiper-slide">
-                      <a href="javascript:void(0);">
-                        <div class="img">
-                          <div class="txt-area">
-                            <b>SEOUL</b>
-                            <span>수서역</span>
-                          </div>
-                          <img src="../images/temp/temp-area.jpg" alt="">
-                        </div>
-                      </a>
-                    </li>
-                    <li class="swiper-slide">
-                      <a href="javascript:void(0);">
-                        <div class="img">
-                          <div class="txt-area">
-                            <b>BUSAN</b>
-                            <span>부산역</span>
-                          </div>
-                          <img src="../images/temp/temp-area.jpg" alt="">
-                        </div>
-                      </a>
-                    </li>
-                    <li class="swiper-slide">
-                      <a href="javascript:void(0);">
-                        <div class="img">
-                          <div class="txt-area">
-                            <b>MOKPO</b>
-                            <span>목포역</span>
-                          </div>
-                          <img src="../images/temp/temp-area.jpg" alt="">
-                        </div>
-                      </a>
-                    </li>
-                    <li class="swiper-slide">
-                      <a href="javascript:void(0);">
-                        <div class="img">
-                          <div class="txt-area">
-                            <b>MOKPO</b>
-                            <span>목포역</span>
-                          </div>
-                          <img src="../images/temp/temp-area.jpg" alt="">
-                        </div>
-                      </a>
-                    </li>
-                    <li class="swiper-slide">
-                      <a href="javascript:void(0);">
-                        <div class="img">
-                          <div class="txt-area">
-                            <b>MOKPO</b>
-                            <span>목포역</span>
-                          </div>
-                          <img src="../images/temp/temp-area.jpg" alt="">
-                        </div>
-                      </a>
-                    </li>
-                </ul>
-            </div>
-          </div>
-        </div>
-        지금, 인기 여행지 -->
+        <div class="devider-line"></div>
 
-        <!-- 오늘의 티플 매거진 -->
-        <div class="tple-magazine-wrap">
+        <!-- 오늘의 여행상품 -->
+        <div class="today-product-wrap">
           <div class="tit-wrap vt">
             <div class="left">
               <p class="txt light">홍길동님을 위한</p>
-              <h2 class="tit-type4">오늘의 티플 매거진</h2>
+              <h2 class="tit-type4">오늘의 여행상품</h2>
             </div>
             <div class="right bottom">
               <a href="3-6.magagine.html" class="btn-plus-more"><i class="ico-plus-more"></i></a>
             </div>
           </div>
           <!-- slide-type1 -->
-          <div class="slide-type1 st6" id="slide-magazine">
+          <div class="slide-type1 st7" id="slide-magazine">
             <div class="swiper-container">
                 <ul class="swiper-wrapper">
                     <li class="swiper-slide">
-                      <a href="3-6-1.magagine_detail.html">
-                        <div class="img"><img src="../images/temp/temp-event3.jpg" alt=""></div>
-                        <div class="txt">경주/신경주역 경주/신경주역경주/신경주역경주/신경주역경주/신경주역경주/신경주역</div>
+                      <a href="3-1-1.trip_detail.html" class="product-type3 st2">
+                        <button class="btn-favorite"><i class="ico-heart"></i></button>
+                        <div class="img">
+                          <img src="../images/temp/temp-product3.jpg" alt="">
+                        </div>
+                        <div class="desc">
+                          <span class="label"><i class="ico-mapidx"></i><span>서울/수서역</span></span>
+                          <span class="tit">부산 아쿠아리움 입장권 아쿠아리움 (2줄까지) 부산 아쿠아리움 입장권 아쿠아리움 (2줄까지)부산 아쿠아리움 입장권 아쿠아리움 (2줄까지)</span>
+                          <span class="account">
+                            <!-- <div class="price-org">44,000</div> -->
+                            <span class="sale">10%<i class="ico-sale-dowm"></i></span>
+                            <span class="price">40,000<span class="won">원</span></span>
+                          </span>
+                        </div>
                       </a>
                     </li>
                     <li class="swiper-slide">
-                      <a href="3-6-1.magagine_detail.html">
-                        <div class="img"><img src="../images/temp/temp-event3.jpg" alt=""></div>
-                        <div class="txt">경주/신경주역</div>
+                      <a href="3-1-1.trip_detail.html" class="product-type3 st2">
+                        <button class="btn-favorite"><i class="ico-heart"></i></button>
+                        <div class="img img-prd">
+                          <img src="../images/temp/temp-product.png" alt="">
+                        </div>
+                        <div class="desc">
+                          <span class="label"><i class="ico-mapidx"></i><span>서울/수서역</span></span>
+                          <span class="tit">부산 아쿠아리움 입장권 아쿠아리움 (2줄까지) 부산 아쿠아리움 입장권 아쿠아리움 (2줄까지)부산 아쿠아리움 입장권 아쿠아리움 (2줄까지)</span>
+                          <span class="account">
+                            <div class="price-org">44,000</div>
+                            <span class="sale">10%<i class="ico-sale-dowm"></i></span>
+                            <span class="price">40,000<span class="won">원</span></span>
+                          </span>
+                        </div>
                       </a>
                     </li>
                     <li class="swiper-slide">
-                      <a href="3-6-1.magagine_detail.html">
-                        <div class="img"><img src="../images/temp/temp-event3.jpg" alt=""></div>
-                        <div class="txt">경주/신경주역</div>
+                      <a href="3-1-1.trip_detail.html" class="product-type3 st2">
+                        <button class="btn-favorite"><i class="ico-heart"></i></button>
+                        <div class="img">
+                          <img src="../images/temp/temp-product3.jpg" alt="">
+                        </div>
+                        <div class="desc">
+                          <span class="label"><i class="ico-mapidx"></i><span>서울/수서역</span></span>
+                          <span class="tit">부산 아쿠아리움 입장권 아쿠아리움 (2줄까지) 부산 아쿠아리움 입장권 아쿠아리움 (2줄까지)부산 아쿠아리움 입장권 아쿠아리움 (2줄까지)</span>
+                          <span class="account">
+                            <div class="price-org">44,000</div>
+                            <span class="sale">10%<i class="ico-sale-dowm"></i></span>
+                            <span class="price">40,000<span class="won">원</span></span>
+                          </span>
+                        </div>
                       </a>
                     </li>
+                    <li class="swiper-slide">
+                      <a href="3-1-1.trip_detail.html" class="product-type3 st2">
+                        <button class="btn-favorite"><i class="ico-heart"></i></button>
+                        <div class="img">
+                          <img src="../images/temp/temp-product3.jpg" alt="">
+                        </div>
+                        <div class="desc">
+                          <span class="label"><i class="ico-mapidx"></i><span>서울/수서역</span></span>
+                          <span class="tit">부산 아쿠아리움 입장권 아쿠아리움 (2줄까지) 부산 아쿠아리움 입장권 아쿠아리움 (2줄까지)부산 아쿠아리움 입장권 아쿠아리움 (2줄까지)</span>
+                          <span class="account">
+                            <div class="price-org">44,000</div>
+                            <span class="sale">10%<i class="ico-sale-dowm"></i></span>
+                            <span class="price">40,000<span class="won">원</span></span>
+                          </span>
+                        </div>
+                      </a>
+                    </li>                    
                 </ul>
             </div>
           </div>
           <!-- // slide-type1 -->
         </div>
-        <!-- // 오늘의 티플 매거진 -->     
-
-        <!-- 여행 카운슬러 추천 -->
-        <div class="travel-counselor-wrap">
-          <div class="tit-wrap vt">
-            <div class="left">
-              <h2 class="tit-type4">여행 카운슬러 추천</h2>
-              <p class="txt light">여행 카운슬러의 추천 여행지</p>
-            </div>
-            <div class="right">
-              <a href="3-7.counselor.html" class="btn-plus-more"><i class="ico-plus-more"></i></a>
-            </div>
-          </div>
-          <div class="video-counselor">
-            <div class="video">
-              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VTlya_WjY8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="text">
-              <b>SRT 타고 떠나는 당일치기 나들이나들이 SRT 타고 떠나는 당일치기 나들이나들이</b>
-              <p class="sub-txt">- 여행 카운슬러 추천 -</p>
-            </div>
-          </div>
-        </div>
-        <!-- // 여행 카운슬러 추천 -->
+        <!-- // 오늘의 여행상품 -->     
 
         <!-- 열차 이용 꿀팁 -->
         <div class="srt-tip-wrap">
           <div class="tit-wrap vt">
             <div class="left">
-              <h2 class="tit-type4">열차 이용 꿀팁</h2>
-              <p class="txt light">SRT 이럴 땐, 이렇게 이용하세요.</p>
+              <p class="txt light">알아두면 좋을</p>
+              <h2 class="tit-type4">SRT 열차 이용 안내</h2>
             </div>
-            <div class="right">
+            <div class="right bottom">
               <a href="javascript:void(0);" class="btn-plus-more"><i class="ico-plus-more"></i></a>
             </div>
           </div>
@@ -486,11 +721,11 @@
                 </button>
                 <div class="detail" style="display:block">
                   <ul class="list-dot light">
-                    <li>성장관광벤처사업 우수상 수상 (한국관광공사 사장상)</li>
-                    <li>기술혁신형 성장관광벤처기업 선정 (문화체육관광부)</li>
-                    <li>협력이익공유제 우수사례 선정 (대중소농어업협력재단)</li>
-                    <li>기술혁신형 중소기업(Inno-Biz) 확인 (중소벤처기업부)</li>
-                    <li>벤처기업 확인 (벤처기업협회)</li>
+                    <li>한국관광공사 성장관광벤처사업 사장상 수상</li>
+                    <li>문화체육관광부 기술혁신형 성장관광벤처기업 선정</li>
+                    <li>대중소농어업협력재단 협력이익공유제 선정</li>
+                    <li>중소벤처기업부 기술혁신형 중소기업(Inno-Biz) 확인</li>
+                    <li>벤처기업협회 정회원사</li>
                   </ul>
                 </div>
               </li>
@@ -538,12 +773,16 @@
     $('.footer').addClass('notch');
   });
 
-visualSlide();
+let visualSlider = undefined;
 function visualSlide(){
 
   let gage = 0;
   let autoTimer = false;
-  let visualSlide = slider('.visual-slide', {
+  if(visualSlider != undefined){
+    visualSlider.destroy();
+    visualSlider = undefined; 
+  }
+  visualSlider = slider('.visual-slide', {
     loop: true,
     autoplay: {
         delay: 3500,
@@ -563,6 +802,19 @@ function visualSlide(){
       }     
   });
 
+  setHeight();
+  function setHeight(){
+    $('.visual-slide .swiper-slide').css('height', 'auto');
+    $('.visual-slide .swiper-slide').height($('.visual-slide').height());
+  }
+  let width = $(window).width();
+    $(window).resize(function(e){
+      if($(window).width() != width){
+        setHeight();
+       }
+       width = $(window).width();
+    });   
+
   setGage();
   function setGage(){
     if(gage >= 100) {
@@ -572,7 +824,7 @@ function visualSlide(){
     autoTimer = setInterval(function(){
       if(gage >= 100) {
         gage = 0;
-        visualSlide.slideNext();
+        visualSlider.slideNext();
       }
       gage += 1;
       $('.swiper-gage .bar').css('width', gage +'%');
@@ -589,6 +841,10 @@ function visualSlide(){
 }
 
 
+$(window).on('load', function(){
+  visualSlide();
+});
+
   //상단 배너
   slider('#slide-banner', {
     loop: true,
@@ -597,6 +853,21 @@ function visualSlide(){
     slidesPerView: 1,
     pagination: {
       el: "#slide-banner .swiper-pagination",
+      clickable: true,
+    },
+  });  
+
+  //티켓 배너
+  slider('#slide-earlybird-ticket', {
+    loop: true,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+    freeMode: false,
+    slidesPerView: 1,
+    pagination: {
+      el: "#slide-earlybird-ticket .swiper-pagination",
       clickable: true,
     },
   });  
@@ -621,6 +892,7 @@ function visualSlide(){
 // }); 
 
 slider('#slide-tip');
+slider('#slide-recomend');
 
   // 하단배너
   slider('#slide-etc', {
@@ -648,6 +920,61 @@ slider('#slide-tip');
         $('.tooltip-myticket').hide();
     }, 5500);
   }
+
+
+// 메인배너에 걸칠때 위로 스크롤올림
+// function resetScroll(){
+//   let t = $(window).scrollTop();
+//     if(t <= $('.main-wrap .visual-slide').height()){
+//       $(window).scrollTop(0);
+//     }
+// }
+
+// setInterval(function(){
+//   resetScroll();
+// }, 1500)
+
+// window.addEventListener('beforeunload', (event) => {
+//            alert('beforeunload')
+//         });
+
+
+//         window.addEventListener('pagehide', (event) => {
+//           alert('pagehide')
+// });
+
+$(function(){
+            let top = $(this).scrollTop();
+
+            if(top > 0 ){
+              $('body').addClass('scrolling');
+              if($('header').length > 0) $('header').addClass('scrolling');
+            }else{
+              $('body').removeClass('scrolling');
+              if($('header').length > 0) $('header').removeClass('scrolling');
+            }
+            
+            if(stickyPos != 0){
+              if(top > stickyPos - 50) $('header').addClass('attach-sticky')
+              else $('header').removeClass('attach-sticky')
+            }
+            
+            if(top > titlePos){
+              $('.header .tit-txt.hide').fadeIn();
+            }else{
+              $('.header .tit-txt.hide').fadeOut();
+            }
+         });
+         //내티켓 툴팁
+$(window).on('load', function(){
+
+            let top = $(this).scrollTop();
+            if(top <= $('.main-wrap .visual-slide').height()){
+                  $("html, body").animate({ scrollTop: 0 }, "slow");
+            }
+         });
+
+
 
 </script>
 

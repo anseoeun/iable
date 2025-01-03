@@ -1,6 +1,7 @@
 
 let root = '/assets/'
 if(location.href.includes('seoeunan')) root = '/iable2/'
+if(location.href.includes('127.') && location.href.includes('html')) root = '/'
 if(location.href.includes(':55') && location.href.includes('html')) root = '/'
 
 
@@ -50,7 +51,7 @@ const autoSpace = (target) => {
 function icon(){
   document.querySelectorAll('i[class*=ico-]').forEach((el)=>{
     let cls = el.className;
-    el.innerHTML = svg[cls];
+    svg[cls] ? el.innerHTML = svg[cls] : null;
   });
 }
 
@@ -112,8 +113,7 @@ function pageScrolling(){
     $('.header .tit-txt.hide').text($('[data-id="header-tit"] .tit-type1').text())
   }
 
-  $(document).on('scroll', function(){
-    
+  function f(){
     let top = $(this).scrollTop();
 
       if(top > 0 ){
@@ -134,7 +134,10 @@ function pageScrolling(){
       }else{
         $('.header .tit-txt.hide').fadeOut();
       }
-    });
+  }
+
+  f();
+  $(document).on('scroll', f);
 }
 
 
@@ -187,6 +190,8 @@ function toggleList(){
   $obj.on('click', 'a.desc, button.desc', function(e){
     let $obj = $(this).parents(obj);
 
+    if($(this).parents().hasClass('pos-move'))  $("html, body").animate({ scrollTop: $(this).offset().top }, "slow");
+    
     if(e.target.closest('.stop-event')) return;
 
     let $parents =  $(this).parents('li').length > 0 ? $(this).parents('li') : $(this).parents('dl').length > 0 ? $(this).parents('dl') : ''
@@ -208,6 +213,7 @@ function toggleList(){
       // $view.parents('li').find('.tit').height(h);
       // $view.parents('li').find('.tit').animate({'height':h2}, 150);
       $view.slideDown();
+      $('html, body').animate({scrollTop: $view.offset().top}, 200);
     }else{
       // $view.parents('li').find('.tit').animate({'height':h}, 150);
       $view.slideUp(function(){
@@ -433,11 +439,6 @@ function footer(){
 function topSticky(){
   $('.content > .top-sticky:first-child').addClass('fixed');
   $('.content > .member-wrap > .top-sticky:first-child').addClass('fixed');
-
-  setTimeout(function(){
-    $('.top-sticky').css('top', '');
-    // $('html, body').scrollTop(0); // 상생스토어오류관련
-  }, 500);
 
   $('.top-sticky').each(function(){
     let $obj = $(this);
@@ -720,7 +721,8 @@ function countInput(obj, callback, callstop){
         setTimeout(function(){
           $plusBtn.hide();
           $upBtn.show();
-        }, 400)
+        }, 400);
+        countChange(1); // $plusBtn 클릭 시 1로 설정
         return false;
       });
       $minusBtn.on('click', function(e){
@@ -728,6 +730,7 @@ function countInput(obj, callback, callstop){
         $obj.removeClass('on');
         $plusBtn.show();
         $upBtn.hide();
+        countChange(0); // $minusBtn 클릭 시 1로 설정
         return false;
       });
     }    
@@ -1073,8 +1076,9 @@ function timeTable(){
 
     $wrap.removeClass('sale');
 
-    $('[data-id=sale-ticket]').hide();
-    $('[data-id=normal-ticket]').show();
+    // 하단에서 올라오던 버튼 숨기고 레이어로 바로오픈함
+    // $('[data-id=sale-ticket]').hide();
+    // $('[data-id=normal-ticket]').show();
 
   });
   //할인예약버튼
@@ -1084,8 +1088,9 @@ function timeTable(){
 
     $wrap.addClass('sale');
 
-    $('[data-id=normal-ticket]').hide();
-    $('[data-id=sale-ticket]').show();
+    // 하단에서 올라오던 버튼 숨기고 레이어로 바로오픈함
+    // $('[data-id=normal-ticket]').hide();
+    // $('[data-id=sale-ticket]').show();
   });
 
 }
@@ -1355,15 +1360,24 @@ $(function(){
   scrollLeft('.tab-type2 ul');
   scrollLeft('.sale-seat-wrap .seat-list');
   flipCard();
-  
-  setTimeout(topSticky, 100);
 });
 
 //resize
 $(window).on('resize', function(){
   fitH();
 });
+//load
+$(window).on('load', function(){
+  topSticky();
+});
 
+document.addEventListener("visibilitychange", () => {
+  pageScrolling();
+});
+
+setTimeout(function(){
+  pageScrolling();
+},1000000) //10분
 
 /*
 if (window.matchMedia('(prefers-color-scheme: dark)').matches) {

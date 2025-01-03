@@ -55,7 +55,7 @@
   .notice{padding:5px 0;font-size: 13px;padding-left:20px;margin-top:15px;background:url('data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQflCwsSBQBIWRXaAAAA7klEQVQoz43STUpCYRjF8Z+vcmncqLKhO8iCaNoCrqCtogZFeLegOahJm+iS2jxaQRE0dqi4hgSpgfj9eUYP5/1zeHjek6mZKBKLnTsy0PWt5c1g/JiZgCUPCubVkWiOxgCy6ppLGAWv6rKQvYSaqnW6sOd9lFjegEFVmSDyOO8nkkX0SRRUHNumvKuceNGtr0Lj4HRrHhSDg0VvxY4chuntNyvo78T1g5+dwM+gvRPYDlLdrVhPmjNw52XWXXHHW78BqcbGvIZ03J4P+87WYM/u/Y37OHSjrLMEdVRcGzLbcCIVJSfy6PnSkk6/4x+rojPgRremOAAAAABJRU5ErkJggg==') no-repeat 0 7px;background-size:auto 15px;}
   .notice ~ .notice{margin-top:0;}
 
-  .delete td{background:#aaa;}
+  .delete td{opacity: 0.5;}
   .delete *{text-decoration: line-through;}
 
 </style>
@@ -126,7 +126,16 @@
       ["", "", "오류", "", "", "", "", "html/3-9-1.tp_payment_error", "", "", ""],
       ["", "인기여행상품(전체)", " ", "", "", "", "", "html/3-10.popular_list", "", "", ""],
       ["", "선물완료", "", "", "", "", "", "html/3-10-2.gift_completed", "", "", ""],
-      ["", "티플상점메인", " ", "", "", "", "", "html/10-1.tiple_shop_main", "", "", ""],
+      ["", "티플상점메인", " ", "", "", "", "", "html/10-1.tiple_shop_main", "", "", ""], 
+      //여행
+      ["여행", "title", "", ""],
+      ["", "여행 메인", "", "", "", "", "", "html/3.travel_main", "", "", ""],      
+      ["", "여행 상세", "", "", "", "", "", "html/3.travel_detail", "", "", ""],      
+      ["", "여행 상세2", "", "", "", "", "", "html/3.travel_detail2", "", "", ""],      
+      ["", "여행 상세3", "", "", "", "", "", "html/3.travel_detail3", "", "", ""],      
+      ["", "선물하기 메인", "", "", "", "", "", "html/3.gift_main", "", "", ""],      
+      ["", "선물하기 상세", "", "", "", "", "", "html/3.gift_detail", "", "", ""],      
+      ["", "선물하기 상세2", "", "", "", "", "", "html/3.gift_detail2", "", "", ""],      
       //티플여행 (2차)
       // ["티플여행(2차)", "title", "", ""],
       // ["", "티플여행 메인", "", "", "", "", "", "html/3.tiple_main_2", "", "", "메뉴"],
@@ -161,6 +170,8 @@
       //모바일금액권
       ["모바일금액권", "title", "", ""],      
       ["", "모바일금액권 메인", "", "", "", "", "", "html/5-1.srtcard", "", "", ""],
+      ["", " 모바일금액권 메인2", "", "", "", "", "", "html/5-1.srtcard2", "", "", ""],
+      ["", " 모바일금액권 메인(리뉴얼)", "", "", "", "", "", "html/5-1.srtcard3", "", "", ""],
       ["", "", "상세", "", "", "", "", "html/5-1-1.trip_detail", "", "", ""],
       ["", "번호확인", "", "", "", "", "", "html/5-2-1.gift_check1", "", "", ""],
       ["", "주문정보 확인", "", "", "", "", "", "html/5-2-2.gift_check2", "", "", ""],
@@ -193,6 +204,8 @@
       ["", "이벤트 상세", "", "", "", "", "", "html/6-1.event_detail", "", "", ""],      
       ["", "", "종료", "", "", "", "", "html/6-1.event_detail#end", "", "", ""],      
       ["", "당첨자발표", "", "", "", "", "", "html/6-3.event_notice", "", "", ""],      
+      ["", "이벤트템플릿", "", "", "", "", "", "html/event_template", "", "", "삭제"],      
+      ["", "이벤트템플릿2", "", "", "", "", "", "html/event_template2", "", "", ""],      
     ]
 
     for(var i = 0 ; i<= data.length -1 ; i++){

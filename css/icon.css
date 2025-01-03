@@ -5,7 +5,7 @@
 [class*=ico-] svg{width:100%;height:100%;vertical-align:top;}
 [class*=ico-] svg image{width:100%;height:100%;vertical-align:top;}
 
-.ico-logo{width:80px;height:21px;}
+.ico-logo{width:78px;height:22px;}
 .text-login-intro .logo .ico-logo{width:100px;height:27px;}
 
 .ico-gnb-smile{width:22px;height:22px;}
@@ -23,8 +23,9 @@
 .ico-back{width:18px;height:19px;}
 .ico-close{width:18px;height:18px;}
 .ico-close2{width:18px;height:18px;}
-.ico-cacao{width:20px;height:20px;}
+.ico-cacao{width:22px;height:22px;}
 .ico-train-srt{width:26px;height:14px;}
+.ico-train-srt2{width:22px;height:16px;}
 .ico-val-check{width:18px;height:18px;}
 .ico-val-view,
 .ico-val-view-off{width:18px;height:18px;}
@@ -64,6 +65,7 @@
 .ico-noti2{width:15px;height:13px;}
 .ico-question{width:16px;height:16px;}
 .ico-home{width:19px;height:19px;}
+.ico-cart{width:19px;height:19px;}
 .ico-menu{width:24px;height:18px;}
 .ico-warning{width:16px;height:18px;}
 .ico-prd-menu{width:20px;height:4px;}
@@ -89,7 +91,6 @@
 .ico-set {width:13px;height:13px;}
 .ico-stroage-ticket {width:35px;height:26px;}
 .ico-stroage-coupon {width:35px;height:26px;}
-.ico-stroage-travel {width:21px;height:31px;}
 .ico-stroage-favorite {width:30px;height:30px;}
 .ico-sale-ticket {width:24px;height:22px;}
 .ico-normal-ticket {width:24px;height:22px;}
@@ -127,12 +128,12 @@
 .ico-more-view{width:16px;height:15px;}
 .ico-mapidx{width:9px;height:12px;}
 .ico-movie-play{width:70px;height:43px;}
+
+.ico-cate-time {width:29px;height:29px;}
 .ico-cate-travel {width:23px;height:35px;}
 .ico-cate-hotel {width:29px;height:35px;}
 .ico-cate-show {width:33px;height:32px;}
 .ico-cate-ecoupon {width:33px;height:31px;}
-.ico-cate-srt {width:34px;height:22px;}
-.ico-cate-time {width:29px;height:29px;}
 .ico-cate-coupon {width:35px;height:26px;}
 .ico-cate-ticket {width:35px;height:26px;}
 .ico-cate-noti {width:30px;height: 26px;}
@@ -141,7 +142,7 @@
 .ico-cate-chatbot{width:35px;height:26px;}
 .ico-cate-call{width:30px;height:26px;}
 .ico-cate-giftcard{width:36px;height:25px;}
-.ico-cate-store{width:29px;height:30px;}
+.ico-cate-myticket{width:37px;height:31px}
 .ico-heart {width:14px;height:13px;}
 .ico-heart2-off {width:20px;height:17px;}
 .ico-heart2-on {width:20px;height:17px;}
@@ -162,7 +163,12 @@
 .ico-chatbot{width:25px;height:21px;}
 .ico-chatbot2{width:32px;height:30px}
 .ico-chatbot3{width:22px;height:17px}
-.ico-mytiple{width:32px;height:32px}
 .ico-myticket{width:37px;height:31px}
 .ico-gift{width:16px;height:16px}
 .ico-phone{width:16px;height:20px}
+.ico-shield{width:22px;height:23px;}
+
+.ico-gnb-tiple{width:42px;height:42px}
+.ico-gnb-ticket{width:42px;height:42px}
+.ico-gnb-giftcard{width:42px;height:42px}
+.ico-gnb-chatbot{width:42px;height:42px}

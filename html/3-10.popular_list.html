@@ -49,7 +49,8 @@
       <div class="tple-travel-wrap">
         <script>
             loadInclude('popular_list', {pos:'.tple-travel-wrap'}, function(){
-              $('.tab-type2.top-sticky').removeAttr('data-top');
+              $('.tab-type2.top-sticky').attr('data-top', 50);
+              topSticky()
             }); 
         </script>
       </div>
@@ -59,6 +60,12 @@
 
 </div>
 <!-- // wrap -->
+
+<script>
+  if(location.href.match('#total')){
+    $('.tit-type1').text('전체 여행 상품')
+  }
+</script>
 
 
 </body>
