@@ -876,6 +876,7 @@ button.btn-type7 .ico-srtplay{position:relative;top:-1px;}
 .list-dot li.lt-sm{letter-spacing: -0.08em;}
 .list-dot li:before{content:'';display:block;width:3px;height:3px;border-radius:3px;background:#1F2125;position:absolute;top:7px;left:0;}
 .list-dot li ~ li {margin-top:5px;}
+.list-dot li.c-pupple:before{background:#7030A0;}
 .list-dot.st2 li ~ li {margin-top:15px;}
 .list-dot.st3 li ~ li {margin-top:5px;}
 .list-dot.light{font-weight:300;}
@@ -1457,10 +1458,10 @@ form + .banner-wrap,
 
 /* .popup-wrap.guide-pop .dim{background:rgba(0, 0, 0, 0);} */
 .popup-wrap.guide-pop .pop-wrap .popup{position:relative;min-width:320px;padding:0 0;max-width: 90vw; /*box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.04);*/ border-radius: 10px;}
-.popup-wrap.guide-pop .pop-wrap .popup .btn-close{position:absolute;top:10px;right:10px;padding:10px;z-index: 1;}
+.popup-wrap.guide-pop .pop-wrap .popup .btn-close{position:absolute;top:9px;right:10px;padding:10px;z-index: 1;}
 .popup-wrap.guide-pop .pop-wrap .popup .pop-body{padding:25px 20px;padding-right:55px;min-height: auto;}
 .popup-wrap.guide-pop .pop-wrap .popup .pop-body.st2{padding-right:20px;}
-.popup-wrap.guide-pop .pop-wrap .popup .pop-body .txt{line-height:1.5;}
+.popup-wrap.guide-pop .pop-wrap .popup .pop-body .txt{line-height:1.5;word-break: keep-all;}
 .popup-wrap.guide-pop .pop-wrap .popup .pop-footer{padding:0 20px 20px;}
 .popup-wrap.guide-pop .pop-text-st1{text-align:center;padding-top:15px;}
 .popup-wrap.guide-pop .pop-text-st1 .text{margin-top:15px;line-height:1.5;}

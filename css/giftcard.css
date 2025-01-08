@@ -11,6 +11,7 @@
 .payment-wrap .payment-giftcard-desc .tit strong{display:block;font-weight:400;}
 .payment-wrap .payment-giftcard-desc .tit .tit-sub{display:block;width:100%;font-size:12px; color:#ACAAAA;margin-top:5px;}
 .payment-wrap .payment-giftcard-desc .tit .link{right:-12px;}
+.payment-wrap .payment-giftcard-desc .list-dot{margin-top:8px;}
 .payment-wrap .payment-giftcard-desc .list{margin-top:10px;}
 .payment-wrap .payment-giftcard-desc .list >li{ color:#ACAAAA;position:relative;padding-left:13px;display:flex;align-items:center;}
 .payment-wrap .payment-giftcard-desc .list >li ~ li{margin-top:10px;}

@@ -50,8 +50,10 @@ const autoSpace = (target) => {
 
 function icon(){
   document.querySelectorAll('i[class*=ico-]').forEach((el)=>{
-    let cls = el.className;
-    svg[cls] ? el.innerHTML = svg[cls] : null;
+    let icoClass = Array.from(el.classList).find(cls => cls.startsWith('ico-'));
+    if (icoClass && svg[icoClass]) {
+      el.innerHTML = svg[icoClass];
+    }
   });
 }
 
