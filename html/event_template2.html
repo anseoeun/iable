@@ -132,6 +132,55 @@
           </li>
         </ul>
 
+        <div class="cheering-reple-wrap">
+          <div class="tit-wrap">
+            <div class="left">
+              <h2 class="tit-type4 c-pupple">응원 댓글 한마디!</h2>
+            </div>
+          </div>
+          <div class="cheering-reple">
+            <div class="reple-form">
+              <div class="textarea">
+                <textarea placeholder="가족, 친구 그리고 나를 위한 새해 소망과 응원메시지를 남겨주세요."></textarea>
+                <span class="byte"><span>0</span> / 500 byte</span>
+              </div>
+              <div class="reg-menu">
+                <div class="txt"><p>*이벤트와 무관한 내용 또는 욕설, 비방 등 부적절한  게시글은 예고 없이 삭제됩니다.</p></div>
+                <button class="btn-reg">등록</button>
+              </div>
+            </div>
+            <div class="reple-list">
+              <div class="total">댓글 1,000건</div>
+              <ul>
+                <li>
+                  <div class="info">홍*동 ‘25. 2. 18.</div>
+                  <div class="menu">
+                    <button type="button" class="btn" onclick="popOpen('#pop-reple-modify');">수정</button>
+                    <button type="button" class="btn" onclick="popOpen('#pop-reple-deletet');">삭제</button>
+                  </div>
+                  <div class="reple-txt">
+                    안녕하세요. 항상 행복하세요.안녕하세요. 항상 행복하세요.안녕하세요. 항상 행복하세요.안녕하세요. 항상 행복하세요.
+                  </div>
+                </li>
+                <li>
+                  <div class="info">홍*동 ‘25. 2. 18.</div>
+                  <div class="menu">
+                    <button type="button" class="btn" onclick="popOpen('#pop-reple-modify');">수정</button>
+                    <button type="button" class="btn" onclick="popOpen('#pop-reple-deletet');">삭제</button>
+                  </div>
+                  <div class="reple-txt">
+                    안녕하세요. 항상 행복하세요.안녕하세요. 항상 행복하세요.안녕하세요. 항상 행복하세요.안녕하세요. 항상 행복하세요.
+                  </div>
+                </li>
+              </ul>
+              <div class="btn-more-wrap">
+                <button type="button" class="btn-more"><span>더보기</span><i class="ico-arr-more"> </i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- // cheering-reple-wrap -->
+
         <div class="event-devider">
           <span></span>
           <span></span>
@@ -295,8 +344,60 @@
         <button type="button" class="btn-type1 st1">매진 전, 승차권 예약하기</button>
       </div>
     </div>
+
+
+
+  <!--댇글 수정-->
+  <div class="popup-wrap" id="pop-reple-modify">
+    <div class="dim"></div>
+    <div class="pop-wrap">
+      <div class="popup">
+        <div class="pop-header"><strong class="tit">댓글 수정</strong></div>
+        <div class="pop-body">
+          <div class="reple-textarea">
+            <textarea style="height:100px;">안녕하세요. 항상 행복하세요.안녕하세요. 항상 행복하세요.안녕하세요. 항상 행복하세요.안녕하세요. 항상 행복하세요.</textarea>
+          </div>
+        </div>
+        
+        <div class="pop-footer">
+          <div class="btn-wrap">
+            <button type="button" class="btn" onclick="popClose('#pop-reple-modify');">취소</button>
+            <button type="button" class="btn c-pupple" onclick="popClose('#pop-reple-modify');">등록</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>      
+
+
+  <!--댓글 삭제-->
+  <div class="popup-wrap" id="pop-reple-deletet">
+    <div class="dim"></div>
+    <div class="pop-wrap">
+      <div class="popup">
+        <div class="pop-header"><strong class="tit">댓글 삭제</strong></div>
+        <div class="pop-body">
+          
+          <div class="reple-text">
+            안녕하세요. 항상 행복하세요.안녕하세요. 항상 행복하세요.안녕하세요. 항상 행복하세요.안녕하세요. 항상 행복하세요.
+          </div>
+
+        </div>
+        
+        <div class="pop-footer">
+          <div class="btn-wrap">
+            <button type="button" class="btn" onclick="popClose('#pop-reple-deletet');">취소</button>
+            <button type="button" class="btn c-pupple" onclick="popClose('#pop-reple-deletet');">삭제</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>      
+
+
 </div>
 <!-- // wrap -->
+ 
 
 
 <script>

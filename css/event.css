@@ -217,3 +217,36 @@
 .early-ticket-wrap .ticket-time-table .start,
 .early-ticket-wrap .ticket-time-table .end{width:20%;}
 .early-ticket-wrap .dotdot{height:22px; margin-top:27px;background:url("data:image/svg+xml,%3Csvg width='14' height='43' viewBox='0 0 14 43' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7' cy='7' r='7' fill='%23D9D9D9'/%3E%3Ccircle cx='7' cy='36' r='7' fill='%23D9D9D9'/%3E%3C/svg%3E%0A") no-repeat 50% 50%;background-size:auto 22px;}
+
+
+.cheering-reple-wrap{padding-bottom:25px;}
+.cheering-reple-wrap .tit-wrap {}
+.cheering-reple-wrap .tit-wrap .left {}
+.cheering-reple-wrap .tit-wrap .left .tit-type4 {padding-top:10px;position:relative;}
+.cheering-reple-wrap .tit-wrap .left .tit-type4:before{content:'';display:block;width:30px;height:1px;background:rgba(0, 0, 0, 0.3);position:absolute;top:0;left:0;}
+
+.cheering-reple-wrap .cheering-reple {}
+.cheering-reple-wrap .cheering-reple .reple-form {border: 1px solid #7030A0; border-radius:10px;overflow:hidden;margin-top:20px;}
+.cheering-reple-wrap .cheering-reple .reple-form .textarea {padding:10px;}
+.cheering-reple-wrap .cheering-reple .reple-form .textarea textarea {font-size:13px;width:100%;height:70px;}
+.cheering-reple-wrap .cheering-reple .reple-form .textarea .byte {text-align:right;font-size:11px;width:100%;display:block;font-weight:500;}
+.cheering-reple-wrap .cheering-reple .reple-form .reg-menu {border-top:1px solid #7030A0;display:flex;align-items:stretch;}
+.cheering-reple-wrap .cheering-reple .reple-form .reg-menu .txt {padding:3px 10px;font-size:12px;display:flex;align-items:center;flex:1;}
+.cheering-reple-wrap .cheering-reple .reple-form .reg-menu .txt p {text-indent: -5px;padding-left:5px;}
+.cheering-reple-wrap .cheering-reple .reple-form .reg-menu .btn-reg {width:65px;background:#7030A0; color:#fff;font-size:14px;font-weight:500;min-height: 50px;}
+.cheering-reple-wrap .cheering-reple .reple-list {margin-top:20px;}
+.cheering-reple-wrap .cheering-reple .reple-list .total {font-weight:500;font-size:13px;}
+.cheering-reple-wrap .cheering-reple .reple-list .total + *{margin-top:10px;}
+.cheering-reple-wrap .cheering-reple .reple-list ul {border-top:2px solid #F6F7F9;}
+.cheering-reple-wrap .cheering-reple .reple-list ul li {padding:15px 0;border-bottom:1px solid #E4E4E4;}
+.cheering-reple-wrap .cheering-reple .reple-list ul li .info {font-size:13px; color:#ACAAAA;float:left;}
+.cheering-reple-wrap .cheering-reple .reple-list ul li .menu {float:right;}
+.cheering-reple-wrap .cheering-reple .reple-list ul li .menu .btn {font-size:13px; color:#ACAAAA;position:relative;}
+.cheering-reple-wrap .cheering-reple .reple-list ul li .menu .btn ~ .btn{margin-left:14px;}
+.cheering-reple-wrap .cheering-reple .reple-list ul li .menu .btn ~ .btn:before{content:'';display:block;height:11px;width:1px;background:#D5D0D0;position:absolute;top:50%;left:-7px;transform:translateY(-50%);}
+.cheering-reple-wrap .cheering-reple .reple-list ul li .reple-txt {clear: both;padding-top:5px;}
+.cheering-reple-wrap .btn-more-wrap{margin-top:15px;}
+.cheering-reple-wrap .btn-more-wrap .btn-more{border-color: #ACAAAA;}
+
+.popup-wrap .reple-textarea{border: 1px solid #7030A0; padding:15px 10px;font-size:13px;  border-radius: 10px;}
+.popup-wrap .reple-textarea textarea{width:100%;}
