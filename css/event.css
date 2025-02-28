@@ -35,6 +35,7 @@
 .event-template-wrap .event-step-list > li .desc .text {margin-top:6px;font-size:14px;}
 .event-template-wrap .event-step-list > li .desc .text > *{line-height:1.4;font-size:14px;}
 .event-template-wrap .event-step-list > li .desc .text > * ~ *{margin-top:7px;}
+.event-template-wrap .event-step-list > li .desc .text > br ~ *{margin-top:0;}
 .event-template-wrap .event-step-list > li .desc .text ul li ~ li{margin-top:2px;}
 .event-template-wrap .event-step-list > li .desc .text em{background:#EEE0F8;}
 .event-template-wrap .event-step-list > li .desc .dl-wrap {margin-top:8px;;}
