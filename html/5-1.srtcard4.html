@@ -1,0 +1,414 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=yes, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no"/>
+<!-- <meta name="theme-color" content="#7030A0"> -->
+<title></title>
+
+<link rel="shortcut icon" href="../images/favicon/favicon.ico">
+<link rel="icon" href="../images/favicon/favicon.ico">
+<link rel="icon" href="../images/favicon/favicon-32.png" sizes="32x32">
+<link rel="icon" href="../images/favicon/favicon-57.png" sizes="57x57">
+<link rel="icon" href="../images/favicon/favicon-72.png" sizes="72x72">
+<link rel="icon" href="../images/favicon/favicon-152.png" sizes="152x152">
+<link rel="apple-touch-icon" href="../images/favicon/favicon.png" />
+
+<link type="text/css" rel="stylesheet" href="../css/style.css" />
+<link type="text/css" rel="stylesheet" href="../css/swiper.min.css" />
+<script src="../js/jquery-3.6.1.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+<script src="../js/ui.js"></script>
+<!-- 퍼블만 사용-->
+<script src="../js/ui-pub.js"></script>
+
+</head>
+<body>
+<!-- wrap -->
+<div class="wrap">
+    <header class="header">
+      <div class="wrapper">
+        <div class="left">
+          <a href="main.html" class="btn-back"><i class="ico-back"></i></a>
+          <span class="tit-txt hide">SRT 금액권으로 예매하세요.</span>
+        </div>
+        <div class="right">
+          <a href="main.html" class="btn-cart"><i class="ico-cart"></i></a>          
+          <button type="button" class="btn-menu" onclick="gnbMenu();"><i class="ico-menu"></i></button>
+        </div>
+      </div>
+    </header>
+    <!-- content -->
+    <div class="content">
+      <div class="srt-giftcard-wrap">
+        <div class="srt-giftcard-header">
+          <div class="tit-wrap vt">
+            <div class="left">
+              <h2 class="tit-type4"><b style="font-size: 20px;color:#3B3B3B;">SRT 금액권</b>으로 예매하세요.</h2>
+              <p class="txt" style="color: #595959;">승차권 예약 전, 필수템</p>
+            </div>
+          </div>
+        </div>
+        <div class="srt-giftcard-visual">
+          <img src="../images/giftcard/srt-giftcard-visual3.png" alt="">
+        </div>
+        
+        <div class="tab-type1 top-sticky tab-scroll" data-top="50">
+          <ul>
+            <li class="on"><a href="javascript:void(0);" data-tab="tab1">구매하기</a></li>
+            <li><a href="javascript:void(0);" data-tab="tab2">상품설명</a></li>
+            <li><a href="javascript:void(0);" data-tab="tab3">이용안내</a></li>
+            <li><a href="javascript:void(0);" data-tab="tab4">취소/환불</a></li>
+          </ul>
+        </div>        
+
+        <!-- product-srtcard -->
+        <div class="product-srtcard st2" data-id="tab1">
+          <div class="tit-wrap">
+            <div class="center">
+              <p class="txt">SRT 금액권으로 고민 끝!</p>
+              <h2 class="tit-type4"><span>승차권 예매 혜택 챙기세요.</span></h2>
+            </div>				
+          </div>
+          <div class="product-list">
+            <ul>
+              <li>
+                <a class="product-type3">
+                  <div class="img img-prd h3">
+                    <img src="../images/temp/temp-srtcard.png" alt="">
+                  </div>
+                  <div class="inp-num-type2 st2" data-evt="inp-number"data-max="9 ">
+                    <button type="button" class="btn down" title="감소"></button>
+                    <input type="number" value="0" class="num">
+                    <button type="button" class="btn up" title="증가"></button>
+                  </div>                  
+                  <div class="desc">
+                    <span class="tit">SRT 금액권(50,000원) SRT 금액권(50,000원)</span>
+                    <span class="account">
+                      <div class="price-org">44,000</div>
+                      <span class="sale">10%<i class="ico-sale-dowm"></i></span>
+                      <span class="price">40,000<span class="won">원</span></span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="product-type3">
+                  <div class="img img-prd h3">
+                    <img src="../images/temp/temp-srtcard.png" alt="">
+                  </div>
+                  <div class="inp-num-type2 st2" data-evt="inp-number"data-max="9 ">
+                    <button type="button" class="btn down" title="감소"></button>
+                    <input type="number" value="0" class="num">
+                    <button type="button" class="btn up" title="증가"></button>
+                  </div>                  
+                  <div class="desc">
+                    <span class="tit">SRT 금액권(50,000원)</span>
+                    <span class="account">
+                      <div class="price-org">44,000</div>
+                      <span class="sale">10%<i class="ico-sale-dowm"></i></span>
+                      <span class="price">40,000<span class="won">원</span></span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="product-type3">
+                  <div class="img img-prd h3">
+                    <img src="../images/temp/temp-srtcard2.png" alt="">
+                  </div>
+                  <div class="inp-num-type2 st2" data-evt="inp-number"data-max="9 ">
+                    <button type="button" class="btn down" title="감소"></button>
+                    <input type="number" value="0" class="num">
+                    <button type="button" class="btn up" title="증가"></button>
+                  </div>                  
+                  <div class="desc">
+                    <span class="tit">SRT 금액권(50,000원)</span>
+                    <span class="account">
+                      <div class="price-org">44,000</div>
+                      <span class="sale">10%<i class="ico-sale-dowm"></i></span>
+                      <span class="price">40,000<span class="won">원</span></span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="product-type3">
+                  <div class="img img-prd h3">
+                    <img src="../images/temp/temp-srtcard2.png" alt="">
+                  </div>
+                  <div class="inp-num-type2 st2" data-evt="inp-number"data-max="9 ">
+                    <button type="button" class="btn down" title="감소"></button>
+                    <input type="number" value="0" class="num">
+                    <button type="button" class="btn up" title="증가"></button>
+                  </div>                  
+                  <div class="desc">
+                    <span class="tit">SRT 금액권(50,000원)</span>
+                    <span class="account">
+                      <div class="price-org">44,000</div>
+                      <span class="sale">10%<i class="ico-sale-dowm"></i></span>
+                      <span class="price">40,000<span class="won">원</span></span>
+                    </span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="fixed-footer-wrap">
+            <div class="txt-total">
+              <span class="label">상품합계</span>
+              <div class="right">
+                <div class="total-number">
+                  <span class="label">총 N개</span>
+                  <span class="price"><b>49,000</b>원</span>
+                </div>
+              </div>
+            </div>
+            <div class="btn-wrap">
+              <button type="button" class="btn-type1 st2" id="btn-purchase">구매하기</button>
+            </div>
+          </div>
+        </div>
+        <!-- // product-srtcard -->
+
+        <div class="division-line"></div>
+        <div class="srtcard-explanation" data-id="tab2">
+          <div class="tit-wrap">
+            <div class="left">
+              <p class="txt">SRT금액권</p>
+              <h2 class="tit-type4"><span>상품설명</span></h2>
+            </div>				
+          </div>
+          <div class="img-srtcard-explanation">
+            <img src="../images/giftcard/srtcard-explanation.png" alt="">
+          </div>
+        </div>
+
+        <div class="srtcard-use-place">
+          <div class="tit-wrap">
+            <div class="center">
+              <h2 class="tit-type4"><span>- SRT금액권 사용처 -</span></h2>
+            </div>				
+          </div>
+          <div class="srtcard-use-place-noti">
+            <i></i>
+            <div class="text">
+              <p>
+                <b>SRT금액권</b>은
+                <br>SRT 승차권 공식발권매체인
+                <br><b>SRT플레이에서만 사용할 수 있습니다.</b>
+              </p>
+              <p>
+                SRT 앱/PC홈페이지/매표소/무인발권기에서는
+                <br>SRT금액권 사용이 제한됩니다.
+              </p>
+            </div>
+          </div>
+          <div class="division-line2"></div>
+          <div class="text">
+            <p>
+              SRT금액권은
+              <br><b>모든 노선</b>(경부선, 호남선, 경전선, 동해선, 전라선)
+              <br><b>모든 좌석</b>(특실/일반실)에서
+              <br><b>사용 가능</b>합니다.
+            </p>
+
+            <p>
+              <em>*중복 사용 불가*</em>
+              <br>타 할인(공공할인, 할인승차권)에는
+              <br>중복 적용되어 사용되지 않습니다.
+            </p>
+          </div>
+          <div class="please-know">
+            <h3 class="tit-sub-round">알아두세요</h3>
+            <div class="text">
+              <p>
+                SRT금액권은
+                <br>좌석 당 하나의 금액권으로 적용됩니다.
+                <br>(잔액은 다음 또는 다른 승차권 예매 시 사용해 주세요.)                
+              </p>
+            </div>
+            <div class="img"><img src="../images/giftcard/please-know.png" alt=""></div>
+          </div>
+        </div>        
+        <!-- // SRT금액권 사용처 -->
+
+        <div class="srtcard-use-method">
+          <div class="tit-wrap">
+            <div class="center">
+              <h2 class="tit-type4"><span>- SRT금액권 사용방법 -</span></h2>
+            </div>				
+          </div>
+          <div class="srtcard-list-type">
+            <div class="unit">
+              <h3 class="tit-sub-round">01 - 구매하기</h3>
+              <div class="txt">권종을 확인하고 원하는 <b>SRT금액권</b>을 구매하세요.</div>
+              <div class="img">
+                <img src="../images/giftcard/srtcard-use-method-1.png" alt="">
+              </div>
+            </div>
+            <div class="unit">
+              <h3 class="tit-sub-round">02 - 등록하기</h3>
+              <div class="txt">
+                보관함에 등록하세요.
+                <br><b>(마이티플 > 보관함 > SRT금액권)</b>
+              </div>
+              <div class="img st2">
+                <img src="../images/giftcard/srtcard-use-method-2.png" alt="">
+              </div>
+            </div>
+            <div class="unit">
+              <h3 class="tit-sub-round">03 - 사용하기</h3>
+              <div class="txt">
+                SRT금액권을 사용해서 예매하세요.
+                <br><b>(좌석 선택 후 할인받기 적용)</b>
+              </div>
+              <div class="img">
+                <img src="../images/giftcard/srtcard-use-method-3.png" alt="">
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>        
+        <!-- // SRT금액권 사용처 -->
+
+        <div class="division-line"></div>
+        <div class="srt-giftcard-using-guide" data-id="tab3">
+          <div class="tit-wrap">
+            <div class="left">
+              <p class="txt">SRT금액권</p>
+              <h2 class="tit-type4"><span>이용안내</span></h2>
+            </div>				
+          </div>          
+          <ul class="list-dot light">
+            <li>SRT금액권은 잔액 내에서 사용 가능한 금액차감형 상품입니다.</li>
+            <li>결합상품과 함께 구매하는 할인승차권 이외 특실 포함 일반실 좌석 예매할 때 결제수단으로 사용할 수 있습니다.</li>
+            <li>금액 한도 초과 시 다른 결제수단으로 추가 결제 가능합니다.</li>
+            <li>공공할인, 결합상품 할인 등 타 할인과 중복 적용되지 않습니다.</li>
+            <li>좌석 예매 시 1개 좌석 당 1개의 금액권으로 적용됩니다. <br>- 잔액은 다음 또는 다른 승차권 예매 시 사용 가능해요.</li>
+          </ul>
+          <div class="division-line2"></div>
+          <div class="srtcard-list-type">
+            <div class="unit">
+              <h3 class="tit-sub-round">저장위치</h3>
+              <div class="txt">SRT플레이에서 구매하신 SRT금액권은 자동 등록되므로<br>번거로운 등록 과정이 없어요.</div>
+              <div class="img">
+                <img src="../images/giftcard/save-location.png" alt="">
+              </div>
+            </div>
+          </div>  
+          <div class="division-line2"></div>        
+          <div class="srtcard-list-type">
+            <div class="unit">
+              <h3 class="tit-sub-round">유의사항</h3>
+              <ul class="list-dot light">
+                <li>SRT금액권 유효기간은 발행일 포함 365일입니다. 구매 후 표기된 유효기간 내에 승차권을 예매하세요.</li>
+                <li>SRT플레이가 아닌 개인간 구매, 기타 부정한 방법으로 구입하신 금액권은 정상적인 사용, 환불, 유효기간 연장 등이 제한될 수 있습니다.</li>
+                <li>SRT금액권 구매 시, 결제수단에 따라 개인별 구매 한도 제약이 있을 수 있으며, 카드사 등 결제수단의 이용한도에 따릅니다.</li>
+                <li>SRT금액권은 열차 지연에 따른 배상 대상이 아닙니다. <br>(승차권 예매에 적용된 금액권 해당 금액만 배상 제외)</li>
+                <li>구매자 과실에 의해 타인에게 발행된 금액권은 환불이 불가하므로 주의해 주세요. 단, 미사용으로 확인된 금액권은 사용 정지 후 환불 가능합니다.</li>
+                <li>이벤트 등 B2B 프로모션 경품용, 임직원 복지 혜택 등으로 받은 SRT금액권은 유효기간 연장 및 취소, 환불 대상이 아닙니다.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="division-line"></div>
+        <div class="srt-giftcard-using-guide" data-id="tab4">
+          <div class="tit-wrap">
+            <div class="left">
+              <p class="txt">SRT금액권</p>
+              <h2 class="tit-type4"><span>취소/환불</span></h2>
+            </div>				
+          </div>          
+          <ul class="list-dot light">
+            <li>구매하신 SRT금액권 권면 금액의 60% 이상(1만원권 이하는 80%)를 사용하신 경우 잔액을 환불 받으실 수 있습니다. 단, 금액권을 할인 구매한 경우 환불 신청 금액에서 중복 차감됩니다.</li>
+            <li>최초 유효기간 이내에는 환불 신청 금액 전액(100%), 최초 유효기간 만료 후에는 환불 신청 금액의 90% 환불 가능합니다.</li>
+            <li>
+              환불신청 방법
+              <br>- 메뉴 > 마이티플 > 구매내역 > SRT금액권
+              <br>- 구매내역 목록에서 취소 또는 환불이 필요한 상품 확인
+              <br>- 환불 가능한 상태인 경우에는 [구매취소] 이용
+              <br>- 환불 불가능한 경우 [환불신청] 및 고객센터를 통해 환불 신청
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="srt-giftcard-alarm st2">
+          <dl class="toggle-box on-noline" data-evt="toggle-list">
+            <dt>
+              <a href="javascript:void(0);" class="desc">
+                <i class="ico-arr-list"></i>
+                <div class="f-wrap">
+                  <p class="tit">상품정보 제공고시</p>
+                </div>
+              </a>
+            </dt>
+            <dd class="detail" style="display:none">
+              <div class="info-table">
+                <table>
+                    <colgroup>
+                        <col style='width:25%' />
+                        <col style='width:auto' />
+                    </colgroup>
+                    <tbody>
+                      <tr>
+                        <td>발행자</td>
+                        <td>㈜이네이블(SRT플레이 운영사)</td>
+                      </tr>
+                      <tr>
+                        <td>사용 가능 가맹점</td>
+                        <td>SRT 모바일 금액권은 (주)이네이블이 운영하는 SRT플레이에서 승차권 좌석 예매 시 사용 가능합니다. (단, 공공할인 등 타 할인이 적용되는 일부 승차권 예매는 사용이 제한됩니다.)</td>
+                      </tr>
+                      <tr>
+                        <td>지급보증 또는 피해보상보험계약 체결에 관한 사항</td>
+                        <td>SRT 금액권은 별도의 지급보증 및 피해보상보험계약 체결없이 자체 신용으로 발행되었습니다.</td>
+                      </tr>
+                      <tr>
+                        <td>소비자피해 발생 시 연락할 관련 전화번호 등</td>
+                        <td>SRT플레이 고객센터 <a href="tel:1588-8366">1588-8366</a>
+                          <br><a href="https://www.srtplay.com/">(www.srtplay.com)</a></td>
+                      </tr>
+                    </tbody>
+                </table>
+              </div>
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <!-- // srt-giftcard-wrap -->
+    </div>
+    <!-- // content -->
+</div>
+<!-- // wrap -->
+
+<script>
+  tabMenuScroll('.tab-scroll', 132);
+
+  const $purchaseButton = $("#btn-purchase");
+  const $numInputs = $("input.num");
+
+  function updateButtonClass() {
+    let hasMoreThanOne = $numInputs.toArray().some(input => Number($(input).val()) > 0);
+    if (hasMoreThanOne) {
+      $purchaseButton.removeClass("st2").addClass("st1");
+    } else {
+      $purchaseButton.removeClass("s1").addClass("st2");
+    }
+  }
+
+  $('.btn.up, .btn.down').on("click", function () {
+      setTimeout(updateButtonClass, 100)
+    });
+
+
+</script>
+
+</body>
+</html>
