@@ -573,6 +573,18 @@ button.btn-type7 .ico-srtplay{position:relative;top:-1px;}
 .tab-type4 ul li button,
 .tab-type4 ul li a{display:block;position:relative;height:50px;line-height:48px;font-size:14px;color:#000;text-align:center;;width:100%;}
 
+.tab-type5{width:calc(100% + 40px);margin-left:-20px;background:#000;}
+.tab-type5 ul{background:#000;white-space: nowrap;overflow-x:auto;}
+.tab-type5 ul::-webkit-scrollbar{display:none;}
+.tab-type5 ul{display:flex;}
+.tab-type5 ul li{flex:1;position:relative;}
+.tab-type5 ul li ~ li:before{content:'';display:block;position:absolute;top:50%;left:0;width:1px;height:16px;background:#fff;transform:translateY(-50%);}
+.tab-type5 ul li:first-child{margin-left:0;}
+.tab-type5 ul li:last-child{margin-right:0;}
+.tab-type5 ul li .line,
+.tab-type5 ul li button,
+.tab-type5 ul li a{display:block;position:relative;height:40px;line-height:38px;font-size:13px;color:#fff;text-align:center;;width:100%;font-weight:500;}
+
 /* input type */
 .inp-toggle{position:relative;display:inline-block;cursor:pointer;white-space:nowrap;display:inline-flex;flex-direction:row;align-items:center;vertical-align: middle;width:50px;height:26px;border-radius:25px;overflow:hidden;}
 .inp-toggle input{opacity:0;position:absolute;top:0;left:0;width:22px;height:22px;opacity:0;}
