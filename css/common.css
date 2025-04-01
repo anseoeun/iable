@@ -521,6 +521,9 @@ button.btn-type7 .ico-srtplay{position:relative;top:-1px;}
 .btn-spread-wrap button{width:100%;display:flex;align-items:center;justify-content: center;}
 .btn-spread-wrap button i{margin-left:5px;}
 
+.btn-top-wrap{margin-bottom: 17px;}
+.btn-top-wrap [class*=btn-type]{font-weight:500;font-size:15px; background: #FFFFFF; box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05); border-radius: 12px; }
+
 /* tab */
 .tab-type1{width:calc(100% + 40px);margin-left:-20px;background:#fff;border-bottom:1px solid #F3F3F3;}
 .tab-type1 ul{background:#fff;white-space: nowrap;overflow-x:auto;padding:1px 20px;}
@@ -583,7 +586,7 @@ button.btn-type7 .ico-srtplay{position:relative;top:-1px;}
 .tab-type5 ul li:last-child{margin-right:0;}
 .tab-type5 ul li .line,
 .tab-type5 ul li button,
-.tab-type5 ul li a{display:block;position:relative;height:40px;line-height:38px;font-size:13px;color:#fff;text-align:center;;width:100%;font-weight:500;}
+.tab-type5 ul li a{display:block;position:relative;height:40px;line-height:40px;font-size:13px;color:#fff;text-align:center;;width:100%;font-weight:500;}
 
 /* input type */
 .inp-toggle{position:relative;display:inline-block;cursor:pointer;white-space:nowrap;display:inline-flex;flex-direction:row;align-items:center;vertical-align: middle;width:50px;height:26px;border-radius:25px;overflow:hidden;}
