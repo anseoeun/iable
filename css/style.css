@@ -851,6 +851,19 @@
 .earlybird-ticket-wrap .ticket-time-table2 .sale .ico-down{width:7px;height:12px;margin:0 5px;}
 .earlybird-ticket-wrap .ticket-time-table2 .sale .ico-down svg rect{fill: #893AEF;}
 
+/* 메인 금액권 */
+.main-srt-giftcard-wrap{margin-top:50px;}
+.main-srt-giftcard-wrap .desc-title {margin-top:15px;padding:20px 20px 62px;width:calc(100% + 40px);margin-left:-20px;background:#F7F6F6 url('../images/giftcard/main-srt-giftcard-wrap.png') no-repeat top 24px right 20px;background-size:auto 84px;}
+.main-srt-giftcard-wrap .desc-title .hot {display:inline-block;line-height:28px; height:28px;border-radius:26px;background: #907877;color: #FFFFFF;font-size: 13px;padding:0 13px;	 color:#fff;}
+.main-srt-giftcard-wrap .desc-title .title {margin-top:12px;}
+.main-srt-giftcard-wrap .desc-title .title .tit {font-size:17px; color:#695757;font-weight: 700;}
+.main-srt-giftcard-wrap .desc-title .title .txt { color:#707070;margin-top:6px;font-size:13px;}
+.main-srt-giftcard-wrap .slide-type1 {margin-top:-30px;padding:0 20px;}
+.main-srt-giftcard-wrap .product-list ul {display:flex;gap:0;}
+.main-srt-giftcard-wrap .product-list ul li {min-width: 140px;}
+.main-srt-giftcard-wrap .product-list ul li .product-type3 .img.img-prd{background:#E3DDDD;}
+.main-srt-giftcard-wrap .product-list ul li .product-type3 .desc .tit {overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;word-wrap:break-word;line-height:1.3em;height:1.3em;min-height: initial;}
+
 /* 티플여행 */
 .tple-travel-wrap .tit-wrap,
 .tple-magazine-wrap .tit-wrap{margin-bottom:17px;}
