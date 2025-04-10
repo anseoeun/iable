@@ -842,7 +842,7 @@ button.btn-type7 .ico-srtplay{position:relative;top:-1px;}
 
 .list-type3 > ul > li{border-bottom:1px solid #E4E8F1;}
 /* .list-type3 > ul > li:only-child .detail{padding-bottom:0;} */
-.list-type3 > ul > li .ic-toggle{display:block;position:absolute;top:50%;right:0;width:22px;height: 22px;border-radius:100%;border:1px solid #1F2125;transform:translateY(-50%);-webkit-transform:translateY(-50%);}
+.list-type3 > ul > li .ic-toggle{display:block;position:absolute;top:50%;right:0;width:22.4px;height: 22.4px;border-radius:100%;border:1px solid #1F2125;transform:translateY(-50%);-webkit-transform:translateY(-50%);}
 .list-type3 > ul > li .ic-toggle:before,
 .list-type3 > ul > li .ic-toggle:after{ content: ""; position: absolute; background-color: white; transition: transform 0.25s ease-out; background: #1F2125; }
 .list-type3 > ul > li .ic-toggle:before{ top: 50%; left: 50%; width: 1px; height: 11px; margin-top:-5px; }

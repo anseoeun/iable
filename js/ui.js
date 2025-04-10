@@ -209,18 +209,19 @@ function toggleList(){
 
     if($view.is(':hidden')){
       $parents.addClass('on'); 
-      // $view.parents('li').find('.tit').removeAttr('style');
-      // let h2 = $view.parents('li').find('.tit span').height();
-
-      // $view.parents('li').find('.tit').height(h);
-      // $view.parents('li').find('.tit').animate({'height':h2}, 150);
       $view.slideDown();
-      $('html, body').animate({scrollTop: $view.offset().top}, 200);
+    
+      let winHeight = $(window).height();
+      let objTop = $obj.offset().top;
+      let scrollTop = $(window).scrollTop();
+    
+      if((objTop - scrollTop) > (winHeight * 2 / 3)) {
+        let targetScrollTop = $view.offset().top - (winHeight / 2);
+        $('html, body').animate({scrollTop: targetScrollTop}, 500);
+      }
     }else{
-      // $view.parents('li').find('.tit').animate({'height':h}, 150);
       $view.slideUp(function(){
         $parents.removeClass('on');
-        // $view.parents('li').find('.tit').removeAttr('style');
       });
     }
 
