@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+.event-visual-text{font-weight:500;font-size:12.5px; color:#A02B93;margin-top:-25px;position:relative;z-index: 1;margin-bottom:10px;}
+
+.event-day-check{margin-top:30px;padding-bottom:20px;}
+.event-day-check .tit {font-weight:500;font-size:18px; color:#000;text-align:center;}
+.event-day-check .btn-wrap {margin-top:13px;}
+.event-day-check .text {margin-top:13px;}
+.event-day-check .text p { color:#595959;font-size:13px;}
+.event-day-check .text p em { color:#7030A0;vertical-align:baseline;}
+
+.btm-popup-wrap .pop-wrap .popup .pop-header{border-bottom:none;height:auto;}
+.btm-popup-wrap .pop-wrap .popup .btn-close{position:absolute;top:5px;right:5px;width:50px;height:50px;z-index: 5;opacity: 0.8;background:url("data:image/svg+xml,%3Csvg width='42' height='42' viewBox='0 0 42 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='21' cy='21' r='19.5' fill='white' stroke='black' stroke-width='3'/%3E%3Crect x='27.1421' y='13.0001' width='3' height='20' rx='1.5' transform='rotate(45 27.1421 13.0001)' fill='black'/%3E%3Crect x='29.2634' y='27.1422' width='3' height='20' rx='1.5' transform='rotate(135 29.2634 27.1422)' fill='black'/%3E%3C/svg%3E%0A") no-repeat 50% 50%;background-size:auto 21px;}
+.attendance-confirm{margin-top:-10px !important;}
+.attendance-confirm .title {text-align:center;font-weight:500;display:flex;justify-content:center;align-items:center;flex-direction: column;gap:5px;}
+.attendance-confirm .title ~ .title{margin-top:10px;}
+.attendance-confirm .title span {display:block; color:#595959;font-size:14px;}
+.attendance-confirm .title b {display:block;font-size:16px; color:#A02B93;line-height:1;font-weight:500;}
+.attendance-confirm .title b em {vertical-align:baseline; color:#7030A0;}
+.attendance-confirm .title b .underline{text-decoration: underline;}
+.attendance-confirm .text {margin-top:15px;}
+.attendance-confirm .text p {font-size:13px;font-weight:300;line-height:1.5; color:#595959;}
+.attendance-confirm .text p em{ color:#7030A0;}
+.attendance-confirm .logo {margin-top:18px;text-align:center;}
+.attendance-confirm .logo .ico-logo {width:90px;height:25px;}
+.attendance-confirm .logo .ico-logo svg path{fill:#7A7A7A}
+
+.alarm-text{display:flex;justify-content:center;align-items:center;flex-direction: column;padding-top:15px;}
+.alarm-text .tit{font-size:18px;font-weight:700;}
+.alarm-text .txt{font-size:14px;margin-top:5px;}
