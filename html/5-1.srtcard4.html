@@ -52,8 +52,21 @@
             </div>
           </div>
         </div>
-        <div class="srt-giftcard-visual">
-          <img src="../images/giftcard/srt-giftcard-visual4.jpg" alt="">
+        <div class="srt-giftcard-visual" id="visual">
+          <div class="swiper-container">
+              <ul class="swiper-wrapper">
+                  <li class="swiper-slide">
+                    <a href="javascript:void(0);">
+                      <img src="../images/giftcard/srt-giftcard-visual4.jpg" alt="">
+                    </a>
+                  </li>
+                  <li class="swiper-slide">
+                    <a href="javascript:void(0);">
+                      <img src="../images/giftcard/srt-giftcard-visual4-2.jpg" alt="">
+                    </a>
+                  </li>
+              </ul>
+          </div>
         </div>
         
         <div class="tab-type5 top-sticky tab-scroll" data-top="50">
@@ -405,6 +418,21 @@
 
   $('.btn.up, .btn.down').on("click", function () {
       setTimeout(updateButtonClass, 100)
+    });
+
+    //비주얼 슬라이더
+    slider('#visual', {
+      loop: true,
+      autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+      },
+      freeMode: false,
+      slidesPerView: 1,
+      pagination: {
+        el: "#visual .swiper-pagination",
+        clickable: true,
+      },
     });
 
 
