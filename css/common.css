@@ -1318,6 +1318,8 @@ form + .banner-wrap,
 .banner-wrap2{overflow:hidden;width:calc(100% + 40px);margin-left:-20px;}
 .banner-wrap2 .line-bar{width:100%;margin-left:0;}
 
+.pop-wrap .banner-wrap .swiper-slide img{border-radius:0;}
+
 /* 배너 slide */
 .banner-slide-list{position:relative;}
 .banner-slide-list img{width:100%;}
@@ -1468,6 +1470,9 @@ form + .banner-wrap,
 .popup-wrap.st2 .pop-wrap .popup .pop-header{margin:0 20px;height:60px;}
 .popup-wrap.st2 .pop-wrap .popup .pop-header .tit{text-align:left;font-size:16px;font-weight:500;}
 .popup-wrap.st2 .pop-wrap .popup .pop-footer{margin:0 20px;}
+
+.popup-wrap.popup-img-banner .pop-wrap .popup{background:none;border-radius:10px;}
+.popup-wrap.popup-img-banner .pop-wrap .popup .pop-footer{background:#fff;margin:0;padding:0 20px;border-radius:0 0 10px 10px;}
 
 .pc .popup-wrap{width:414px;left:50%;transform:translateX(-50%);-webkit-transform:translateX(-50%);margin-left:216px;}
 @media all and (max-width:900px){
