@@ -52,7 +52,8 @@ body.notch:after{content:'';display:block;height:calc(0px + env(safe-area-inset-
 .header .wrapper{display:flex;flex-direction:row;height:50px;/*background:#fff;*/}
 .header .wrapper > *{height:100%;}
 .header .wrapper > * > [class*=btn-].btn-circle{width:30px;height:30px;border-radius:100%;background:#fff;display:flex;justify-content:center;align-items:center;}
-.header .wrapper > * > [class*=btn-]:not(.btn-circle){height:100%;min-width:35px;display:flex;justify-content:center;align-items:center;}
+.header .wrapper > * > [class*=btn-]:not(.btn-circle){height:100%;min-width:50px;display:flex;justify-content:center;align-items:center;}
+.header .wrapper > * > [class*=btn-].w-sm{min-width: 35px;}
 .header .wrapper > * > [class*=btn-].btn-chatbot{min-width: 40px;}
 .header .wrapper > * > [class*=btn-].btn-giftcard span{display:block; width:55px;height:23px;line-height:24px;color:#fff;font-weight:500;font-size:12px;border-radius:6px;}
 .header .wrapper > * > [class*=btn-].btn-giftcard span.front{padding-top:1px; border:1px solid #7030A0; color:#7030A0; display:flex;align-items:center;justify-content: center;}
