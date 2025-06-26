@@ -149,6 +149,47 @@
         </div>
         <!-- // list-category -->
 
+        <!-- 지금은 할인 중-->
+        <div class="sale-percent-wrap">
+          <div class="tit-wrap">
+            <div class="left">
+              <h2 class="tit-type4">지금은 할인 중,<br>SRT PLAY하세요!</h2>
+              <p class="txt light">노선별 전 열차 중 실시간 할인열차 비중  👀</p>
+            </div>
+          </div>
+          <div class="sale-percent-list">
+            <ul>
+              <li>
+                <div class="percent"><span><span>50</span><span class="unit">%</span></span></div>
+                <div class="dots"></div>
+                <div class="label">경부선</div>
+              </li>
+              <li>
+                <div class="percent"><span><span><span>87.5</span></span><span class="unit">%</span></span></div>
+                <div class="dots"></div>
+                <div class="label">호남선</div>
+              </li>
+              <li>
+                <div class="percent"><span><span>99</span><span class="unit">%</span></span></div>
+                <div class="dots"></div>
+                <div class="label">경전선</div>
+              </li>
+              <li>
+                <div class="percent"><span><span>70</span><span class="unit">%</span></span></div>
+                <div class="dots"></div>
+                <div class="label">경전선</div>
+              </li>
+              <li>
+                <div class="percent"><span><span>10</span><span class="unit">%</span></span></div>
+                <div class="dots"></div>
+                <div class="label">경전선</div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <!-- 지금은 할인 중-->
+
         <!-- 얼리버드 승차권-->
         <div class="earlybird-ticket-wrap">
           <div class="tit-wrap">
@@ -1062,6 +1103,38 @@ $(window).on('load', function(){
             }
          });
 
+    // 지금은 할인 중
+    function createDots($container, percentage) {
+      $container.empty();
+
+      const totalDots = 50;
+      const filledDots = Math.round(totalDots * (percentage / 100));
+
+      for (let i = 0; i < totalDots; i++) {
+        const $dot = $('<div class="dot"></div>');
+
+        if (i < filledDots) {
+          const step = Math.floor(i / (filledDots / 10)); // 0 ~ 9
+          const alpha = 1 - (step * 0.1);
+          $dot.css('opacity', alpha.toFixed(2));
+        }
+
+        $container.append($dot);
+      }
+    }
+
+    $(function () {
+      $('.sale-percent-list li').each(function () {
+        const $li = $(this);
+        const percentText = $li.find('.percent span').first().text().trim();
+        const percentage = parseFloat(percentText);
+        const $dotsContainer = $li.find('.dots');
+
+        if (!isNaN(percentage)) {
+          createDots($dotsContainer, percentage);
+        }
+      });
+    });
 
 
 </script>

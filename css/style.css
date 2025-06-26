@@ -852,6 +852,18 @@
 .earlybird-ticket-wrap .ticket-time-table2 .sale .ico-down{width:7px;height:12px;margin:0 5px;}
 .earlybird-ticket-wrap .ticket-time-table2 .sale .ico-down svg rect{fill: #893AEF;}
 
+/* 지금은 할인 중 */
+.sale-percent-wrap{margin-top:50px;}
+.sale-percent-list ul{display:flex;justify-content: space-between;margin-top:28px;}
+.sale-percent-list ul li{flex:1;display:flex;justify-content: center;flex-direction: column;}
+.sale-percent-list ul li .percent{display:flex;justify-content:center;align-items:center; }
+.sale-percent-list ul li .percent > span{height: 18px;width:46px;text-align:center;display:inline-block;line-height:16px; border: 1px dashed #7030A0; border-radius: 18px;color: #7030A0;font-size:11px;}
+.sale-percent-list ul li .percent > span > *{vertical-align:baseline;}
+.sale-percent-list ul li .percent > span .unit{font-size:9px;margin-left:1px;line-height:1;}
+.sale-percent-list ul li .dots{margin-top:10px;display: grid; grid-template-columns: repeat(5, 6px); grid-template-rows: repeat(10, 6px); grid-gap: 4px; justify-content: center; align-items: end; transform: rotate(180deg);}
+.sale-percent-list ul li .dots .dot{ width: 6px; height: 6px; border-radius: 50%; background: linear-gradient(146.98deg, #833CB8 7.88%, #BB61FF 94.09%); opacity: 0.1;}
+.sale-percent-list ul li .label{padding-top:8px; margin-top:10px; border-top: 1px solid rgba(112, 48, 160, 0.4);font-weight: 500;font-size: 13px;color: #7030A0;display:flex;justify-content:center;align-items:center;}
+
 /* 메인 금액권 */
 .main-srt-giftcard-wrap{margin-top:50px;}
 .main-srt-giftcard-wrap .desc-title {margin-top:15px;padding:20px 20px 62px;width:calc(100% + 40px);margin-left:-20px;background:#F7F6F6 url('../images/giftcard/main-srt-giftcard-wrap.png') no-repeat top 24px right 20px;background-size:auto 84px;}
