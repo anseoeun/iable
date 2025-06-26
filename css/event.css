@@ -151,6 +151,7 @@
 .special-tiple .tit-type4 {margin-bottom:20px;text-align:center;}
 .special-tiple ul {display:grid;grid-template-columns: repeat(2, 1fr);grid-gap:20px; }
 .special-tiple ul > li{min-height:180px;padding:0 20px 15px; border-radius:10px;background-position:0 0;background-size:100% auto;background-repeat:no-repeat;overflow:hidden;}
+.special-tiple ul > li .tit,
 .special-tiple ul > li b {display:block;padding-top:78px; font-size:14px;font-weight:700; color:#1F2125;line-height:1.2;}
 .special-tiple ul > li .text {margin-top:7px;font-size:12px; color:#6C737D;line-height:1.4;}
 .special-tiple ul .reserve {background-color: #EDEAEC; background-image: url('../images/event/bg-reserve.jpg');}
