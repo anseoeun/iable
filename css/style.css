@@ -862,6 +862,7 @@
 .sale-percent-list ul li .percent > span .unit{font-size:9px;margin-left:1px;line-height:1;}
 .sale-percent-list ul li .dots{margin-top:10px;display: grid; grid-template-columns: repeat(5, 6px); grid-template-rows: repeat(10, 6px); grid-gap: 4px; justify-content: center; align-items: end; transform: rotate(180deg);}
 .sale-percent-list ul li .dots .dot{ width: 6px; height: 6px; border-radius: 50%; background: linear-gradient(146.98deg, #833CB8 7.88%, #BB61FF 94.09%); opacity: 0.1;}
+.sale-percent-list ul li .dots .dot.empty{background:#F0F0EE; opacity:1 !important;}
 .sale-percent-list ul li .label{padding-top:8px; margin-top:10px; border-top: 1px solid rgba(112, 48, 160, 0.4);font-weight: 500;font-size: 13px;color: #7030A0;display:flex;justify-content:center;align-items:center;}
 
 /* 메인 금액권 */

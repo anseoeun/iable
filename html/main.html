@@ -1108,20 +1108,42 @@ $(window).on('load', function(){
       $container.empty();
 
       const totalDots = 50;
-      const filledDots = Math.round(totalDots * (percentage / 100));
+      const totalSteps = 20; // 5% 단위 → 20단계
+      const dotsPerStep = totalDots / totalSteps; // 2.5
+      const filledDotCount = Math.floor((percentage / 100) * totalDots);
+      let dotIndex = 0;
+      let filledCount = 0;
 
-      for (let i = 0; i < totalDots; i++) {
-        const $dot = $('<div class="dot"></div>');
+      for (let step = 0; step < totalSteps; step++) {
+        const alpha = 1 - step * 0.05;
 
-        if (i < filledDots) {
-          const step = Math.floor(i / (filledDots / 10)); // 0 ~ 9
-          const alpha = 1 - (step * 0.1);
-          $dot.css('opacity', alpha.toFixed(2));
+        for (let i = 0; i < Math.round(dotsPerStep); i++) {
+          const $dot = $('<div class="dot empty"></div>');
+
+          if (filledCount < filledDotCount) {
+            $dot.removeClass('empty').css({
+              backgroundColor: '#833CB8',
+              opacity: alpha.toFixed(2)
+            });
+            filledCount++;
+          }
+
+          $container.append($dot);
+          dotIndex++;
+
+          if (dotIndex >= totalDots) break;
         }
 
+        if (dotIndex >= totalDots) break;
+      }
+
+      while (dotIndex < totalDots) {
+        const $dot = $('<div class="dot empty"></div>');
         $container.append($dot);
+        dotIndex++;
       }
     }
+
 
     $(function () {
       $('.sale-percent-list li').each(function () {
