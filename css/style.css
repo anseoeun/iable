@@ -1201,7 +1201,7 @@
 .guide-combined_product-wrap .take-look-wrap .description .desc ol li ~ li{margin-top:2px;}
 .guide-combined_product-wrap .take-look-wrap .description .desc .tip {margin-top:25px;display:flex;flex-direction: column;gap:10px;}
 .guide-combined_product-wrap .take-look-wrap .description .desc .tip em { display: inline-flex; justify-content: center; align-items: center; padding: 2px 8px; background: #A02B93; border-radius: 45px; color:#fff;font-weight:500;font-size:11px; }
-.guide-combined_product-wrap .take-look-wrap .description .desc .tip p{word-break: keep-all;}
+.guide-combined_product-wrap .take-look-wrap .description .desc .tip p{word-break: keep-all;line-height:1.4;}
 .guide-combined_product-wrap .take-look-wrap .description .desc .tip p b {font-weight:500;word-break: keep-all;}
 .guide-combined_product-wrap .reserve-tip {margin-top:40px;}
 .guide-combined_product-wrap .reserve-tip .img{margin-top:5px;}
@@ -1218,14 +1218,16 @@
 	background-size:auto 13px;
 }
 .guide-combined_product-wrap .premium-guide .guide-list ol {font-size:14px;font-weight:500;}
+.guide-combined_product-wrap .premium-guide .guide-list ol li{text-indent: -18px;padding-left:18px;}
 .guide-combined_product-wrap .premium-guide .guide-list ol li ~ li{margin-top:2px;}
 .guide-combined_product-wrap .ticket-using-method{margin-top:40px;}
 .guide-combined_product-wrap .ticket-using-method * + .text {margin-top:15px;}
-.guide-combined_product-wrap .ticket-using-method .text {font-size:13px;}
-.guide-combined_product-wrap .ticket-using-method .text b {display:block;font-weight:500;}
+.guide-combined_product-wrap .ticket-using-method .text {font-size:13px; color:#3B3B3B;}
+.guide-combined_product-wrap .ticket-using-method .text b {display:block;font-weight:500;margin-bottom:3px;}
 .guide-combined_product-wrap .ticket-using-method .text b ~ b{margin-top:5px;}
 .guide-combined_product-wrap .ticket-using-method .text * + p {margin-top:5px;}
 .guide-combined_product-wrap .ticket-using-method .text p {font-weight:300;margin-top:2px;}
+.guide-combined_product-wrap .ticket-using-method .link{text-decoration: underline;}
 .guide-combined_product-wrap .check-noti {margin-top:40px;}
 .guide-combined_product-wrap .check-noti .list-dot{margin-top:15px;font-size:13px;}
 .guide-combined_product-wrap .check-noti .list-dot li.c-red:before{background:#ff0000;}
@@ -1255,9 +1257,10 @@
 .guide-combined_product-wrap .ticket-using-guide .using-guide .line-circle li .ic-iphone-bookstore{width:24px;height:19px;}
 .guide-combined_product-wrap .ticket-using-guide .using-guide .line-circle li .ic-android-bookstore{width:17px;height:17px;}
 .guide-combined_product-wrap .ticket-using-guide .using-guide .line-circle li .ic-my-home{width:19px;height:19px;}
-.guide-combined_product-wrap .ticket-using-guide .using-guide .line-circle li .img{padding:10px 0;}
+.guide-combined_product-wrap .ticket-using-guide .using-guide .line-circle li .img{padding:10px 0 20px;}
 .guide-combined_product-wrap .ticket-using-guide .using-guide .line-circle li .tag-premium{padding-left:20px;margin:8px 0;}
 .guide-combined_product-wrap .ticket-using-guide .using-guide .line-circle li .tag-premium img{height:25px;}
+.guide-combined_product-wrap .ticket-using-guide .using-guide .link{text-decoration: underline;}
 .guide-combined_product-wrap .product-contact {margin-top:40px;width:calc(100% + 40px);margin-left:-20px;padding:30px 0;display:flex;flex-direction: column; justify-content:center;align-items:center;background:rgba(252, 252, 252, 1);font-size:15px;gap:5px;}
 .guide-combined_product-wrap .product-contact b {font-weight:700;}
 .guide-combined_product-wrap .product-contact em { color:rgba(112, 48, 160, 1);font-weight:700;}
