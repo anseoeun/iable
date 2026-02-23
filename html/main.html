@@ -110,36 +110,26 @@
         <!-- list-category -->
         <div class="list-category st3">
           <ul>
-            <li>
+            <li class="cate-srt">
               <a href="1-1.book_home.html">
                 <span class="icon"><i class="ico-cate-srt"></i></span>
                 <span class="txt">승차권 예매</span>
                 <span class="tag">할인혜택</span>
               </a>
             </li>
-            <li>
-              <a href="javascript:void(0);" onclick="$(this).toggleClass('flipped')">
-                <i class="ico-cate-giftcard2"></i>
-                <span class="txt">SRT금액권</span>
-                <span class="tag-flip flip-wrap">
-                  <spa class="tag front">BIZ</spa>
-                  <spa class="tag off back">준비중</spa>
-                </span>
-              </a>
-            </li>            
-            <li>
+            <li class="cate-time">
               <a href="2.schedules.html">
                 <span class="icon"><i class="ico-cate-times"></i></span>
                 <span class="txt">시간표조회</span>
               </a>
             </li>
-            <li>
+            <li class="cate-trip">
               <a href="javascript:void(0);">
                 <span class="icon"><i class="ico-cate-trip"></i></span>
                 <span class="txt">티플여행</span>
               </a>
             </li>
-            <li>
+            <li class="cate-market">
               <a href="javascript:void(0);">
                 <span class="icon"><i class="ico-cate-market"></i></span>
                 <span class="txt">풍요마켓</span>
@@ -147,6 +137,35 @@
             </li>
           </ul>
         </div>
+        <!-- <div class="list-category st3">
+          <ul>
+            <li class="cate-srt">
+              <a href="1-1.book_home.html">
+                <span class="icon"><img src="../images/common/ico-cate-srt.png" alt=""></span>
+                <span class="txt">승차권 예매</span>
+                <span class="tag">최대 50%↓</span>
+              </a>
+            </li>
+            <li>
+              <a href="2.schedules.html">
+                <span class="icon"><img src="../images/common/ico-cate-time.png" alt=""></span>
+                <span class="txt">시간표조회</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">
+                <span class="icon"><img src="../images/common/ico-cate-travel.png" alt=""></span>
+                <span class="txt">티플여행</span>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">
+                <span class="icon"><img src="../images/common/ico-cate-market.png" alt=""></span>
+                <span class="txt">풍요마켓</span>
+              </a>
+            </li>
+          </ul>
+        </div> -->
         <!-- // list-category -->
 
         <!-- 지금은 할인 중-->
@@ -1083,14 +1102,14 @@ $(function(){
               if($('header').length > 0) $('header').removeClass('scrolling');
             }
             
-            if(stickyPos != 0){
+            if(typeof stickyPos !== 'undefined' && stickyPos != 0){
               if(top > stickyPos - 50) $('header').addClass('attach-sticky')
               else $('header').removeClass('attach-sticky')
             }
-            
-            if(top > titlePos){
+
+            if(typeof titlePos !== 'undefined' && top > titlePos){
               $('.header .tit-txt.hide').fadeIn();
-            }else{
+            }else if(typeof titlePos !== 'undefined'){
               $('.header .tit-txt.hide').fadeOut();
             }
          });
